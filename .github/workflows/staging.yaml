@@ -22,7 +22,7 @@ jobs:
           sudo nmp install sfdx-git-delta@latest -g
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
           git fetch --all
-          git --no-pager diff --name-status staging origin/main
+          git --no-pager diff --name-status staging origin/master
           sfdx sgd:source:delta --to staging --from origin/master --repo . --output .
           cat package/package.xml
 
