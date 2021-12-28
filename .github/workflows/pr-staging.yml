@@ -16,7 +16,18 @@ jobs:
       - uses: sfdx-actions/setup-sfdx@v1
         with:
           sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
+
+      - name: 'Install App And Create Delta'
+        run: |
+        sudo nmp install sfdx-git-delta@latest -g
+        git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+        git fetch --all
+        git checkout-b pr
+        git --no-pager diff --name-status pr origin/staging
+        sfdx sgd:source:delta --to pr --from origin/staging --repo . --output .
+        cat package/package.xml
+
       - name: 'Convert Metadata'
-        run: sfdx force:source:convert --rootdir=force-app --outputdir=convert
+        run: sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
       - name: 'Run Test on Metadata'
         run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
