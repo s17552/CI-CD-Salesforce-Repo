@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Contact_Default_Practice_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Default Practice ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Default_Region_ID__c</fullName>
+        <description>Default Region ID for a new Contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default Region ID for a new Contact</inlineHelpText>
+        <label>Contact Default Region ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contracts_Negotiated_Queue_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Contracts Negotiated Queue ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contracts_Queue_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Contracts Queue ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Access_Request_Approver__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Access Request Approver</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Access_Support__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Access Support</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Business_Hours__c</fullName>
+        <description>Default Business Hours for self configured environment, business hours ID</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default Business Hours for self configured environment, business hours ID</inlineHelpText>
+        <label>Default Business Hours</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Custom_Access_Case_Owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Custom Access Case Owner</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Role_ID_for_a_new_User__c</fullName>
+        <description>Default role ID for a new User</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default role ID for a new User</inlineHelpText>
+        <label>Default Role ID for a new User</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_SLA_Process__c</fullName>
+        <description>Default SLA Process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default SLA Process</inlineHelpText>
+        <label>Default SLA Process</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Entitlements_Product__c</fullName>
+        <description>Default product for self configured environment, product ID</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default product for self configured environment, product ID</inlineHelpText>
+        <label>Entitlements Product</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Renewals_Queue_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewals Queue ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Default_Access_Support__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Default Access Support</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Utilization_Cutoff_date__c</fullName>
+        <description>Utilization calculations to be deleted prior to this date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Utilization calculations to be deleted prior to this date</inlineHelpText>
+        <label>Utilization Cutoff date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>MSTR Placeholder Values</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>SETUP_TYPE</columns>
+        <columns>NAME</columns>
+        <columns>Contact_Default_Region_ID__c</columns>
+        <columns>Default_Role_ID_for_a_new_User__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

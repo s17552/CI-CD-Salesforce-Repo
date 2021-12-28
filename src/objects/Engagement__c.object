@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This is status information for each of the MSTR Cloud engagements.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AWS_Infrastructure__c</fullName>
+        <externalId>false</externalId>
+        <label>AWS Infrastructure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Analyst__c</fullName>
+        <description>This is the number of Analyst licenses per the customer contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of Analyst licenses per the customer contract</inlineHelpText>
+        <label>Analyst</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Architect__c</fullName>
+        <description>This is the number of Architect licenses per the customer contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of Architect licenses per the customer contract</inlineHelpText>
+        <label>Architect</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cloud_Customer__c</fullName>
+        <externalId>false</externalId>
+        <label>Cloud Customer</label>
+        <referenceTo>Cloud_Customer__c</referenceTo>
+        <relationshipName>Engagements</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Cloud_Old_Engt_ID__c</fullName>
+        <description>This is old cloud engagement ID (sys ID) from pro SFDC for migration to Ent SFDC</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is old cloud engagement ID (sys ID) from pro SFDC for migration to Ent SFDC</inlineHelpText>
+        <label>Cloud Old Engt ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cloud_Support_Model__c</fullName>
+        <description>Select the level of Cloud Support Model the customer has purchased.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the level of Cloud Support Model the customer has purchased.</inlineHelpText>
+        <label>Cloud Support Model</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cloud Standard</fullName>
+                    <default>false</default>
+                    <label>Cloud Standard</label>
+                </value>
+                <value>
+                    <fullName>Cloud Plus</fullName>
+                    <default>false</default>
+                    <label>Cloud Plus</label>
+                </value>
+                <value>
+                    <fullName>Cloud Complete</fullName>
+                    <default>false</default>
+                    <label>Cloud Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>This field tracks general comments on status of the engagement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter general comments on status of the engagement.</inlineHelpText>
+        <label>Comments</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Consumer__c</fullName>
+        <description>This is the number of consumer licenses per the customer contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of consumer licenses per the customer contract</inlineHelpText>
+        <label>Consumer</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contract_Expiration_Date__c</fullName>
+        <description>This date tracks the date when the customer&apos;s cloud service agreement will expire.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date when the customer&apos;s cloud service agreement will expire.</inlineHelpText>
+        <label>Contract Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contract_WH_Size_TB__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract WH Size (TB)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Contract_Sign_Date__c</fullName>
+        <description>This field tracks the date the customer signed the contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the customer Contract Sign Date</inlineHelpText>
+        <label>Customer Contract Sign Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Desktop_Designer__c</fullName>
+        <description>This is the number of Desktop Designer licenses per the customer contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of Desktop Designer licenses per the customer contract</inlineHelpText>
+        <label>Desktop Designer</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Direct_Connect__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this box if this is a direct connect environment</description>
+        <externalId>false</externalId>
+        <label>Direct Connect</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Education_Services_PEP__c</fullName>
+        <description>This value indicates whether the customer purchased any Perpetual Education Passes (PEP) as part of their contract.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a value if the customer purchased any Perpetual Education Passes (PEP) as part of their contract.</inlineHelpText>
+        <label>Education Services (PEP)</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engagement_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This is the engagement manager assigned to the account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the engagement manager assigned to the account</inlineHelpText>
+        <label>Engagement Manager</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Engagement_Status__c</fullName>
+        <description>This is the project status for the customer environment. Production customers are those that have their production environment pointing to a MicroStrategy metadata with reporting objects in it. Customers with a single node will always be marked as production. Quick-strike projects are single node environments provisioned for a limited time.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the project status for the customer environment. Production customers are those that have their production environment pointing to a MicroStrategy metadata with reporting objects in it. Customers with a single node will always be marked as prod.</inlineHelpText>
+        <label>Engagement Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Upcoming</fullName>
+                    <default>false</default>
+                    <label>Upcoming</label>
+                </value>
+                <value>
+                    <fullName>Environment Buildout In Progress</fullName>
+                    <default>true</default>
+                    <label>Environment Buildout In Progress</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Production</fullName>
+                    <default>false</default>
+                    <label>Production</label>
+                </value>
+                <value>
+                    <fullName>Off-Boarded</fullName>
+                    <default>false</default>
+                    <label>Off-Boarded</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Estimated_Upcharge__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Upcharge</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hosting_Location__c</fullName>
+        <description>This is the Hosting Location where the customer environment should be created</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Hosting Location where the customer environment should be created</inlineHelpText>
+        <label>Hosting Location</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ashburn, VA 3.0</fullName>
+                    <default>true</default>
+                    <label>Ashburn, VA 3.0</label>
+                </value>
+                <value>
+                    <fullName>Ashburn, VA 1.0</fullName>
+                    <default>false</default>
+                    <label>Ashburn, VA 1.0</label>
+                </value>
+                <value>
+                    <fullName>AWS Dublin</fullName>
+                    <default>false</default>
+                    <label>AWS Dublin</label>
+                </value>
+                <value>
+                    <fullName>AWS Frankfurt</fullName>
+                    <default>false</default>
+                    <label>AWS Frankfurt</label>
+                </value>
+                <value>
+                    <fullName>AWS Northern California</fullName>
+                    <default>false</default>
+                    <label>AWS Northern California</label>
+                </value>
+                <value>
+                    <fullName>AWS North Virginia</fullName>
+                    <default>false</default>
+                    <label>AWS North Virginia</label>
+                </value>
+                <value>
+                    <fullName>AWS Oregon</fullName>
+                    <default>false</default>
+                    <label>AWS Oregon</label>
+                </value>
+                <value>
+                    <fullName>AWS Sao Paulo</fullName>
+                    <default>false</default>
+                    <label>AWS Sao Paulo</label>
+                </value>
+                <value>
+                    <fullName>AWS Singapore</fullName>
+                    <default>false</default>
+                    <label>AWS Singapore</label>
+                </value>
+                <value>
+                    <fullName>AWS Sydney</fullName>
+                    <default>false</default>
+                    <label>AWS Sydney</label>
+                </value>
+                <value>
+                    <fullName>London, England 1.0</fullName>
+                    <default>false</default>
+                    <label>London, England 1.0</label>
+                </value>
+                <value>
+                    <fullName>Seattle, WA 3.0</fullName>
+                    <default>false</default>
+                    <label>Seattle, WA 3.0</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IP_Filtering__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field indicates whether the customer has requested IP filtering for their environment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this field if the customer has requested IP filtering for their environment</inlineHelpText>
+        <label>IP Filtering</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>In_Memory_Analytics_GB__c</fullName>
+        <externalId>false</externalId>
+        <label>In Memory Analytics (GB)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Intro_Period__c</fullName>
+        <description>This field tracks the number of months offered to the customer as an intro period</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of months (if any) offered to the customer as an intro period</inlineHelpText>
+        <label>Intro Period (Months)</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MSTR_Contract_Sign_Date__c</fullName>
+        <description>This field tracks the date MicroStrategy signed the contact</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date MSTR signed the contract</inlineHelpText>
+        <label>MSTR Contract Sign Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Option_Seats__c</fullName>
+        <description>This field tracks the number of Mobile Option seats purchased</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field tracks the number of Mobile Option seats purchased</inlineHelpText>
+        <label>Mobile Option Seats</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_Option__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Customer purchased mobile option or had the option grandfathered in.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer purchased mobile option or had the option grandfathered in.</inlineHelpText>
+        <label>Mobile Option</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <description>Enter any relevant notes for this customer engagement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter any relevant notes for this customer engagement</inlineHelpText>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Off_board_Date__c</fullName>
+        <description>This field tracks the Off-boarding date for the customer environment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Off-boarding date for the customer environment</inlineHelpText>
+        <label>Off-board Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Other_Hosting__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Hosting</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pro__c</fullName>
+        <description>This is the number of Pro licenses per the customer contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of Pro licenses per the customer contract</inlineHelpText>
+        <label>Pro</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Professional_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>Professional Services</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>3rd Party</fullName>
+                    <default>false</default>
+                    <label>3rd Party</label>
+                </value>
+                <value>
+                    <fullName>MSTR</fullName>
+                    <default>false</default>
+                    <label>MSTR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quickstrike__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this box if this is a Quickstrike engagement</inlineHelpText>
+        <label>Quickstrike</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>R_Integration__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box indicates whether the customer bought the R integration option</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if customer purchased R the integration option</inlineHelpText>
+        <label>R Integration</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SDK__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box indicates whether the customer bought the SDK component</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if the customer bought the SDK component</inlineHelpText>
+        <label>SDK</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SES__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SES</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SLA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this box if the SLA applies to this customer</inlineHelpText>
+        <label>SLA</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_Model__c</fullName>
+        <description>This field captures whether this customer will have a Named User license or an unlimited user Capacity Model subscription.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select whether this customer will have a Named User license or an unlimited user Capacity Model subscription.</inlineHelpText>
+        <label>Subscription Model</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Named User</fullName>
+                    <default>false</default>
+                    <label>Named User</label>
+                </value>
+                <value>
+                    <fullName>Capacity</fullName>
+                    <default>false</default>
+                    <label>Capacity</label>
+                </value>
+                <value>
+                    <fullName>VBI 25</fullName>
+                    <default>false</default>
+                    <label>VBI 25</label>
+                </value>
+                <value>
+                    <fullName>VBI 50</fullName>
+                    <default>false</default>
+                    <label>VBI 50</label>
+                </value>
+                <value>
+                    <fullName>VBI 100</fullName>
+                    <default>false</default>
+                    <label>VBI 100</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Support_Liaisons__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field tracks whether we have support liasions for this Engagement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if we have support liasions for this Engagement.</inlineHelpText>
+        <label>Support Liaisons</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Technical_Contacts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field tracks whether there have been defined main contacts for this engagement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if there have been defined main contacts for this engagement.</inlineHelpText>
+        <label>Technical Contacts</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Total_BI_Users__c</fullName>
+        <description>This is the total number of users, based on adding up Consumer, Analyst, Pro, Architect and Desktop Designer</description>
+        <externalId>false</externalId>
+        <formula>Consumer__c + Analyst__c + Pro__c + Architect__c + Desktop_Designer__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is a calculated field showing the total number of users, based on adding up Consumer, Analyst, Pro, Architect and Desktop Designer</inlineHelpText>
+        <label>Total BI Users</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Txn_Srv_Option__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Customer purchased Transaction Services option or had the option grandfathered in.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer purchased Transaction Services option or had the option grandfathered in.</inlineHelpText>
+        <label>Txn Srv. Option</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Txn_Svc_Seats__c</fullName>
+        <description>This field tracks the number of Transaction Services Option seats purchased</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field tracks the number of Transaction Services Option seats purchased</inlineHelpText>
+        <label>Txn Svc Seats</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VPN__c</fullName>
+        <externalId>false</externalId>
+        <label>VPN</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Required</fullName>
+                    <default>false</default>
+                    <label>Required</label>
+                </value>
+                <value>
+                    <fullName>Not Required</fullName>
+                    <default>false</default>
+                    <label>Not Required</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>View__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp; Id, &quot;View&quot;, &quot;_top&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>View</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WH_Users__c</fullName>
+        <description>This is the number of WH users per the customer contract</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of WH users per the customer contract</inlineHelpText>
+        <label>WH Users</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Work_Order_Submission_Date__c</fullName>
+        <description>This field tracks the date when the Work Order was submitted to operations</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date when the Work Order was submitted to operations</inlineHelpText>
+        <label>Work Order Submission Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X3rd_Party_Professional_Services__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>3rd Party Professional Services</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Cloud Configuration</label>
+    <listViews>
+        <fullName>All_Active_Engagements</fullName>
+        <columns>View__c</columns>
+        <columns>Cloud_Customer__c</columns>
+        <columns>Engagement_Manager__c</columns>
+        <columns>Engagement_Status__c</columns>
+        <columns>Hosting_Location__c</columns>
+        <columns>Subscription_Model__c</columns>
+        <columns>Contract_Expiration_Date__c</columns>
+        <columns>Direct_Connect__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Engagement_Status__c</field>
+            <operation>equals</operation>
+            <value>Upcoming,Environment Buildout In Progress,Development,Production</value>
+        </filters>
+        <label>All Active Configurations</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Engagements</fullName>
+        <columns>View__c</columns>
+        <columns>Cloud_Customer__c</columns>
+        <columns>Customer_Contract_Sign_Date__c</columns>
+        <columns>Engagement_Manager__c</columns>
+        <columns>Engagement_Status__c</columns>
+        <columns>Hosting_Location__c</columns>
+        <columns>Subscription_Model__c</columns>
+        <columns>Contract_Expiration_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Configurations</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>CC-{0000}</displayFormat>
+        <label>Cloud Configuration Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Cloud Configurations</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>View__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Cloud_Customer__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Engagement_Manager__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Engagement_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Hosting_Location__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Subscription_Model__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contract_Expiration_Date__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Cloud_Customer__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Engagement_Manager__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Engagement_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Hosting_Location__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Subscription_Model__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contract_Expiration_Date__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Cloud_Customer__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Engagement_Manager__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Engagement_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Hosting_Location__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Subscription_Model__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contract_Expiration_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>New_Engagement</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Engagement</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/a01/e
+?CF00NE00000038Wga={!Cloud_Customer__c.Name}
+&amp;CF00NE00000038Wga_lkid={!Cloud_Customer__c.Id}
+&amp;CF00NE00000037WiE={!$User.Full_Name__c}
+&amp;CF00NE00000037WiE_lkid={!$User.Id}
+&amp;retURL=%2F{!Cloud_Customer__c.Id}</url>
+    </webLinks>
+</CustomObject>

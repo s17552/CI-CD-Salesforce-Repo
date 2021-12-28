@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This is a junction object between legal documents and Opportunity. It is meant to hold information regarding necessary documents between the 2 to allow users to identify what is needed to execute the quote.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Legal_Checklists</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Base_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>look up to fill in the Governing Documents Related List</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Opportunity you are creating the checklist for.</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Governing Documents</relationshipLabel>
+        <relationshipName>Related_Documents</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Related</fullName>
+                    <default>false</default>
+                    <label>Related</label>
+                </value>
+                <value>
+                    <fullName>Required</fullName>
+                    <default>false</default>
+                    <label>Required</label>
+                </value>
+                <value>
+                    <fullName>Governing</fullName>
+                    <default>false</default>
+                    <label>Governing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comment__c</fullName>
+        <externalId>false</externalId>
+        <label>Comment</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Document__c</fullName>
+        <description>Displays primary quote of related opportunity or displays legal document</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Legal_Documents__c ),
+  IF(ISBLANK(  Governing_Document__c ),
+  If(ISBLANK( Related_Opportunity__c) ,
+  &quot;Missing&quot;,
+     If(ISBLANK(Related_Opportunity__r.SBQQ__PrimaryQuote__c),
+        &quot;No Primary Quote&quot;,
+        HYPERLINK(&quot;/&quot;&amp;  Related_Opportunity__r.SBQQ__PrimaryQuote__c ,
+        Related_Opportunity__r.SBQQ__PrimaryQuote__r.Name ))
+  ),
+IF( Governing_Document__r.RecordType.DeveloperName=&apos;Legacy&apos;,HYPERLINK( Governing_Document__r.LDContractLink__c , Governing_Document__r.Name ),
+HYPERLINK(&quot;/&quot;&amp;Governing_Document__c, Governing_Document__r.Name ))),
+HYPERLINK(&quot;/&quot;&amp; Legal_Documents__c, Legal_Documents__r.Name ))</formula>
+        <label>Contract</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exec_Quarter__c</fullName>
+        <externalId>false</externalId>
+        <formula>Governing_Document__r.Quarter_Executed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Exec. Quarter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>File__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Legal_Documents__c ),
+IF(ISBLANK( Governing_Document__c ),
+If(ISBLANK( Related_Opportunity__c) ,
+&quot;Missing&quot;,
+If(ISBLANK(Related_Opportunity__r.SBQQ__PrimaryQuote__c),
+&quot;No Primary Quote&quot;,
+HYPERLINK(&quot;https://mstr.lightning.force.com/&quot;&amp; Related_Opportunity__r.SBQQ__PrimaryQuote__c ,
+Related_Opportunity__r.SBQQ__PrimaryQuote__r.Name ))
+),
+IF( Governing_Document__r.RecordType.DeveloperName=&apos;Legacy&apos;,HYPERLINK(  Governing_Document__r.LDDocumentLink__c  ,  Governing_Document__r.LDDocumentName__c  ),
+HYPERLINK(&quot;https://mstr.lightning.force.com/&quot;&amp;Governing_Document__c, Governing_Document__r.Name ))),
+HYPERLINK(&quot;https://mstr.lightning.force.com/&quot;&amp; Legal_Documents__c, Legal_Documents__r.Name ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>File</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Governing_Document__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Governing Document</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <filterItems>
+                <field>Legal_Documents__c.Account__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>Legal_Documents__c.Status__c</field>
+                <operation>equals</operation>
+                <value>LD09 EXE</value>
+            </filterItems>
+            <filterItems>
+                <field>Legal_Documents__c.Status__c</field>
+                <operation>equals</operation>
+                <value>Agreement Executed</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Legal_Documents__c</referenceTo>
+        <relationshipLabel>Related Documents (Governing Document)</relationshipLabel>
+        <relationshipName>Related_Documents1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Documents__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Look up for legal documents</description>
+        <externalId>false</externalId>
+        <label>Legal Documents</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Account__c</field>
+                <operation>equals</operation>
+                <valueField>Legal_Documents__c.Account__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Legal_Documents__c</referenceTo>
+        <relationshipLabel>Related Documents</relationshipLabel>
+        <relationshipName>Legal_Checklists</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>lookup to fill in the Related Documents related list</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the Opportunity who you are creating the legal document checklist for.</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Related Documents</relationshipLabel>
+        <relationshipName>Legal_Checklists</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the opportunity that contains the primary quote which has documents related to the current quote.</inlineHelpText>
+        <label>Related Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>NotNeeded</relationshipLabel>
+        <relationshipName>Legal_Checklists1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Displays Status</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( Legal_Documents__c ),
+ IF(ISBLANK( Governing_Document__c  ),
+  If(ISBLANK( Related_Opportunity__c) ,
+    &quot;No LD or Primary Quote&quot;,
+     Related_Opportunity__r.SBQQ__PrimaryQuote__r.Quote_Description__c ),
+   TEXT(Governing_Document__r.Status__c)),
+  TEXT(Legal_Documents__r.Status__c)
+)</formula>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Price Quotation/Sales Order (MSTR format)</fullName>
+                    <default>false</default>
+                    <label>Price Quotation/Sales Order (MSTR format)</label>
+                </value>
+                <value>
+                    <fullName>Order Form (Customer format)</fullName>
+                    <default>false</default>
+                    <label>Order Form (Customer format)</label>
+                </value>
+                <value>
+                    <fullName>End User License Agreement (for partner deals only)</fullName>
+                    <default>false</default>
+                    <label>End User License Agreement (for partner deals only)</label>
+                </value>
+                <value>
+                    <fullName>Customer-generated Purchase Order</fullName>
+                    <default>false</default>
+                    <label>Customer-generated Purchase Order</label>
+                </value>
+                <value>
+                    <fullName>Statement of Work</fullName>
+                    <default>false</default>
+                    <label>Statement of Work</label>
+                </value>
+                <value>
+                    <fullName>Master Software License and Services Agreement</fullName>
+                    <default>false</default>
+                    <label>Master Software License and Services Agreement</label>
+                </value>
+                <value>
+                    <fullName>Master Services Agreement</fullName>
+                    <default>false</default>
+                    <label>Master Services Agreement</label>
+                </value>
+                <value>
+                    <fullName>Addendum/Amendment to SLA or MSA</fullName>
+                    <default>false</default>
+                    <label>Addendum/Amendment to SLA or MSA</label>
+                </value>
+                <value>
+                    <fullName>Data Processing Addendum</fullName>
+                    <default>false</default>
+                    <label>Data Processing Addendum</label>
+                </value>
+                <value>
+                    <fullName>Related License/Services Transaction</fullName>
+                    <default>false</default>
+                    <label>Related License/Services Transaction</label>
+                </value>
+                <value>
+                    <fullName>Information Security Questionnaire</fullName>
+                    <default>false</default>
+                    <label>Information Security Questionnaire</label>
+                </value>
+                <value>
+                    <fullName>Partner Agreement</fullName>
+                    <default>false</default>
+                    <label>Partner Agreement</label>
+                </value>
+                <value>
+                    <fullName>OEM Agreement</fullName>
+                    <default>false</default>
+                    <label>OEM Agreement</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Related Document</label>
+    <nameField>
+        <displayFormat>QRD-{0000}</displayFormat>
+        <label>Legal Checklist Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Related Documents</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Governing</fullName>
+        <active>true</active>
+        <description>For Governing Document Links</description>
+        <label>Governing</label>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>Governing</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Addendum%2FAmendment to SLA or MSA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Processing Addendum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Services Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Software License and Services Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Agreement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Related</fullName>
+        <active>true</active>
+        <description>For Related Documents</description>
+        <label>Related</label>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Required</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Addendum%2FAmendment to SLA or MSA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer-generated Purchase Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Processing Addendum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>End User License Agreement %28for partner deals only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Security Questionnaire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Services Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master Software License and Services Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Form %28Customer format%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Quotation%2FSales Order %28MSTR format%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Related License%2FServices Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statement of Work</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>No_Opportunity_or_Legal_Document</fullName>
+        <active>true</active>
+        <description>User must select either a Legal Document or Related Opportunity.</description>
+        <errorConditionFormula>AND(
+  ISBLANK( Related_Opportunity__c ),
+  ISBLANK(  Legal_Documents__c ),
+  ISBLANK(  Governing_Document__c )
+)</errorConditionFormula>
+        <errorMessage>You must relate either a Legal Document or Related Opportunity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Select_Opportunity_or_Legal_Document</fullName>
+        <active>true</active>
+        <description>User should only be able to select one</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(Related_Opportunity__c)),
+OR(
+  NOT(ISBLANK(Legal_Documents__c)),
+  NOT(ISBLANK( Governing_Document__c ))
+)
+)</errorConditionFormula>
+        <errorMessage>You cannot select both a related opportunity and related legal document. Please select only one.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom object to track customer upgrades</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>BI_Complete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box indicates whether the component is complete</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This box indicates whether the component is complete</inlineHelpText>
+        <label>BI Complete</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Request_Date__c</fullName>
+        <description>Date when the customer requested the upgrade</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Date when the customer requested the upgrade</inlineHelpText>
+        <label>Customer Request Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cut_over_Date__c</fullName>
+        <description>Date when the customer is doing a cut-over of production to the new environment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Date when the customer is doing a cut-over of production to the new environment</inlineHelpText>
+        <label>Cut-over Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DI_Complete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box indicates whether the component is complete</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This box indicates whether the component is complete</inlineHelpText>
+        <label>DI Complete</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DI_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box indicates whether the component is required</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This box indicates whether the component is required</inlineHelpText>
+        <label>Data Integration Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DW_Complete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box indicates whether the component is complete</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This box indicates whether the component is complete</inlineHelpText>
+        <label>DW Complete</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DW_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This box indicates whether the component is required</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This box indicates whether the component is required</inlineHelpText>
+        <label>Data Warehouse Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Engagement_lkp__c</fullName>
+        <description>Engagement parent of the upgrade</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Engagement parent of the upgrade</inlineHelpText>
+        <label>Engagement</label>
+        <referenceTo>Engagement__c</referenceTo>
+        <relationshipLabel>Upgrades</relationshipLabel>
+        <relationshipName>Upgrades</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>From_Datacenter__c</fullName>
+        <description>Data Center that has the current environment to be upgraded</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Data Center that has the current environment to be upgraded</inlineHelpText>
+        <label>From Datacenter</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ashburn 1.0</fullName>
+                    <default>true</default>
+                    <label>Ashburn 1.0</label>
+                </value>
+                <value>
+                    <fullName>Ashburn 3.0</fullName>
+                    <default>false</default>
+                    <label>Ashburn 3.0</label>
+                </value>
+                <value>
+                    <fullName>London 1.0</fullName>
+                    <default>false</default>
+                    <label>London 1.0</label>
+                </value>
+                <value>
+                    <fullName>Seattle 3.0</fullName>
+                    <default>false</default>
+                    <label>Seattle 3.0</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>From_MSTR_Version__c</fullName>
+        <description>MicroStrategy Version for the Current Environment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the MicroStrategy Version for the Current Environment</inlineHelpText>
+        <label>From MSTR Version</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>9.4.1 HF4</fullName>
+                    <default>false</default>
+                    <label>9.4.1 HF4</label>
+                </value>
+                <value>
+                    <fullName>9.4.1 HF3</fullName>
+                    <default>false</default>
+                    <label>9.4.1 HF3</label>
+                </value>
+                <value>
+                    <fullName>9.4.1 HF2</fullName>
+                    <default>false</default>
+                    <label>9.4.1 HF2</label>
+                </value>
+                <value>
+                    <fullName>9.4.1 HF1</fullName>
+                    <default>true</default>
+                    <label>9.4.1 HF1</label>
+                </value>
+                <value>
+                    <fullName>9.4.1</fullName>
+                    <default>false</default>
+                    <label>9.4.1</label>
+                </value>
+                <value>
+                    <fullName>9.4.0</fullName>
+                    <default>false</default>
+                    <label>9.4.0</label>
+                </value>
+                <value>
+                    <fullName>9.3.1 HF3</fullName>
+                    <default>false</default>
+                    <label>9.3.1 HF3</label>
+                </value>
+                <value>
+                    <fullName>9.3.1 HF2</fullName>
+                    <default>false</default>
+                    <label>9.3.1 HF2</label>
+                </value>
+                <value>
+                    <fullName>9.3.1 HF1</fullName>
+                    <default>false</default>
+                    <label>9.3.1 HF1</label>
+                </value>
+                <value>
+                    <fullName>9.3.1 GA</fullName>
+                    <default>false</default>
+                    <label>9.3.1 GA</label>
+                </value>
+                <value>
+                    <fullName>9.3.1 HF4</fullName>
+                    <default>false</default>
+                    <label>9.3.1 HF4</label>
+                </value>
+                <value>
+                    <fullName>9.3.0 GA</fullName>
+                    <default>false</default>
+                    <label>9.3.0 GA</label>
+                </value>
+                <value>
+                    <fullName>9.3.0 HF1</fullName>
+                    <default>false</default>
+                    <label>9.3.0 HF1</label>
+                </value>
+                <value>
+                    <fullName>9.3.0 HF2</fullName>
+                    <default>false</default>
+                    <label>9.3.0 HF2</label>
+                </value>
+                <value>
+                    <fullName>9.3.0 HF3</fullName>
+                    <default>false</default>
+                    <label>9.3.0 HF3</label>
+                </value>
+                <value>
+                    <fullName>9.3.0 HF4</fullName>
+                    <default>false</default>
+                    <label>9.3.0 HF4</label>
+                </value>
+                <value>
+                    <fullName>9.2.1m GA</fullName>
+                    <default>false</default>
+                    <label>9.2.1m GA</label>
+                </value>
+                <value>
+                    <fullName>9.2.1m HF1</fullName>
+                    <default>false</default>
+                    <label>9.2.1m HF1</label>
+                </value>
+                <value>
+                    <fullName>9.2.1m HF2</fullName>
+                    <default>false</default>
+                    <label>9.2.1m HF2</label>
+                </value>
+                <value>
+                    <fullName>9.2.1m HF3</fullName>
+                    <default>false</default>
+                    <label>9.2.1m HF3</label>
+                </value>
+                <value>
+                    <fullName>9.2.1m HF4</fullName>
+                    <default>false</default>
+                    <label>9.2.1m HF4</label>
+                </value>
+                <value>
+                    <fullName>9.2.1m HF5</fullName>
+                    <default>false</default>
+                    <label>9.2.1m HF5</label>
+                </value>
+                <value>
+                    <fullName>9.2.1 GA</fullName>
+                    <default>false</default>
+                    <label>9.2.1 GA</label>
+                </value>
+                <value>
+                    <fullName>9.2.1 HF1</fullName>
+                    <default>false</default>
+                    <label>9.2.1 HF1</label>
+                </value>
+                <value>
+                    <fullName>9.2.1 HF2</fullName>
+                    <default>false</default>
+                    <label>9.2.1 HF2</label>
+                </value>
+                <value>
+                    <fullName>9.2.1 HF3</fullName>
+                    <default>false</default>
+                    <label>9.2.1 HF3</label>
+                </value>
+                <value>
+                    <fullName>9.2.1 HF11</fullName>
+                    <default>false</default>
+                    <label>9.2.1 HF11</label>
+                </value>
+                <value>
+                    <fullName>9.0.2 GA</fullName>
+                    <default>false</default>
+                    <label>9.0.2 GA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HDR_Ticket__c</fullName>
+        <description>Provide a link to the HDR ticket # for quick reference</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a link to the HDR ticket # for quick reference</inlineHelpText>
+        <label>HDR Ticket #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <description>Notes related to the Upgrade</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter Notes related to the Upgrade</inlineHelpText>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Required_BI__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>This box indicates whether the component is required</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This box indicates whether the component is required</inlineHelpText>
+        <label>Required BI</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Support_Ticket__c</fullName>
+        <description>Provide a link to the support central case # for quick reference</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a link to the support central case # for quick reference</inlineHelpText>
+        <label>Support Ticket #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>To_Data_Center__c</fullName>
+        <description>Data Center that will have the upgraded environment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Data Center that will have the upgraded environment</inlineHelpText>
+        <label>To Data Center</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ashburn 1.0</fullName>
+                    <default>false</default>
+                    <label>Ashburn 1.0</label>
+                </value>
+                <value>
+                    <fullName>Ashburn 3.0</fullName>
+                    <default>false</default>
+                    <label>Ashburn 3.0</label>
+                </value>
+                <value>
+                    <fullName>London 1.0</fullName>
+                    <default>false</default>
+                    <label>London 1.0</label>
+                </value>
+                <value>
+                    <fullName>Seattle 3.0</fullName>
+                    <default>false</default>
+                    <label>Seattle 3.0</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>To_MSTR_Version__c</fullName>
+        <description>Target MicroStrategy Version for the New Environment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Target MicroStrategy Version for the New Environment</inlineHelpText>
+        <label>To MSTR Version</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>9.4.1 HF4</fullName>
+                    <default>false</default>
+                    <label>9.4.1 HF4</label>
+                </value>
+                <value>
+                    <fullName>9.4.1 HF3</fullName>
+                    <default>false</default>
+                    <label>9.4.1 HF3</label>
+                </value>
+                <value>
+                    <fullName>9.4.1 HF2</fullName>
+                    <default>false</default>
+                    <label>9.4.1 HF2</label>
+                </value>
+                <value>
+                    <fullName>9.4.1 HF1</fullName>
+                    <default>true</default>
+                    <label>9.4.1 HF1</label>
+                </value>
+                <value>
+                    <fullName>9.4.1</fullName>
+                    <default>false</default>
+                    <label>9.4.1</label>
+                </value>
+                <value>
+                    <fullName>9.4.0</fullName>
+                    <default>false</default>
+                    <label>9.4.0</label>
+                </value>
+                <value>
+                    <fullName>9.3.1 HF3</fullName>
+                    <default>false</default>
+                    <label>9.3.1 HF3</label>
+                </value>
+                <value>
+                    <fullName>9.3.1 HF2</fullName>
+                    <default>false</default>
+                    <label>9.3.1 HF2</label>
+                </value>
+                <value>
+                    <fullName>9.3.1 HF1</fullName>
+                    <default>false</default>
+                    <label>9.3.1 HF1</label>
+                </value>
+                <value>
+                    <fullName>9.3.1 GA</fullName>
+                    <default>false</default>
+                    <label>9.3.1 GA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Upgrade_End_Date__c</fullName>
+        <description>Date when the upgrade was finished</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Date when the upgrade was finished</inlineHelpText>
+        <label>Upgrade End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Upgrade_Owner__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the upgrade owner</inlineHelpText>
+        <label>Upgrade Owner</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Upgrades</relationshipLabel>
+        <relationshipName>Upgrades</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Upgrade_Release_Date__c</fullName>
+        <description>Date when the upgraded environment was released to the customer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Date when the upgraded environment was released to the customer</inlineHelpText>
+        <label>Upgrade Release Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Upgrade_Start_Date__c</fullName>
+        <description>Date when the upgrade was started</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Date when the upgrade was started</inlineHelpText>
+        <label>Upgrade Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Upgrade_Status__c</fullName>
+        <description>Current status for the Upgrade</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the current status for the Upgrade</inlineHelpText>
+        <label>Upgrade Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Initiated Request</fullName>
+                    <default>true</default>
+                    <label>Customer Initiated Request</label>
+                </value>
+                <value>
+                    <fullName>Work-Order Created</fullName>
+                    <default>false</default>
+                    <label>Work-Order Created</label>
+                </value>
+                <value>
+                    <fullName>Checklist completed</fullName>
+                    <default>false</default>
+                    <label>Checklist completed</label>
+                </value>
+                <value>
+                    <fullName>Work-Order Submitted</fullName>
+                    <default>false</default>
+                    <label>Work-Order Submitted</label>
+                </value>
+                <value>
+                    <fullName>VMs Created</fullName>
+                    <default>false</default>
+                    <label>VMs Created</label>
+                </value>
+                <value>
+                    <fullName>Application(s) Installed</fullName>
+                    <default>false</default>
+                    <label>Application(s) Installed</label>
+                </value>
+                <value>
+                    <fullName>VPN Setup</fullName>
+                    <default>false</default>
+                    <label>VPN Setup</label>
+                </value>
+                <value>
+                    <fullName>Website DNS Setup</fullName>
+                    <default>false</default>
+                    <label>Website DNS Setup</label>
+                </value>
+                <value>
+                    <fullName>Configuration Complete</fullName>
+                    <default>false</default>
+                    <label>Configuration Complete</label>
+                </value>
+                <value>
+                    <fullName>QA Complete</fullName>
+                    <default>false</default>
+                    <label>QA Complete</label>
+                </value>
+                <value>
+                    <fullName>Customer Validation In Progress</fullName>
+                    <default>false</default>
+                    <label>Customer Validation In Progress</label>
+                </value>
+                <value>
+                    <fullName>Upgrade Complete</fullName>
+                    <default>false</default>
+                    <label>Upgrade Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Upgrade_Validation_Date__c</fullName>
+        <description>Date when the customer validated the upgraded environment as having been successfully upgraded</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Date when the customer validated the upgraded environment as having been successfully upgraded</inlineHelpText>
+        <label>Upgrade Validation Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Upgrade</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Upgrade_Owner__c</columns>
+        <columns>From_Datacenter__c</columns>
+        <columns>To_Data_Center__c</columns>
+        <columns>Upgrade_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Upgrades</label>
+    </listViews>
+    <listViews>
+        <fullName>Cloud_Upgrades</fullName>
+        <columns>NAME</columns>
+        <columns>Upgrade_Owner__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Upgrade_Status__c</columns>
+        <columns>Upgrade_Start_Date__c</columns>
+        <columns>Upgrade_Release_Date__c</columns>
+        <columns>From_Datacenter__c</columns>
+        <columns>To_Data_Center__c</columns>
+        <columns>From_MSTR_Version__c</columns>
+        <columns>To_MSTR_Version__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Cloud Upgrades</label>
+        <sharedTo/>
+    </listViews>
+    <nameField>
+        <displayFormat>U-{00000}</displayFormat>
+        <label>Upgrade Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Upgrades</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Quote information with amounts rolled up to products/platforms/services.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AlertAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Total quote amount for Alert</description>
+        <externalId>false</externalId>
+        <label>Loyalty Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AnalyticsLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Analytics License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AnalyticsTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>Analytics Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BIAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Total quote amount for BI.</description>
+        <externalId>false</externalId>
+        <label>Analytics Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CloudAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <label>Cloud Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CloudLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Cloud License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cloud_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Cloud Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Configuration_Approved_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Configuration Approved By</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Configuration_Approved_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Configuration Approved On</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Configuration_Submitted_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Configuration Submitted By</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Configuration_Submitted_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Configuration Submitted On</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ConsultingLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Consulting License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ConsultingTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>Consulting Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consulting_SKUs__c</fullName>
+        <externalId>false</externalId>
+        <label>Consulting SKUs</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DSI_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>DSI ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DSI_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>DSI Name</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DSI_desc__c</fullName>
+        <externalId>false</externalId>
+        <label>DSI Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EducationLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Education License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EducationTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>Education Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FeeAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <label>Fee Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FeeLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Fee License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FeeTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>Fee Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FirstYearMxAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Total quote amount for first year maintenance</description>
+        <externalId>false</externalId>
+        <label>First Year Mx Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FirstYearMxLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>First Year Mx License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FirstYearMxTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>First Year Mx Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IdentityLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Identity License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IdentityTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>Identity Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Approved_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Approved By</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Approved_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Approved On</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Assigned_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Assigned On</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Assigned_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Assigned To</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://mstr.my.salesforce.com/&quot; &amp; Id, QuoteId__c)</formula>
+        <label>Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LoyaltyLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Loyalty License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LoyaltyTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>Loyalty Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MobileAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Total quote amount for mobile.</description>
+        <externalId>false</externalId>
+        <label>Mobile Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>MobileLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MobileTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Negotiation_Status_Assigned_To__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+  OR(
+   AND(ISPICKVAL(Negotiation_Status__c,&quot;Legal Review&quot;),
+   ISBLANK(Legal_Assigned_To__c)
+   ),
+   AND(ISPICKVAL(Negotiation_Status__c,&quot;RevRec Review&quot;),
+   ISBLANK(Rev_Rec_Assigned_To__c)
+   )
+   ),
+  &quot;Not Assigned&quot;,
+  IF(
+    AND(ISPICKVAL(Negotiation_Status__c,&quot;Legal Review&quot;),
+    NOT(ISBLANK(Legal_Assigned_To__c))
+    ),
+    Legal_Assigned_To__c,
+      IF(
+      AND(ISPICKVAL(Negotiation_Status__c,&quot;RevRec Review&quot;),
+      NOT(ISBLANK(Rev_Rec_Assigned_To__c))
+      ),
+      Rev_Rec_Assigned_To__c,
+      IF(ISPICKVAL(Negotiation_Status__c,&quot;Field Review&quot;),
+      Opportunity__r.Owner.Shortened_Full_Name__c,
+&apos;-&apos;
+)
+)
+)
+)</formula>
+        <label>Negotiation Status Assigned To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Negotiation_Status_Comments_History__c</fullName>
+        <externalId>false</externalId>
+        <label>Negotiation Status Comments History</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Negotiation_Status_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ISPICKVAL(Negotiation_Status__c,&quot;Negotiation Closed&quot;),
+null,
+NOW() - Negotiation_Status_Last_Modified_Date__c
+)</formula>
+        <label>Negotiation Status Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Negotiation_Status_Last_Modified_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Negotiation Status Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Negotiation_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Negotiation Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Field Review</fullName>
+                    <default>false</default>
+                    <label>Field Review</label>
+                </value>
+                <value>
+                    <fullName>Legal Review</fullName>
+                    <default>false</default>
+                    <label>Legal Review</label>
+                </value>
+                <value>
+                    <fullName>Customer Review</fullName>
+                    <default>false</default>
+                    <label>Customer Review</label>
+                </value>
+                <value>
+                    <fullName>Negotiation Closed</fullName>
+                    <default>false</default>
+                    <label>Negotiation Closed</label>
+                </value>
+                <value>
+                    <fullName>RevRec Review</fullName>
+                    <default>false</default>
+                    <label>RevRec Review</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OEMAddOnAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <label>OEM Add-On Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OEMAddOnLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>OEM Add-On License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OEMAddOnTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>OEM Add-On Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <description>Opportunity is the master record for all quote details</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Quote Details</relationshipLabel>
+        <relationshipName>QuoteDetails</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>OtherAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Total quote amount for other services</description>
+        <externalId>false</externalId>
+        <label>Other Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OtherLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Other License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OtherTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PremiumMxAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <externalId>false</externalId>
+        <label>Premium Mx Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PremiumMxLicenseType__c</fullName>
+        <externalId>false</externalId>
+        <label>Premium Mx License Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Term</fullName>
+                    <default>false</default>
+                    <label>Term</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PremiumMxTerm__c</fullName>
+        <externalId>false</externalId>
+        <label>Premium Mx Term (Months)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Quote__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if the quote is selected as a primary quote</description>
+        <externalId>false</externalId>
+        <label>Primary Quote</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QuoteExecuted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates if the quote is executed</description>
+        <externalId>false</externalId>
+        <label>Quote Executed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>QuoteExecutionDate__c</fullName>
+        <description>Execution date for the quote (sent by Quote system) - not displayed on Salesforce UI</description>
+        <externalId>false</externalId>
+        <label>Quote Execution Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>QuoteId__c</fullName>
+        <description>Quote id from Quote system</description>
+        <externalId>true</externalId>
+        <label>Quote Id</label>
+        <length>20</length>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Details_Action__c</fullName>
+        <description>The field is used to create a link to view the quote within the MicroStrategy Quote System.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://portal.microstrategy.com/Quote/Main.aspx?p=SearchResult&amp;mode=15&amp;title=Matched Quotes&amp;searchCriteria=&quot; &amp;QuoteId__c, &quot;View Quote&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quote Details Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rev_Rec_Approved_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Rev Rec Approved By</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rev_Rec_Assigned_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Rev Rec Approved On</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Rev_Rec_Assigned_To__c</fullName>
+        <externalId>false</externalId>
+        <label>Rev Rec Assigned To</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBCF_Consulting_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.SBCF_Gross_Consulting__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Consulting Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBCF_Education_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Gross_Education__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Education Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBCF_Software_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Gross_License__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Software Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBCF_Support_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Gross_Maintenance__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Support Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ServicesAmountConsulting__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Total Quote amount for consulting services</description>
+        <externalId>false</externalId>
+        <label>Services Amount (Consulting)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ServicesAmountEducation__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Total Quote amount for education services</description>
+        <externalId>false</externalId>
+        <label>Services Amount (Education)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ServicesAmount__c</fullName>
+        <description>Total quote amount for services (sum of consulting and education services)</description>
+        <externalId>false</externalId>
+        <formula>ServicesAmountConsulting__c +  ServicesAmountEducation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Services Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>The current status of quote version.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The current status of quote version.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>WIP</fullName>
+                    <default>false</default>
+                    <label>WIP</label>
+                </value>
+                <value>
+                    <fullName>Pending Review</fullName>
+                    <default>false</default>
+                    <label>Pending Review</label>
+                </value>
+                <value>
+                    <fullName>Revision Required</fullName>
+                    <default>false</default>
+                    <label>Revision Required</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Discarded</fullName>
+                    <default>false</default>
+                    <label>Discarded</label>
+                </value>
+                <value>
+                    <fullName>Replaced By New Version</fullName>
+                    <default>false</default>
+                    <label>Replaced By New Version</label>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <label>Expired</label>
+                </value>
+                <value>
+                    <fullName>Previously Approved</fullName>
+                    <default>false</default>
+                    <label>Previously Approved</label>
+                </value>
+                <value>
+                    <fullName>Agreement Executed</fullName>
+                    <default>false</default>
+                    <label>Agreement Executed</label>
+                </value>
+                <value>
+                    <fullName>Agreement Discarded</fullName>
+                    <default>false</default>
+                    <label>Agreement Discarded</label>
+                </value>
+                <value>
+                    <fullName>Approved:  Rider Required</fullName>
+                    <default>false</default>
+                    <label>Approved:  Rider Required</label>
+                </value>
+                <value>
+                    <fullName>Rider / Revenue Review Requested</fullName>
+                    <default>false</default>
+                    <label>Rider / Revenue Review Requested</label>
+                </value>
+                <value>
+                    <fullName>Approved:  Rider Completed</fullName>
+                    <default>false</default>
+                    <label>Approved:  Rider Completed</label>
+                </value>
+                <value>
+                    <fullName>Revenue Review Completed</fullName>
+                    <default>false</default>
+                    <label>Revenue Review Completed</label>
+                </value>
+                <value>
+                    <fullName>Under Negotiation</fullName>
+                    <default>false</default>
+                    <label>Under Negotiation</label>
+                </value>
+                <value>
+                    <fullName>Negotiation Closed</fullName>
+                    <default>false</default>
+                    <label>Negotiation Closed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TotalQuoteAmount__c</fullName>
+        <description>The sum of all TCVs for a quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The sum of all TCVs for a quote.</inlineHelpText>
+        <label>Total Quote Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>The type of quote created for an opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of quote created for an opportunity.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>License</fullName>
+                    <default>false</default>
+                    <label>License</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Renewal</fullName>
+                    <default>false</default>
+                    <label>Maintenance Renewal</label>
+                </value>
+                <value>
+                    <fullName>Platinum Service</fullName>
+                    <default>false</default>
+                    <label>Platinum Service</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+                <value>
+                    <fullName>Maintenance Upgrade</fullName>
+                    <default>false</default>
+                    <label>Maintenance Upgrade</label>
+                </value>
+                <value>
+                    <fullName>DSI Adjustment</fullName>
+                    <default>false</default>
+                    <label>DSI Adjustment</label>
+                </value>
+                <value>
+                    <fullName>Master License Agreement</fullName>
+                    <default>false</default>
+                    <label>Master License Agreement</label>
+                </value>
+                <value>
+                    <fullName>Master Service Agreement</fullName>
+                    <default>false</default>
+                    <label>Master Service Agreement</label>
+                </value>
+                <value>
+                    <fullName>Starter Kit</fullName>
+                    <default>false</default>
+                    <label>Starter Kit</label>
+                </value>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Online Sales</fullName>
+                    <default>false</default>
+                    <label>Online Sales</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UsherAmount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Total quote amount for Usher</description>
+        <externalId>false</externalId>
+        <label>Identity Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>View__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp; Id, &quot;View&quot;, &quot;_top&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>View</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Quote Details</label>
+    <listViews>
+        <fullName>All_Quote_Details</fullName>
+        <columns>View__c</columns>
+        <columns>QuoteId__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>TotalQuoteAmount__c</columns>
+        <columns>Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Primary_Quote__c</columns>
+        <columns>QuoteExecuted__c</columns>
+        <columns>DSI_ID__c</columns>
+        <columns>DSI_Name__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Configuration_Submitted_On__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Quote Details</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>Quote-{0000000000}</displayFormat>
+        <label>Quote Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Quote Details</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>View__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QuoteId__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Opportunity__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TotalQuoteAmount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Primary_Quote__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>QuoteExecuted__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>View__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QuoteId__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Primary_Quote__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QuoteExecuted__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>QuoteExecutionDate__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Non_Negative_Quote_Value_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR( 
+
+AlertAmount__c&lt;0, ISBLANK(AlertAmount__c), 
+BIAmount__c&lt;0, ISBLANK(BIAmount__c),
+FirstYearMxAmount__c&lt;0, ISBLANK(FirstYearMxAmount__c),
+MobileAmount__c&lt;0, ISBLANK(MobileAmount__c),
+OtherAmount__c&lt;0, ISBLANK(OtherAmount__c), 
+ServicesAmountConsulting__c&lt;0, ISBLANK(ServicesAmountConsulting__c),
+ServicesAmountEducation__c&lt;0, ISBLANK(ServicesAmountEducation__c),
+UsherAmount__c&lt;0, ISBLANK(UsherAmount__c) )</errorConditionFormula>
+        <errorMessage>Quote amount cannot contain a blank or negative value.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Opportunity_Not_Editable</fullName>
+        <active>true</active>
+        <description>Opportunity should not be edited after creation, except for users assigned to System Administrator, Sales Operations, and Integration User</description>
+        <errorConditionFormula>AND ( NOT(ISNEW()), ISCHANGED( Opportunity__c ), $Profile.Name != &apos;Sales Operations&apos;, $Profile.Name != &apos;System Administrator&apos;, $Profile.Name != &apos;Integration User&apos;, $Profile.Name != &apos;MSTR Limited System Admin&apos;)</errorConditionFormula>
+        <errorDisplayField>Opportunity__c</errorDisplayField>
+        <errorMessage>Opportunity cannot be updated</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Quote_Id_is_not_editable</fullName>
+        <active>true</active>
+        <description>Users should not be able to edit quote id</description>
+        <errorConditionFormula>AND ( NOT(ISNEW()), ISCHANGED(QuoteId__c), $Profile.Name != &apos;Sales Operations&apos;, $Profile.Name != &apos;System Administrator&apos;)</errorConditionFormula>
+        <errorDisplayField>QuoteId__c</errorDisplayField>
+        <errorMessage>Quote Id cannot be updated.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Quote_Name_Not_Editable</fullName>
+        <active>true</active>
+        <description>Quote name should not be edited after creation</description>
+        <errorConditionFormula>AND ( NOT(ISNEW()), ISCHANGED(Name), $Profile.Name != &apos;Sales Operations&apos;, $Profile.Name != &apos;System Administrator&apos;)</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Quote Name cannot be updated</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

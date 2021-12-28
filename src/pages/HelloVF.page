@@ -1,0 +1,18 @@
+<apex:page standardController="Contact" extensions="HelloVFController">
+    <apex:form >
+        <apex:actionFunction name="update" action="{!calculate}" rerender="helloPanel"/>
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputText >Your name</apex:outputText>
+                    <apex:inputText value="{!firstName}" onkeyup="update()"/>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!Contact.Birthdate}"/>
+                <apex:commandButton value="Calculate" action="{!calculate}" rerender="helloPanel"/>
+                <apex:outputPanel id="helloPanel">
+                    Hello, {!firstName}! You're {!age} years old.
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

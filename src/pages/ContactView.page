@@ -1,0 +1,9 @@
+<!--
+ - Created by ychuiev001 on 14.06.2019.
+ -->
+
+<apex:page id="ContactView" standardController="Contact">
+    {!Contact.FirstName} <br/>
+    {!Contact.LastName} <br/>
+    {!Contact.Owner.Email} <br/>
+</apex:page>

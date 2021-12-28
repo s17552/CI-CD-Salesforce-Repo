@@ -1,0 +1,45 @@
+<!--
+ - Created by ychuiev001 on 14.06.2019.
+ -->
+
+<apex:page id="AccountDetail" standardController="Account" showHeader="true">
+
+    <!--
+    {!Account.Name}
+-->
+
+    <apex:detail relatedList="false"/>
+
+    <apex:relatedList list="Contacts"/>
+    <apex:relatedList list="Opportunities" pageSize="5"/>
+
+    <apex:outputField value="{! Account.Name }"/>
+    <br/>
+    <apex:outputField value="{! Account.Phone }"/>
+    <br/>
+    <apex:outputField value="{! Account.Industry }"/>
+    <br/>
+    <apex:outputField value="{! Account.AnnualRevenue }"/>
+    <br/>
+
+
+
+    <apex:pageBlock title="Account Details">
+        <apex:pageBlockSection >
+            <apex:outputField value="{! Account.Name }"/>
+            <apex:outputField value="{! Account.Phone }"/>
+            <apex:outputField value="{! Account.Industry }"/>
+            <apex:outputField value="{! Account.AnnualRevenue }"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+
+    <apex:pageBlock title="Contacts">
+        <apex:pageBlockTable value="{!Account.Contacts}" var="contact">
+            <apex:column value="{!contact.Name}"/>
+            <apex:column value="{!contact.Title}"/>
+            <apex:column value="{!contact.Phone}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+
+
+</apex:page>

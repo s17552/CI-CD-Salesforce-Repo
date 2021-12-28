@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Engagement_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Engagements*</relationshipLabel>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; + Opportunity__r.Account.Id , Opportunity__r.Account.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Hours</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bookings__c</fullName>
+        <externalId>false</externalId>
+        <label>Bookings</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_LOE_wks__c</fullName>
+        <description>Number of weeks to be invested according to business.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of weeks to be invested according to business.</inlineHelpText>
+        <label>Business LOE (wks)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Business Lead</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Engagements3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <referenceTo>Business_Unit__c</referenceTo>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CaseID__c</fullName>
+        <description>All engagements migrated to cases will have this ID to reference the new record.</description>
+        <externalId>false</externalId>
+        <label>CaseID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cloud_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Cloud Id</label>
+        <length>5</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cost_Health__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Cost_Risk__c,
+&quot;High&quot;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPP&quot;,&quot;&quot;,16,16),
+&quot;Medium&quot;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPK&quot;,&quot;&quot;,16,16),
+&quot;Low&quot;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPF&quot;,&quot;&quot;,16,16),
+&quot; &quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost Health</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cost_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost Risk</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DSI__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Opportunity__r.DSI__c), 
+  &quot;Not Available&quot;, 
+  HYPERLINK(&quot;/&quot; + Opportunity__r.DSI__c, Opportunity__r.DSI__r.Name) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DSI</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>For Legal Engagement Record Type</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <description>Due date for Next Milestone. The best due date is sometime this week, next week, or within 14 days. Set a due date that is aggressive but achievable in order to drive the pace and keep the process moving forward.</description>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Engagement_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Engagement Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Engagements1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Engagement_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>P3 = Customer is overall satisfied with engagement. 
+P2 = Customer is experiencing business value or technical issues causing engagement difficulties. 
+P1 = Customer is unsatisfied with engagement and massive turnaround efforts are required.</inlineHelpText>
+        <label>Engagement Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>P1 - Focus</fullName>
+                    <default>false</default>
+                    <label>P1 - Focus</label>
+                </value>
+                <value>
+                    <fullName>P2 - Attention</fullName>
+                    <default>false</default>
+                    <label>P2 - Attention</label>
+                </value>
+                <value>
+                    <fullName>P3 - Reference</fullName>
+                    <default>false</default>
+                    <label>P3 - Reference</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Executive_Sponsor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Executive Sponsor</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Engagements2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Finance Lead</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Engagements4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Health_Flag__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Engagement_Status__c, 
+  &quot;P1 - Focus&quot;, IMAGE(&quot;https://mstr--c.na38.content.force.com/servlet/servlet.FileDownload?file=015E0000006LTPP&quot;,&quot;&quot;,16,16), 
+  &quot;P2 - Attention&quot;, IMAGE(&quot;https://mstr--c.na38.content.force.com/servlet/servlet.FileDownload?file=015E0000006LTPK&quot;,&quot;&quot;,16,16), 
+  &quot;P3 - Reference&quot;, IMAGE(&quot;https://mstr--c.na38.content.force.com/servlet/servlet.FileDownload?file=015E0000006LTPF&quot;,&quot;&quot;,16,16), 
+  &quot; &quot; 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Health</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IS_Exec__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IS Exec</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IS_LOE_wks__c</fullName>
+        <description>Number of weeks to be invested according to MicroStrategy Information Systems.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of weeks to be invested according to MicroStrategy Information Systems.</inlineHelpText>
+        <label>IS LOE (wks)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Kimble_Engagement_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Kimble Engagement ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LOE__c</fullName>
+        <externalId>false</externalId>
+        <label>LOE (hrs)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less Than 5</fullName>
+                    <default>false</default>
+                    <label>Less Than 5</label>
+                </value>
+                <value>
+                    <fullName>5 to 10</fullName>
+                    <default>false</default>
+                    <label>5 to 10</label>
+                </value>
+                <value>
+                    <fullName>10 to 20</fullName>
+                    <default>false</default>
+                    <label>10 to 20</label>
+                </value>
+                <value>
+                    <fullName>Greater Than 20</fullName>
+                    <default>false</default>
+                    <label>Greater Than 20</label>
+                </value>
+                <value>
+                    <fullName>10-20</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>10-20</label>
+                </value>
+                <value>
+                    <fullName>5-10</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>5-10</label>
+                </value>
+                <value>
+                    <fullName>&lt;5</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>&lt;5</label>
+                </value>
+                <value>
+                    <fullName>&gt;20</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>&gt;20</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Next_Milestone__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>WHO at MSTR is going to take action? WHAT action will be taken? WHO at the Customer will be the counterparty? Example: John Smith to gather requirements for POC from Rob Thomas (Director of Operations).</inlineHelpText>
+        <label>Next Milestone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Next_Opp_Flag__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Opportunity__r.Next_Opportunity__c), 
+  IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPP&quot;,&quot;&quot;,16,16), 
+  HYPERLINK(Opportunity__r.Next_Opportunity__c, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPF&quot;,&quot;&quot;,16,16) )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Next Opp</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; + Opportunity__r.Next_Opportunity__r.Id , Opportunity__r.Next_Opportunity__r.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Next Opportunity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Assessment__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Opportunity__r.Assessment_Link__c),
+  &quot;Not Available&quot;,
+  HYPERLINK(Opportunity__r.Assessment_Link__c, &quot;Click here&quot;)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Assessment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Plan__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What are the steps necessary to complete this engagement successfully? ie “1. Complete POC by 3/1 2. Present Proposal by 3/3 3. Meet key stakeholders and get approval for solution 3/10. 4. Present finished solution by 3/12. 5. Close by 3/25&quot;.</inlineHelpText>
+        <label>Plan</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Process__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Process</label>
+        <referenceTo>Process__c</referenceTo>
+        <relationshipLabel>Engagements*</relationshipLabel>
+        <relationshipName>Engagements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Project Id</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Quality__c</fullName>
+        <externalId>false</externalId>
+        <formula>( 
+(LEN( Scope__c ) / 255) * IF(CONTAINS( Scope__c, &quot; &quot;), 1, 0.7) * IF(CONTAINS( Scope__c, &quot;.&quot;), 1, 0.95) * (1/4) 
++ 
+(LEN( Next_Milestone__c ) /255) * IF(CONTAINS( Next_Milestone__c, &quot; &quot;), 1, 0.7) * IF(CONTAINS( Next_Milestone__c, &quot;.&quot;), 1, 0.95) * (1/4) 
++ 
+(LEN( Plan__c ) / 255) * IF(CONTAINS( Plan__c, &quot; &quot;), 1, 0.7) * IF(CONTAINS( Plan__c, &quot;.&quot;), 1, 0.95) * (1/4) 
++ 
+IF(ISNULL(Due_Date__c), 0, 
+IF(Due_Date__c &gt;= TODAY(), 
+IF(Due_Date__c &lt;= TODAY() + 14, 1, 
+IF(Due_Date__c &lt;= TODAY() + 28, 0.8, 
+IF(Due_Date__c &lt;= TODAY() + 42, 0.6, 
+IF(Due_Date__c &lt;= TODAY() + 56, 0.4, 
+IF(Due_Date__c &lt;= TODAY() + 70, 0.2, 0) 
+) 
+) 
+) 
+), 0 
+) 
+) * (1/4) 
+) 
+* IF(CONTAINS( Scope__c + Next_Milestone__c + Plan__c, &quot;.&quot;), 1, 0.8) 
+* IF(CONTAINS( Scope__c + Next_Milestone__c + Plan__c, &quot;,&quot;), 1, 0.95) 
+* IF(CONTAINS( Scope__c + Next_Milestone__c + Plan__c, &quot; &quot;), 1, 0.6) 
+* IF(CONTAINS( Scope__c + Next_Milestone__c + Plan__c, &quot; &quot;), 0.6, 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quality</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Quote_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Quote Id</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Recovery_Plan__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide detailed plan to achieve P3 health status.</inlineHelpText>
+        <label>Recovery Plan</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Schedule_Health__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Schedule_Risk__c,
+&quot;High&quot;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPP&quot;,&quot;&quot;,16,16),
+&quot;Medium&quot;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPK&quot;,&quot;&quot;,16,16),
+&quot;Low&quot;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPF&quot;,&quot;&quot;,16,16),
+&quot; &quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Schedule Health</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Schedule_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Schedule Risk</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Scope_Health__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Scope_Risk__c,
+&quot;High&quot;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPP&quot;,&quot;&quot;,16,16),
+&quot;Medium&quot;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPK&quot;,&quot;&quot;,16,16),
+&quot;Low&quot;, IMAGE(&quot;/servlet/servlet.FileDownload?file=015E0000006LTPF&quot;,&quot;&quot;,16,16),
+&quot; &quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Scope Health</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Scope_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Scope Risk</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>High</fullName>
+                    <default>false</default>
+                    <label>High</label>
+                </value>
+                <value>
+                    <fullName>Medium</fullName>
+                    <default>false</default>
+                    <label>Medium</label>
+                </value>
+                <value>
+                    <fullName>Low</fullName>
+                    <default>false</default>
+                    <label>Low</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Scope__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the scope of this engagement? What does the customer want to achieve? What are the different pieces of the project?</inlineHelpText>
+        <label>Scope</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>E1 - Not Started</fullName>
+                    <default>false</default>
+                    <label>E1 - Not Started</label>
+                </value>
+                <value>
+                    <fullName>E2 - In Progress</fullName>
+                    <default>false</default>
+                    <label>E2 - In Progress</label>
+                </value>
+                <value>
+                    <fullName>E3 - Completed</fullName>
+                    <default>false</default>
+                    <label>E3 - Completed</label>
+                </value>
+                <value>
+                    <fullName>E4 - Customer Accepted</fullName>
+                    <default>false</default>
+                    <label>E4 - Customer Accepted</label>
+                </value>
+                <value>
+                    <fullName>E0 - Customer Rejected</fullName>
+                    <default>false</default>
+                    <label>E0 - Customer Rejected</label>
+                </value>
+                <value>
+                    <fullName>LC1 - up to 10% completed</fullName>
+                    <default>false</default>
+                    <label>LC1 - up to 10% completed</label>
+                </value>
+                <value>
+                    <fullName>LC2 - 25% completed</fullName>
+                    <default>false</default>
+                    <label>LC2 - 25% completed</label>
+                </value>
+                <value>
+                    <fullName>LC3 - 50% completed</fullName>
+                    <default>false</default>
+                    <label>LC3 - 50% completed</label>
+                </value>
+                <value>
+                    <fullName>LC4 - 75% completed</fullName>
+                    <default>false</default>
+                    <label>LC4 - 75% completed</label>
+                </value>
+                <value>
+                    <fullName>LC5 - 100% completed</fullName>
+                    <default>false</default>
+                    <label>LC5 - 100% completed</label>
+                </value>
+                <value>
+                    <fullName>LC6 - On hold</fullName>
+                    <default>false</default>
+                    <label>LC6 - On hold</label>
+                </value>
+                <value>
+                    <fullName>LC0 - Discarded</fullName>
+                    <default>false</default>
+                    <label>LC0 - Discarded</label>
+                </value>
+                <value>
+                    <fullName>E1 - Pending</fullName>
+                    <default>false</default>
+                    <label>E1 - Pending</label>
+                </value>
+                <value>
+                    <fullName>E2 - Requirements</fullName>
+                    <default>false</default>
+                    <label>E2 - Requirements</label>
+                </value>
+                <value>
+                    <fullName>E3 - Design</fullName>
+                    <default>false</default>
+                    <label>E3 - Design</label>
+                </value>
+                <value>
+                    <fullName>E4 - Acquire</fullName>
+                    <default>false</default>
+                    <label>E4 - Acquire</label>
+                </value>
+                <value>
+                    <fullName>E5 - Implementation</fullName>
+                    <default>false</default>
+                    <label>E5 - Implementation</label>
+                </value>
+                <value>
+                    <fullName>E6 - Acceptance</fullName>
+                    <default>false</default>
+                    <label>E6 - Acceptance</label>
+                </value>
+                <value>
+                    <fullName>E7 - Support</fullName>
+                    <default>false</default>
+                    <label>E7 - Support</label>
+                </value>
+                <value>
+                    <fullName>E8 - Completed</fullName>
+                    <default>false</default>
+                    <label>E8 - Completed</label>
+                </value>
+                <value>
+                    <fullName>E0 - Canceled</fullName>
+                    <default>false</default>
+                    <label>E0 - Canceled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Consulting - T&amp;M</fullName>
+                    <default>false</default>
+                    <label>Consulting - T&amp;M</label>
+                </value>
+                <value>
+                    <fullName>Consulting - Fixed Fee</fullName>
+                    <default>false</default>
+                    <label>Consulting - Fixed Fee</label>
+                </value>
+                <value>
+                    <fullName>Cloud - Expert Services</fullName>
+                    <default>false</default>
+                    <label>Cloud - Expert Services</label>
+                </value>
+                <value>
+                    <fullName>Cloud - Support</fullName>
+                    <default>false</default>
+                    <label>Cloud - Support</label>
+                </value>
+                <value>
+                    <fullName>Premium - Support</fullName>
+                    <default>false</default>
+                    <label>Premium - Support</label>
+                </value>
+                <value>
+                    <fullName>Education - T&amp;M</fullName>
+                    <default>false</default>
+                    <label>Education - T&amp;M</label>
+                </value>
+                <value>
+                    <fullName>Master Service Agreement</fullName>
+                    <default>false</default>
+                    <label>Master Service Agreement</label>
+                </value>
+                <value>
+                    <fullName>Enterprise License Agreement</fullName>
+                    <default>false</default>
+                    <label>Enterprise License Agreement</label>
+                </value>
+                <value>
+                    <fullName>Renewal Agreement</fullName>
+                    <default>false</default>
+                    <label>Renewal Agreement</label>
+                </value>
+                <value>
+                    <fullName>Reseller Agreement</fullName>
+                    <default>false</default>
+                    <label>Reseller Agreement</label>
+                </value>
+                <value>
+                    <fullName>License Conversion</fullName>
+                    <default>false</default>
+                    <label>License Conversion</label>
+                </value>
+                <value>
+                    <fullName>Pilot Agreement</fullName>
+                    <default>false</default>
+                    <label>Pilot Agreement</label>
+                </value>
+                <value>
+                    <fullName>(i) LC Commercial</fullName>
+                    <default>false</default>
+                    <label>LC Commercial</label>
+                </value>
+                <value>
+                    <fullName>(ii) LC Product</fullName>
+                    <default>false</default>
+                    <label>LC Product</label>
+                </value>
+                <value>
+                    <fullName>(iii) LC Corporate</fullName>
+                    <default>false</default>
+                    <label>LC Corporate</label>
+                </value>
+                <value>
+                    <fullName>(iv) LC Operations</fullName>
+                    <default>false</default>
+                    <label>LC Operations</label>
+                </value>
+                <value>
+                    <fullName>IS Eng</fullName>
+                    <default>false</default>
+                    <label>IS Eng</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>X3rd_Party_wks__c</fullName>
+        <description>Number of weeks to be invested according to a third party.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of weeks to be invested according to a third party.</inlineHelpText>
+        <label>3rd Party (wks)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Engagement*</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>RECORDTYPE</columns>
+        <columns>NAME</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Engagement_Manager__c</columns>
+        <columns>Engagement_Status__c</columns>
+        <columns>Stage__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Completed_Legal_Engagements</fullName>
+        <columns>NAME</columns>
+        <columns>Priority__c</columns>
+        <columns>Stage__c</columns>
+        <columns>Opportunity__c</columns>
+        <columns>Account__c</columns>
+        <columns>Due_Date__c</columns>
+        <columns>Next_Milestone__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>MSTR_Engagement__c.Legal_Engagement</value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>LC5 - 100% completed</value>
+        </filters>
+        <label>All Completed Legal Engagements</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Legal</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>IS_Engagements3</fullName>
+        <columns>NAME</columns>
+        <columns>Stage__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Business_Lead__c</columns>
+        <columns>Engagement_Manager__c</columns>
+        <columns>Executive_Sponsor__c</columns>
+        <columns>IS_Exec__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>IS_LOE_wks__c</columns>
+        <columns>Business_LOE_wks__c</columns>
+        <columns>X3rd_Party_wks__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>IS Eng</value>
+        </filters>
+        <label>IS Engagements</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Completed_Legal_Engagements</fullName>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Type__c</columns>
+        <columns>NAME</columns>
+        <columns>Priority__c</columns>
+        <columns>Description__c</columns>
+        <columns>Stage__c</columns>
+        <columns>Next_Milestone__c</columns>
+        <columns>LOE__c</columns>
+        <columns>Due_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>MSTR_Engagement__c.Legal_Engagement</value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operation>equals</operation>
+            <value>LC5 - 100% completed</value>
+        </filters>
+        <label>My Completed Legal Engagements</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Legal</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Open_Legal_Engagements</fullName>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Type__c</columns>
+        <columns>NAME</columns>
+        <columns>Priority__c</columns>
+        <columns>Description__c</columns>
+        <columns>Stage__c</columns>
+        <columns>Next_Milestone__c</columns>
+        <columns>LOE__c</columns>
+        <columns>Due_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>MSTR_Engagement__c.Legal_Engagement</value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operation>notEqual</operation>
+            <value>LC5 - 100% completed</value>
+        </filters>
+        <label>My Open Legal Engagements</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Legal</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Open_Legal_Engagements</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>OWNER.LAST_NAME</columns>
+        <columns>Type__c</columns>
+        <columns>NAME</columns>
+        <columns>Priority__c</columns>
+        <columns>Description__c</columns>
+        <columns>Stage__c</columns>
+        <columns>Next_Milestone__c</columns>
+        <columns>LOE__c</columns>
+        <columns>Due_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>MSTR_Engagement__c.Legal_Engagement</value>
+        </filters>
+        <filters>
+            <field>Stage__c</field>
+            <operation>notEqual</operation>
+            <value>LC5 - 100% completed</value>
+        </filters>
+        <label>All Open Legal Engagements</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Legal</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Engagement Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Engagements*</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Cloud_Engagement</fullName>
+        <active>true</active>
+        <description>Represents a Cloud Support or Cloud Expert Services engagement</description>
+        <label>Cloud Engagement</label>
+        <picklistValues>
+            <picklist>Engagement_Status__c</picklist>
+            <values>
+                <fullName>P1 - Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2 - Attention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3 - Reference</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>E0 - Customer Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E1 - Not Started</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E2 - In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E3 - Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E4 - Customer Accepted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Cloud - Expert Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cloud - Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Education_Engagement</fullName>
+        <active>true</active>
+        <description>Represents an Education T&amp;M or Education Fixed Fee engagement</description>
+        <label>Education Engagement</label>
+        <picklistValues>
+            <picklist>Engagement_Status__c</picklist>
+            <values>
+                <fullName>P1 - Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2 - Attention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3 - Reference</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>E0 - Customer Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E1 - Not Started</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E2 - In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E3 - Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E4 - Customer Accepted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Education - T%26M</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>IS_Engagement</fullName>
+        <active>true</active>
+        <description>Represents an Information Systems internal engagement</description>
+        <label>IS Engagement</label>
+        <picklistValues>
+            <picklist>Cost_Risk__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Engagement_Status__c</picklist>
+            <values>
+                <fullName>P1 - Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2 - Attention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3 - Reference</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Schedule_Risk__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Scope_Risk__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>E0 - Canceled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E1 - Pending</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>E2 - Requirements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E3 - Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E4 - Acquire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E5 - Implementation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E6 - Acceptance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E7 - Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E8 - Completed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>IS Eng</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Legal_Engagement</fullName>
+        <active>true</active>
+        <description>Represents a Legal matter</description>
+        <label>Legal Engagement</label>
+        <picklistValues>
+            <picklist>Engagement_Status__c</picklist>
+            <values>
+                <fullName>P1 - Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2 - Attention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3 - Reference</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOE__c</picklist>
+            <values>
+                <fullName>10 to 20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5 to 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater Than 20</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less Than 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>LC0 - Discarded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LC1 - up to 10%25 completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LC2 - 25%25 completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LC3 - 50%25 completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LC4 - 75%25 completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LC5 - 100%25 completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LC6 - On hold</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>%28i%29 LC Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28ii%29 LC Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28iii%29 LC Corporate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28iv%29 LC Operations</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Services_Engagement</fullName>
+        <active>true</active>
+        <description>Represents a Consulting T&amp;M or Consulting Fixed Fee engagement</description>
+        <label>Services Engagement</label>
+        <picklistValues>
+            <picklist>Engagement_Status__c</picklist>
+            <values>
+                <fullName>P1 - Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2 - Attention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3 - Reference</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>E0 - Customer Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E1 - Not Started</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E2 - In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E3 - Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E4 - Customer Accepted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Consulting - Fixed Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting - T%26M</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Support_Engagement</fullName>
+        <active>true</active>
+        <description>Represents a Standard or Premium Support engagement</description>
+        <label>Support Engagement</label>
+        <picklistValues>
+            <picklist>Engagement_Status__c</picklist>
+            <values>
+                <fullName>P1 - Focus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2 - Attention</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P3 - Reference</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Stage__c</picklist>
+            <values>
+                <fullName>E0 - Customer Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E1 - Not Started</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E2 - In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E3 - Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E4 - Customer Accepted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Premium - Support</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>StartDate_cannot_be_greater_than_EndDate</fullName>
+        <active>true</active>
+        <errorConditionFormula>Start_Date__c &gt; End_Date__c</errorConditionFormula>
+        <errorDisplayField>Start_Date__c</errorDisplayField>
+        <errorMessage>Start Date cannot be greater than End Date</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

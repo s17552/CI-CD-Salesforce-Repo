@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Alert_Exp_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Alert Exp Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Alert_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Alert Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>***</fullName>
+                    <default>false</default>
+                    <label>***</label>
+                </value>
+                <value>
+                    <fullName>** New **</fullName>
+                    <default>false</default>
+                    <label>** New **</label>
+                </value>
+                <value>
+                    <fullName>!!!</fullName>
+                    <default>false</default>
+                    <label>!!!</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Global__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Global</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>Industry</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aerospace &amp; Defense</fullName>
+                    <default>false</default>
+                    <label>Aerospace &amp; Defense</label>
+                </value>
+                <value>
+                    <fullName>Agriculture</fullName>
+                    <default>false</default>
+                    <label>Agriculture</label>
+                </value>
+                <value>
+                    <fullName>Apparel</fullName>
+                    <default>false</default>
+                    <label>Apparel</label>
+                </value>
+                <value>
+                    <fullName>Apparel &amp; Textiles</fullName>
+                    <default>false</default>
+                    <label>Apparel &amp; Textiles</label>
+                </value>
+                <value>
+                    <fullName>Associations</fullName>
+                    <default>false</default>
+                    <label>Associations</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Banking</fullName>
+                    <default>false</default>
+                    <label>Banking</label>
+                </value>
+                <value>
+                    <fullName>Biotech</fullName>
+                    <default>false</default>
+                    <label>Biotech</label>
+                </value>
+                <value>
+                    <fullName>Business Services</fullName>
+                    <default>false</default>
+                    <label>Business Services</label>
+                </value>
+                <value>
+                    <fullName>Business Services/Advertising/Consulting</fullName>
+                    <default>false</default>
+                    <label>Business Services/Advertising/Consulting</label>
+                </value>
+                <value>
+                    <fullName>Chemicals</fullName>
+                    <default>false</default>
+                    <label>Chemicals</label>
+                </value>
+                <value>
+                    <fullName>Communications</fullName>
+                    <default>false</default>
+                    <label>Communications</label>
+                </value>
+                <value>
+                    <fullName>Computer Hardware/Software/IT Services</fullName>
+                    <default>false</default>
+                    <label>Computer Hardware/Software/IT Services</label>
+                </value>
+                <value>
+                    <fullName>Construction</fullName>
+                    <default>false</default>
+                    <label>Construction</label>
+                </value>
+                <value>
+                    <fullName>Consumer Goods and Services</fullName>
+                    <default>false</default>
+                    <label>Consumer Goods and Services</label>
+                </value>
+                <value>
+                    <fullName>Consumer Packaged Goods</fullName>
+                    <default>false</default>
+                    <label>Consumer Packaged Goods</label>
+                </value>
+                <value>
+                    <fullName>Consumer Services</fullName>
+                    <default>false</default>
+                    <label>Consumer Services</label>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+                <value>
+                    <fullName>Electronics</fullName>
+                    <default>false</default>
+                    <label>Electronics</label>
+                </value>
+                <value>
+                    <fullName>Energy &amp; Utilities</fullName>
+                    <default>false</default>
+                    <label>Energy &amp; Utilities</label>
+                </value>
+                <value>
+                    <fullName>Financial Services</fullName>
+                    <default>false</default>
+                    <label>Financial Services</label>
+                </value>
+                <value>
+                    <fullName>Food &amp; Beverage</fullName>
+                    <default>false</default>
+                    <label>Food &amp; Beverage</label>
+                </value>
+                <value>
+                    <fullName>Furniture</fullName>
+                    <default>false</default>
+                    <label>Furniture</label>
+                </value>
+                <value>
+                    <fullName>Government</fullName>
+                    <default>false</default>
+                    <label>Government</label>
+                </value>
+                <value>
+                    <fullName>Hardware</fullName>
+                    <default>false</default>
+                    <label>Hardware</label>
+                </value>
+                <value>
+                    <fullName>Healthcare</fullName>
+                    <default>false</default>
+                    <label>Healthcare</label>
+                </value>
+                <value>
+                    <fullName>Healthcare &amp; Medical</fullName>
+                    <default>false</default>
+                    <label>Healthcare &amp; Medical</label>
+                </value>
+                <value>
+                    <fullName>Home &amp; Garden</fullName>
+                    <default>false</default>
+                    <label>Home &amp; Garden</label>
+                </value>
+                <value>
+                    <fullName>Hospitality &amp; Gaming</fullName>
+                    <default>false</default>
+                    <label>Hospitality &amp; Gaming</label>
+                </value>
+                <value>
+                    <fullName>Hospitality &amp; Travel</fullName>
+                    <default>false</default>
+                    <label>Hospitality &amp; Travel</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Investment Services</fullName>
+                    <default>false</default>
+                    <label>Investment Services</label>
+                </value>
+                <value>
+                    <fullName>Manufacturing</fullName>
+                    <default>false</default>
+                    <label>Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Media &amp; Entertainment</fullName>
+                    <default>false</default>
+                    <label>Media &amp; Entertainment</label>
+                </value>
+                <value>
+                    <fullName>Metals &amp; Mining</fullName>
+                    <default>false</default>
+                    <label>Metals &amp; Mining</label>
+                </value>
+                <value>
+                    <fullName>Mining</fullName>
+                    <default>false</default>
+                    <label>Mining</label>
+                </value>
+                <value>
+                    <fullName>Non-Profit</fullName>
+                    <default>false</default>
+                    <label>Non-Profit</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Pharmaceuticals</fullName>
+                    <default>false</default>
+                    <label>Pharmaceuticals</label>
+                </value>
+                <value>
+                    <fullName>Pharmaceuticals / Biotech</fullName>
+                    <default>false</default>
+                    <label>Pharmaceuticals / Biotech</label>
+                </value>
+                <value>
+                    <fullName>Printing &amp; Publishing</fullName>
+                    <default>false</default>
+                    <label>Printing &amp; Publishing</label>
+                </value>
+                <value>
+                    <fullName>Real Estate</fullName>
+                    <default>false</default>
+                    <label>Real Estate</label>
+                </value>
+                <value>
+                    <fullName>Recreation</fullName>
+                    <default>false</default>
+                    <label>Recreation</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>Retail &amp; Distribution</fullName>
+                    <default>false</default>
+                    <label>Retail &amp; Distribution</label>
+                </value>
+                <value>
+                    <fullName>Security Services</fullName>
+                    <default>false</default>
+                    <label>Security Services</label>
+                </value>
+                <value>
+                    <fullName>Software &amp; Technology</fullName>
+                    <default>false</default>
+                    <label>Software &amp; Technology</label>
+                </value>
+                <value>
+                    <fullName>Telecommunications</fullName>
+                    <default>false</default>
+                    <label>Telecommunications</label>
+                </value>
+                <value>
+                    <fullName>Textiles</fullName>
+                    <default>false</default>
+                    <label>Textiles</label>
+                </value>
+                <value>
+                    <fullName>Transportation &amp; Logistics</fullName>
+                    <default>false</default>
+                    <label>Transportation &amp; Logistics</label>
+                </value>
+                <value>
+                    <fullName>Travel</fullName>
+                    <default>false</default>
+                    <label>Travel</label>
+                </value>
+                <value>
+                    <fullName>Unclassified</fullName>
+                    <default>false</default>
+                    <label>Unclassified</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Playbook_Article_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>Playbook Article Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Playbook_Doc_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Playbook Doc ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Playbook Link</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Play Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Playbook Links</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

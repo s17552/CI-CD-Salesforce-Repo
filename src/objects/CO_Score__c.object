@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Cheerful_Raw__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheerful Raw</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheerful__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+AND(
+OR(
+TEXT( Feedback_Type__c )=&apos;Direct Report&apos;,
+TEXT( Feedback_Type__c )=&apos;Indirect Report&apos;,
+TEXT( Feedback_Type__c )=&apos;Overall&apos;,
+TEXT( Feedback_Type__c )=&apos;All Collaborator&apos;,
+TEXT( Feedback_Type__c )=&apos;Collaborator&apos;
+),
+ Raters__c  &lt; 3
+),
+0,
+Cheerful_Raw__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cheerful</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dept__c</fullName>
+        <externalId>false</externalId>
+        <formula>Employee__r.Department</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Dept</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Emp_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>Employee__r.Manager.User_ID_18_digit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Emp Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employee_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Employee Feedback</label>
+        <referenceTo>CO_Feed__c</referenceTo>
+        <relationshipLabel>CO Score</relationshipLabel>
+        <relationshipName>CO_Score</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Employee_Name_F__c</fullName>
+        <externalId>false</externalId>
+        <formula>Employee__r.Shortened_Full_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Employee Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Employee</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>CO_Score</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Engaged_Raw__c</fullName>
+        <externalId>false</externalId>
+        <label>Engaged Raw</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engaged__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+AND( 
+OR( 
+TEXT( Feedback_Type__c )=&apos;Direct Report&apos;, 
+TEXT( Feedback_Type__c )=&apos;Indirect Report&apos;, 
+TEXT( Feedback_Type__c )=&apos;Overall&apos;, 
+TEXT( Feedback_Type__c )=&apos;All Collaborator&apos;,
+TEXT( Feedback_Type__c )=&apos;Collaborator&apos; 
+), 
+Raters__c &lt; 3 
+), 
+0,  Engaged_Raw__c  
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Engaged</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FM_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Employee_Feedback__r.Functional_Manager__r.Shortened_Full_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FM Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FeedbackType__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Feedback_Type__c,
+&quot;Direct Report&quot;, &quot;Direct Report&quot;,
+&quot;General Manager&quot;, &quot;GM/Matrixed Manager&quot;,
+&quot;Collaborator&quot;, &quot;Direct Collaborators&quot;,
+&quot;All Collaborator&quot;, &quot;All Collaborator&quot;,
+&quot;Functional Manager&quot;, &quot;Functional Manager&quot;,
+&quot;Indirect Report&quot;, &quot;Indirect Report&quot;,
+&quot;Overall&quot;, &quot;Overall&quot;,
+&quot;Leadership Skills&quot;, &quot;Leadership Skills&quot;,
+&quot;Other Collaborator&quot;, &quot;Other Collaborator&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Feedback Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feedback_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Feedback Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Direct Report</fullName>
+                    <default>false</default>
+                    <label>Direct Report</label>
+                </value>
+                <value>
+                    <fullName>General Manager</fullName>
+                    <default>false</default>
+                    <label>General Manager</label>
+                </value>
+                <value>
+                    <fullName>Collaborator</fullName>
+                    <default>false</default>
+                    <label>Collaborator</label>
+                </value>
+                <value>
+                    <fullName>Functional Manager</fullName>
+                    <default>false</default>
+                    <label>Functional Manager</label>
+                </value>
+                <value>
+                    <fullName>Indirect Report</fullName>
+                    <default>false</default>
+                    <label>Indirect Report</label>
+                </value>
+                <value>
+                    <fullName>Overall</fullName>
+                    <default>false</default>
+                    <label>Overall</label>
+                </value>
+                <value>
+                    <fullName>Other Collaborator</fullName>
+                    <default>false</default>
+                    <label>Other Collaborator</label>
+                </value>
+                <value>
+                    <fullName>All Collaborator</fullName>
+                    <default>false</default>
+                    <label>All Collaborator</label>
+                </value>
+                <value>
+                    <fullName>Leadership Skills</fullName>
+                    <default>false</default>
+                    <label>Leadership Skills</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GM_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Employee_Feedback__r.Other__c != null, Employee_Feedback__r.Other__r.Shortened_Full_Name__c,Employee_Feedback__r.General_Manager__r.Shortened_Full_Name__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GM Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MeritBU__c</fullName>
+        <externalId>false</externalId>
+        <formula>Employee__r.Business_Unit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Merit BU</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Precise_Agile_Transparent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+AND( 
+OR( 
+TEXT( Feedback_Type__c )=&apos;Direct Report&apos;, 
+TEXT( Feedback_Type__c )=&apos;Indirect Report&apos;, 
+TEXT( Feedback_Type__c )=&apos;Overall&apos;, 
+TEXT( Feedback_Type__c )=&apos;All Collaborator&apos;,
+TEXT( Feedback_Type__c )=&apos;Collaborator&apos; 
+), 
+Raters__c &lt; 3 
+), 
+0, Precise_Raw__c  
+)</formula>
+        <label>Precise, Agile &amp; Transparent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Precise_Raw__c</fullName>
+        <externalId>false</externalId>
+        <label>Precise Raw</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quarter__c</fullName>
+        <externalId>false</externalId>
+        <label>Quarter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Q32017</fullName>
+                    <default>false</default>
+                    <label>Q32017</label>
+                </value>
+                <value>
+                    <fullName>Q42017</fullName>
+                    <default>false</default>
+                    <label>Q42017</label>
+                </value>
+                <value>
+                    <fullName>Q12018</fullName>
+                    <default>false</default>
+                    <label>Q12018</label>
+                </value>
+                <value>
+                    <fullName>Q22018</fullName>
+                    <default>false</default>
+                    <label>Q22018</label>
+                </value>
+                <value>
+                    <fullName>Q32018</fullName>
+                    <default>false</default>
+                    <label>Q32018</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Raters__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label># Raters</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sort__c</fullName>
+        <externalId>false</externalId>
+        <label>Sort</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <externalId>false</externalId>
+        <formula>Employee__r.Title</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Raters__c</fullName>
+        <description>Total number of raters for the specific score type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total number of raters for the specific score type.</inlineHelpText>
+        <label># Total Raters</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>CO Score</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Feedback_Type__c</columns>
+        <columns>Employee__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Employee__c</field>
+            <operation>contains</operation>
+            <value>Amritha</value>
+        </filters>
+        <filters>
+            <field>Quarter__c</field>
+            <operation>equals</operation>
+            <value>Q32018</value>
+        </filters>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>CO Score Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>CO Score</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

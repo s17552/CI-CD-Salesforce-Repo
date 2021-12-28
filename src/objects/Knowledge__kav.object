@@ -1,0 +1,2694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <articleTypeChannelDisplay>
+        <articleTypeTemplates>
+            <channel>App</channel>
+            <template>Tab</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Prm</channel>
+            <template>Tab</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Csp</channel>
+            <template>Tab</template>
+        </articleTypeTemplates>
+        <articleTypeTemplates>
+            <channel>Pkb</channel>
+            <template>Toc</template>
+        </articleTypeTemplates>
+    </articleTypeChannelDisplay>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>Article_Creator__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>look up field for purely front end display on the community site</description>
+        <externalId>false</externalId>
+        <label>Article Creator</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Knowledge</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Content__c</fullName>
+        <description>Content of the Technote</description>
+        <externalId>false</externalId>
+        <label>Content</label>
+        <length>131072</length>
+        <trackHistory>true</trackHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Dossier_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Dossier URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>KB_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>KB ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Validation_Status_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>User that last changed the Validation Status</description>
+        <externalId>false</externalId>
+        <label>Last Validation Status By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Knowledge_KB_Articles_validation</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Last_Validation_Status_Date__c</fullName>
+        <description>Date/Time when the Validation Status was last edited</description>
+        <externalId>false</externalId>
+        <label>Last Validation Status Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Link__c</fullName>
+        <externalId>false</externalId>
+        <label>Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Lithium_Author_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Lithium Author Email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lithium_Author__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lithium Author</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Knowledge_TechnoteAuthor</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Lithium_Board_ID__c</fullName>
+        <description>The legacy Lithium board ID, for migrated articles only.</description>
+        <externalId>false</externalId>
+        <label>Lithium Board ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lithium_ID__c</fullName>
+        <description>The legacy Lithium ID of this article, for migrated articles only.</description>
+        <externalId>false</externalId>
+        <label>Lithium ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lithium_Labels__c</fullName>
+        <description>The legacy Lithium labels assigned to this article, for migrated articles only.</description>
+        <externalId>false</externalId>
+        <label>Lithium Labels</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lithium_Legacy_URL__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(Lithium_URL__c, &quot;Open Lithium Article&quot; ,&quot;_blank&quot;)</formula>
+        <label>Lithium Legacy URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lithium_Likes__c</fullName>
+        <description>The legacy Lithium number of likes to be used for migrated articles only.</description>
+        <externalId>false</externalId>
+        <label>Lithium Likes</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lithium_Published_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Lithium Published Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Lithium_URL__c</fullName>
+        <description>The legacy Lithium URL, for migrated articles only.</description>
+        <externalId>false</externalId>
+        <label>Lithium URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lithium_Views__c</fullName>
+        <description>The legacy Lithium number of views, for migrated articles only.</description>
+        <externalId>false</externalId>
+        <label>Lithium Views</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MicroStrategy_Only__c</fullName>
+        <description>Internal section of Technical Notes</description>
+        <externalId>false</externalId>
+        <label>MicroStrategy Only</label>
+        <length>131072</length>
+        <trackHistory>true</trackHistory>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Moderation_Comments__c</fullName>
+        <description>Comments set by the moderator to be referenced in future revisions or to denote archive reasons.</description>
+        <externalId>false</externalId>
+        <label>Moderation Comments</label>
+        <length>10000</length>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ReadyForMigration__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ReadyForMigration</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Technote_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;TN&quot;&amp; Lithium_ID__c</formula>
+        <label>Technote Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Online help</fullName>
+                    <default>false</default>
+                    <label>Online help</label>
+                </value>
+                <value>
+                    <fullName>PDF</fullName>
+                    <default>false</default>
+                    <label>PDF</label>
+                </value>
+                <value>
+                    <fullName>SDK Documentation</fullName>
+                    <default>false</default>
+                    <label>SDK Documentation</label>
+                </value>
+                <value>
+                    <fullName>API Reference</fullName>
+                    <default>false</default>
+                    <label>API Reference</label>
+                </value>
+                <value>
+                    <fullName>Press Release</fullName>
+                    <default>false</default>
+                    <label>Press Release</label>
+                </value>
+                <value>
+                    <fullName>Presentation</fullName>
+                    <default>false</default>
+                    <label>Presentation</label>
+                </value>
+                <value>
+                    <fullName>Blog</fullName>
+                    <default>false</default>
+                    <label>Blog</label>
+                </value>
+                <value>
+                    <fullName>Announcement</fullName>
+                    <default>false</default>
+                    <label>Announcement</label>
+                </value>
+                <value>
+                    <fullName>Certification</fullName>
+                    <default>false</default>
+                    <label>Certification</label>
+                </value>
+                <value>
+                    <fullName>Code Sample</fullName>
+                    <default>false</default>
+                    <label>Code Sample</label>
+                </value>
+                <value>
+                    <fullName>Code Snippets</fullName>
+                    <default>false</default>
+                    <label>Code Snippets</label>
+                </value>
+                <value>
+                    <fullName>Course</fullName>
+                    <default>false</default>
+                    <label>Course</label>
+                </value>
+                <value>
+                    <fullName>Customer Story</fullName>
+                    <default>false</default>
+                    <label>Customer Story</label>
+                </value>
+                <value>
+                    <fullName>Dashboard</fullName>
+                    <default>false</default>
+                    <label>Dashboard</label>
+                </value>
+                <value>
+                    <fullName>Data Samples</fullName>
+                    <default>false</default>
+                    <label>Data Samples</label>
+                </value>
+                <value>
+                    <fullName>Data Source Connector</fullName>
+                    <default>false</default>
+                    <label>Data Source Connector</label>
+                </value>
+                <value>
+                    <fullName>Demo</fullName>
+                    <default>false</default>
+                    <label>Demo</label>
+                </value>
+                <value>
+                    <fullName>MicroLearning</fullName>
+                    <default>false</default>
+                    <label>MicroLearning</label>
+                </value>
+                <value>
+                    <fullName>Plugins</fullName>
+                    <default>false</default>
+                    <label>Plugins</label>
+                </value>
+                <value>
+                    <fullName>Samplet</fullName>
+                    <default>false</default>
+                    <label>Samplet</label>
+                </value>
+                <value>
+                    <fullName>Solution Brief</fullName>
+                    <default>false</default>
+                    <label>Solution Brief</label>
+                </value>
+                <value>
+                    <fullName>Visualization</fullName>
+                    <default>false</default>
+                    <label>Visualization</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Version__c</fullName>
+        <description>MicroStrategy version family that this article applies to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>MicroStrategy version family that this article applies to.</inlineHelpText>
+        <label>Version</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2021 Update 2 (August 2021)</fullName>
+                    <default>false</default>
+                    <label>2021 Update 2 (August 2021)</label>
+                </value>
+                <value>
+                    <fullName>2021 Update 2</fullName>
+                    <default>false</default>
+                    <label>2021 Update 2</label>
+                </value>
+                <value>
+                    <fullName>2021 Update 1</fullName>
+                    <default>false</default>
+                    <label>2021 Update 1</label>
+                </value>
+                <value>
+                    <fullName>2021</fullName>
+                    <default>false</default>
+                    <label>2021</label>
+                </value>
+                <value>
+                    <fullName>2020 Update 5</fullName>
+                    <default>false</default>
+                    <label>2020 Update 5</label>
+                </value>
+                <value>
+                    <fullName>2020 Update 4</fullName>
+                    <default>false</default>
+                    <label>2020 Update 4</label>
+                </value>
+                <value>
+                    <fullName>2020 Update 3</fullName>
+                    <default>false</default>
+                    <label>2020 Update 3</label>
+                </value>
+                <value>
+                    <fullName>2020 Update 2</fullName>
+                    <default>false</default>
+                    <label>2020 Update 2</label>
+                </value>
+                <value>
+                    <fullName>2020 Update 1</fullName>
+                    <default>false</default>
+                    <label>2020 Update 1</label>
+                </value>
+                <value>
+                    <fullName>2020</fullName>
+                    <default>false</default>
+                    <label>2020</label>
+                </value>
+                <value>
+                    <fullName>2019 Update 8</fullName>
+                    <default>false</default>
+                    <label>2019 Update 8</label>
+                </value>
+                <value>
+                    <fullName>2019 Update 7</fullName>
+                    <default>false</default>
+                    <label>2019 Update 7</label>
+                </value>
+                <value>
+                    <fullName>2019 Update 6</fullName>
+                    <default>false</default>
+                    <label>2019 Update 6</label>
+                </value>
+                <value>
+                    <fullName>2019 Update 5</fullName>
+                    <default>false</default>
+                    <label>2019 Update 5</label>
+                </value>
+                <value>
+                    <fullName>2019 Update 4</fullName>
+                    <default>false</default>
+                    <label>2019 Update 4</label>
+                </value>
+                <value>
+                    <fullName>2019 Update 3</fullName>
+                    <default>false</default>
+                    <label>2019 Update 3</label>
+                </value>
+                <value>
+                    <fullName>2019 Update 2</fullName>
+                    <default>false</default>
+                    <label>2019 Update 2</label>
+                </value>
+                <value>
+                    <fullName>2019 Update 1</fullName>
+                    <default>false</default>
+                    <label>2019 Update 1</label>
+                </value>
+                <value>
+                    <fullName>2019</fullName>
+                    <default>false</default>
+                    <label>2019</label>
+                </value>
+                <value>
+                    <fullName>11.0</fullName>
+                    <default>false</default>
+                    <label>11.0</label>
+                </value>
+                <value>
+                    <fullName>10.11</fullName>
+                    <default>false</default>
+                    <label>10.11</label>
+                </value>
+                <value>
+                    <fullName>10.10</fullName>
+                    <default>false</default>
+                    <label>10.10</label>
+                </value>
+                <value>
+                    <fullName>10.9</fullName>
+                    <default>false</default>
+                    <label>10.9</label>
+                </value>
+                <value>
+                    <fullName>10.8</fullName>
+                    <default>false</default>
+                    <label>10.8</label>
+                </value>
+                <value>
+                    <fullName>10.7</fullName>
+                    <default>false</default>
+                    <label>10.7</label>
+                </value>
+                <value>
+                    <fullName>10.6</fullName>
+                    <default>false</default>
+                    <label>10.6</label>
+                </value>
+                <value>
+                    <fullName>10.5</fullName>
+                    <default>false</default>
+                    <label>10.5</label>
+                </value>
+                <value>
+                    <fullName>10.4</fullName>
+                    <default>false</default>
+                    <label>10.4</label>
+                </value>
+                <value>
+                    <fullName>10.3</fullName>
+                    <default>false</default>
+                    <label>10.3</label>
+                </value>
+                <value>
+                    <fullName>10.2</fullName>
+                    <default>false</default>
+                    <label>10.2</label>
+                </value>
+                <value>
+                    <fullName>10.1</fullName>
+                    <default>false</default>
+                    <label>10.1</label>
+                </value>
+                <value>
+                    <fullName>10.0</fullName>
+                    <default>false</default>
+                    <label>10.0</label>
+                </value>
+                <value>
+                    <fullName>9.5.1</fullName>
+                    <default>false</default>
+                    <label>9.5.1</label>
+                </value>
+                <value>
+                    <fullName>9.4.1</fullName>
+                    <default>false</default>
+                    <label>9.4.1</label>
+                </value>
+                <value>
+                    <fullName>9.3.1</fullName>
+                    <default>false</default>
+                    <label>9.3.1</label>
+                </value>
+                <value>
+                    <fullName>10.x</fullName>
+                    <default>false</default>
+                    <label>10.x</label>
+                </value>
+                <value>
+                    <fullName>9.x</fullName>
+                    <default>false</default>
+                    <label>9.x</label>
+                </value>
+                <value>
+                    <fullName>10.0.0</fullName>
+                    <default>false</default>
+                    <label>10.0.0</label>
+                </value>
+                <value>
+                    <fullName>10.1.0</fullName>
+                    <default>false</default>
+                    <label>10.1.0</label>
+                </value>
+                <value>
+                    <fullName>10.2.0</fullName>
+                    <default>false</default>
+                    <label>10.2.0</label>
+                </value>
+                <value>
+                    <fullName>10.3.0</fullName>
+                    <default>false</default>
+                    <label>10.3.0</label>
+                </value>
+                <value>
+                    <fullName>10.4.0</fullName>
+                    <default>false</default>
+                    <label>10.4.0</label>
+                </value>
+                <value>
+                    <fullName>10.5.0</fullName>
+                    <default>false</default>
+                    <label>10.5.0</label>
+                </value>
+                <value>
+                    <fullName>10.6.0</fullName>
+                    <default>false</default>
+                    <label>10.6.0</label>
+                </value>
+                <value>
+                    <fullName>10.7.0</fullName>
+                    <default>false</default>
+                    <label>10.7.0</label>
+                </value>
+                <value>
+                    <fullName>10.8.0</fullName>
+                    <default>false</default>
+                    <label>10.8.0</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Video_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Video URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>is_Lithium_Author__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Lithium_Author__r.Id = $User.Id ,TRUE,FALSE)</formula>
+        <label>is Lithium Author</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <label>Knowledge</label>
+    <listViews>
+        <fullName>archived_articles</fullName>
+        <columns>TITLE</columns>
+        <columns>ABSTRACT</columns>
+        <columns>ARTICLE_NUMBER</columns>
+        <columns>LANGUAGE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PUBLISH_STATUS</field>
+            <operation>equals</operation>
+            <value>3</value>
+        </filters>
+        <filters>
+            <field>LANGUAGE</field>
+            <operation>equals</operation>
+            <value>en_US</value>
+        </filters>
+        <label>Archived Articles</label>
+    </listViews>
+    <listViews>
+        <fullName>draft_articles</fullName>
+        <columns>TITLE</columns>
+        <columns>ABSTRACT</columns>
+        <columns>ARTICLE_NUMBER</columns>
+        <columns>LANGUAGE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PUBLISH_STATUS</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>LANGUAGE</field>
+            <operation>equals</operation>
+            <value>en_US</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Knowledge__kav.Example</value>
+        </filters>
+        <label>Draft Articles</label>
+    </listViews>
+    <listViews>
+        <fullName>published_articles</fullName>
+        <columns>ARTICLE_NUMBER</columns>
+        <columns>TITLE</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>ABSTRACT</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LANGUAGE</field>
+            <operation>equals</operation>
+            <value>en_US</value>
+        </filters>
+        <filters>
+            <field>PUBLISH_STATUS</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </filters>
+        <label>Published Articles</label>
+    </listViews>
+    <pluralLabel>Knowledge</pluralLabel>
+    <recordTypes>
+        <fullName>Blog</fullName>
+        <active>true</active>
+        <label>Blog</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>API Reference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Announcement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Snippets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Source Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MicroLearning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online help</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plugins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDK Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samplet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Brief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Version__c</picklist>
+            <values>
+                <fullName>10%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2 %28August 2021%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%2E1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Course</fullName>
+        <active>true</active>
+        <label>Course</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>API Reference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Announcement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Snippets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Source Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MicroLearning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online help</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plugins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDK Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samplet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Brief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Version__c</picklist>
+            <values>
+                <fullName>10%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2 %28August 2021%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%2E1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Documentation</fullName>
+        <active>true</active>
+        <label>Documentation</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>API Reference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Announcement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Snippets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Source Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MicroLearning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online help</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plugins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDK Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samplet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Brief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Version__c</picklist>
+            <values>
+                <fullName>10%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2 %28August 2021%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%2E1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Example</fullName>
+        <active>true</active>
+        <label>Example</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>API Reference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Announcement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Snippets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Source Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MicroLearning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online help</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plugins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDK Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samplet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Brief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Version__c</picklist>
+            <values>
+                <fullName>10%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2 %28August 2021%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%2E1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>KBArticle</fullName>
+        <active>true</active>
+        <label>KB Article</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>API Reference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Announcement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Snippets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Source Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MicroLearning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online help</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plugins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDK Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samplet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Brief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Version__c</picklist>
+            <values>
+                <fullName>10%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2 %28August 2021%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%2E1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>KB_Article_Video</fullName>
+        <active>true</active>
+        <label>KB Article Video</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>API Reference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Announcement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Snippets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Source Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MicroLearning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online help</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plugins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDK Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samplet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Brief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Version__c</picklist>
+            <values>
+                <fullName>10%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E0%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2Ex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2 %28August 2021%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2Ex</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Topic_Homepage</fullName>
+        <active>true</active>
+        <label>Topic_Homepage</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>API Reference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Announcement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Snippets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Source Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MicroLearning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online help</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plugins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDK Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samplet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Brief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Version__c</picklist>
+            <values>
+                <fullName>10%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E0%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2Ex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2 %28August 2021%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2Ex</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Tutorial</fullName>
+        <active>true</active>
+        <label>Tutorial</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>API Reference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Announcement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certification</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Sample</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Code Snippets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Story</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dashboard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Samples</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Source Connector</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MicroLearning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online help</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plugins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDK Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Samplet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solution Brief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visualization</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Version__c</picklist>
+            <values>
+                <fullName>10%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E11</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10%2E9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>11%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 Update 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 Update 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2021 Update 2 %28August 2021%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E3%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E4%2E1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9%2E5%2E1</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchFilterFields>TITLE</searchFilterFields>
+        <searchFilterFields>VERSION_NUMBER</searchFilterFields>
+        <searchFilterFields>Type__c</searchFilterFields>
+        <searchResultsAdditionalFields>TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Version__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LANGUAGE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <validationRules>
+        <fullName>Prevent_Url_name_from_changing</fullName>
+        <active>true</active>
+        <description>Preventing url name from changing if published</description>
+        <errorConditionFormula>AND(OR(IsVisibleInPkb,PRIORVALUE(IsVisibleInPkb )), ISCHANGED( UrlName))</errorConditionFormula>
+        <errorMessage>This article is customer facing, so url changes are not permitted.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>urlName_Greater_Than_166</fullName>
+        <active>false</active>
+        <description>Urlname field cannot be longer than 166 characters due to internal Salesforce known issues - https://success.salesforce.com/issues_view?title=in-a-community-articles-with-very-long-urls-don-t-load-for-guest-users&amp;Id=a1p3A000000JWkt</description>
+        <errorConditionFormula>LEN( UrlName ) &gt;166</errorConditionFormula>
+        <errorMessage>Url Name cannot exceed 166 characters due to Salesforce Limitation for guest profile viewing. Please fix the Url Name field.</errorMessage>
+    </validationRules>
+</CustomObject>

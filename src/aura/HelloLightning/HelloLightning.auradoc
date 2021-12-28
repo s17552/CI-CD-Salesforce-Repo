@@ -1,0 +1,10 @@
+<!--
+ - Created by ychuiev001 on 25.06.2019.
+ -->
+
+<aura:documentation>
+    <aura:description>Documentation for HelloLightning</aura:description>
+    <aura:example name="HelloLightning" ref="HelloLightning" label="HelloLightning">
+        Example for HelloLightning
+    </aura:example>
+</aura:documentation>

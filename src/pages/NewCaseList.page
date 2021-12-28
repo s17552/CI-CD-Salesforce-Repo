@@ -1,0 +1,15 @@
+<!--
+ - Created by ychuiev001 on 14.06.2019.
+ -->
+
+<apex:page id="NewCaseList" controller="NewCaseListController">
+
+    <apex:repeat value="{!cases}" var="case">
+
+        <li>
+            <apex:outputLink value="/{!case.Id}" title="{!case.CaseNumber}">
+                {!case.CaseNumber}
+            </apex:outputLink>
+        </li>
+    </apex:repeat>
+</apex:page>

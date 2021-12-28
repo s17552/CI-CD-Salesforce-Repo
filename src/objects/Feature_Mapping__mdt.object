@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Maps CXO to Department Field Api Names for use in FeatureVoting.cmp</description>
+    <fields>
+        <fullName>Comments_Api__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Comments Api</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>used to determine what stage child records get created</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>F1 - CTO</fullName>
+                    <default>true</default>
+                    <label>F1 - CTO</label>
+                </value>
+                <value>
+                    <fullName>F2 - CXO</fullName>
+                    <default>false</default>
+                    <label>F2 - CXO</label>
+                </value>
+                <value>
+                    <fullName>F3 - CEO</fullName>
+                    <default>false</default>
+                    <label>F3 - CEO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tempo_Api__c</fullName>
+        <description>Tempo Api Name For use in Lightning:recordEditForm - FeatureVoting.cmp</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Tempo Api</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Field Mapping</fullName>
+                    <default>true</default>
+                    <label>Field Mapping</label>
+                </value>
+                <value>
+                    <fullName>Rally Input</fullName>
+                    <default>false</default>
+                    <label>Rally Input</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UserEmail__c</fullName>
+        <description>Email used to compare who can send features from Rally</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>UserEmail</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserId__c</fullName>
+        <description>CXO User Id</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>UserId</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Value_Api__c</fullName>
+        <description>Value api name used in Lightning:recordEditForm - FeatureVoting.cmp</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Value Api</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isAutoApproved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>determines if approval mapping will fall under autoapproval</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>isAutoApproved</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Feature Mapping</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>isAutoApproved__c</columns>
+        <columns>UserId__c</columns>
+        <columns>Tempo_Api__c</columns>
+        <columns>Value_Api__c</columns>
+        <columns>Comments_Api__c</columns>
+        <columns>Type__c</columns>
+        <columns>UserEmail__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Feature Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

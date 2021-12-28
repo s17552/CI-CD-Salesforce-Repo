@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Fills out map for filter dependency (Release controls Version; Version controls os_group) - matches picklists in downloads__c</description>
+    <fields>
+        <fullName>Account_Id__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Account Id</label>
+        <length>20</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Download_Category__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Download Category</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Identity_2020</fullName>
+                    <default>true</default>
+                    <label>Identity 2020</label>
+                </value>
+                <value>
+                    <fullName>RC 2021</fullName>
+                    <default>false</default>
+                    <label>RC 2021</label>
+                </value>
+                <value>
+                    <fullName>Identity 2021</fullName>
+                    <default>false</default>
+                    <label>Identity 2021</label>
+                </value>
+                <value>
+                    <fullName>HyperWeb CRX</fullName>
+                    <default>false</default>
+                    <label>HyperWeb CRX</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Is_Eligible__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Is Eligible</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>VersionDetail__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Version Detail</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isLatestReleaseType__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>checkbox for latest releasetype concat with Version meant to assist in default selections</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>isLatestReleaseType</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>is_RC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>boolean to prevent display unless they are a part of the Early adopter program</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>is RC</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>osGroupList__c</fullName>
+        <description>semi-colon delimited os groups based on version number</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>semi-colon delimited os groups based on version number</inlineHelpText>
+        <label>osGroupList</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>releaseType__c</fullName>
+        <description>releaseType - Platform, Patch, Feature</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>releaseType</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>versionList__c</fullName>
+        <description>semi-colon delimited list of versions based on downloads__c.Type__c</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>semi-colon delimited list of versions based on downloads__c.Type__c</inlineHelpText>
+        <label>versionList</label>
+        <length>1000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Download Filter</label>
+    <pluralLabel>Download filters</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

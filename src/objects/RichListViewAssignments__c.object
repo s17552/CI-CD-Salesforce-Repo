@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Assigns RichListViews to profiles</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ListViews__c</fullName>
+        <description>ListView names separated by commas</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ListView names separated by commas</inlineHelpText>
+        <label>ListViews</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>RichListViewAssignments</label>
+    <visibility>Public</visibility>
+</CustomObject>

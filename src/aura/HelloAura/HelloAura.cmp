@@ -1,0 +1,20 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:attribute name="firstName" type="String"/>
+    <aura:attribute name="birthdate" type="Date"/>
+    <aura:attribute name="age" type="Decimal"/>
+    <lightning:card>
+        <div class="slds-card">
+            <div class="slds-card__header slds-card__body_inner">
+                AURA
+            </div>
+            <div class="slds-card__body slds-card__body_inner">
+                <lightning:input label="Your name" value="{!v.firstName}"/>
+                <ui:inputDate label="Birthdate" value="{!v.birthdate}" displayDatePicker="true"/>
+                <lightning:button variant="brand" label="Calculate" onclick="{!c.calculate}"/>
+            </div>
+            <div class="slds-card__footer slds-card__body_inner">
+                Hello, {!v.firstName}! You're {!v.age} years old.
+            </div>
+        </div>
+    </lightning:card>
+</aura:component>

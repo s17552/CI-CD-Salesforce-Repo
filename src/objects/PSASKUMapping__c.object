@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Is_Travel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Designates a travel product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Designates a travel product</inlineHelpText>
+        <label>Is Travel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NonBillable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Non-Billable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PlanFactor__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan Factor</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PlanHours__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <description>Role to use when creating resource requests</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Role to use when creating resource requests</inlineHelpText>
+        <label>Role</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>PSA SKU Mapping</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Product_Name__c</columns>
+        <columns>Is_Travel__c</columns>
+        <columns>Role__c</columns>
+        <columns>NonBillable__c</columns>
+        <columns>PlanFactor__c</columns>
+        <columns>PlanHours__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <visibility>Protected</visibility>
+</CustomObject>

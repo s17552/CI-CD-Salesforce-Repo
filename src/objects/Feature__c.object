@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Feature_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>KPIs</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>KPIs</fullName>
+        <fields>Feature_ID_and_Name__c</fields>
+        <fields>Product__c</fields>
+        <fields>UC_Capability__c</fields>
+        <fields>Lead_Team__c</fields>
+        <fields>State__c</fields>
+        <fields>Release__c</fields>
+        <fields>Release_Date__c</fields>
+        <label>KPIs</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Feature object to be sourced from Rally to drive approval processes and transparency in Salesforce for technology activities.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Affected_Customers__c</fullName>
+        <description>comma or semicolon delimited string for customers aggregation based on US and DE</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customers that have issues/enhancements requests related to the Feature</inlineHelpText>
+        <label>Affected Customers</label>
+        <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Avg_Tempo__c</fullName>
+        <description>Rolling Avg Tempo</description>
+        <externalId>false</externalId>
+        <formula>(IF(TEXT(CLDTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(CLDTempo__c),1))) + IF(TEXT(CEOTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(CEOTempo__c),1))) + IF(TEXT(COOTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(COOTempo__c),1))) + IF(TEXT(CONTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(CONTempo__c),1))) + IF(TEXT(EDUTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(EDUTempo__c),1))) + IF(TEXT(ITSTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(ITSTempo__c),1))) + IF(TEXT(MKTTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(MKTTempo__c),1))) + IF(TEXT(SLSTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(SLSTempo__c),1))) + IF(TEXT(SVCTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(SVCTempo__c),1))) + IF(TEXT(SUPTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(SUPTempo__c),1))) + IF(TEXT(TECTempo__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(TECTempo__c),1)))) /  (If(IF(TEXT(CLDTempo__c)=&apos;&apos;,0,1) + IF(TEXT(CEOTempo__c)=&apos;&apos;,0,1) + IF(TEXT(COOTempo__c)=&apos;&apos;,0,1) + IF(TEXT(CONTempo__c)=&apos;&apos;,0,1) + IF(TEXT(EDUTempo__c)=&apos;&apos;,0,1) + IF(TEXT(ITSTempo__c)=&apos;&apos;,0,1) + IF(TEXT(MKTTempo__c)=&apos;&apos;,0,1) + IF(TEXT(SLSTempo__c)=&apos;&apos;,0,1) + IF(TEXT(SUPTempo__c)=&apos;&apos;,0,1) + IF(TEXT(SVCTempo__c)=&apos;&apos;,0,1) + IF(TEXT(TECTempo__c)=&apos;&apos;,0,1)=0,1,IF(TEXT(CLDTempo__c)=&apos;&apos;,0,1) + IF(TEXT(CEOTempo__c)=&apos;&apos;,0,1) + IF(TEXT(COOTempo__c)=&apos;&apos;,0,1) + IF(TEXT(CONTempo__c)=&apos;&apos;,0,1) + IF(TEXT(EDUTempo__c)=&apos;&apos;,0,1) + IF(TEXT(ITSTempo__c)=&apos;&apos;,0,1) + IF(TEXT(MKTTempo__c)=&apos;&apos;,0,1) + IF(TEXT(SLSTempo__c)=&apos;&apos;,0,1) + IF(TEXT(SUPTempo__c)=&apos;&apos;,0,1) + IF(TEXT(SVCTempo__c)=&apos;&apos;,0,1) + IF(TEXT(TECTempo__c)=&apos;&apos;,0,1)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Average of all submitted ratings of representative department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>Tempo</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Avg_Value__c</fullName>
+        <description>AVG Value Score</description>
+        <externalId>false</externalId>
+        <formula>(IF(TEXT(CLDValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(CLDValue__c),1))) + IF(TEXT(CEOValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(CEOValue__c),1))) + IF(TEXT(COOValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(COOValue__c),1))) + IF(TEXT(CONValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(CONValue__c),1))) + IF(TEXT(EDUValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(EDUValue__c),1))) + IF(TEXT(ITSValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(ITSValue__c),1))) + IF(TEXT(MKTValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(MKTValue__c),1))) + IF(TEXT(SLSValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(SLSValue__c),1))) + IF(TEXT(SUPValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(SUPValue__c),1))) + IF(TEXT(SVCValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(SVCValue__c),1))) + IF(TEXT(TECValue__c)=&apos;&apos;,0,VALUE(LEFT(TEXT(TECValue__c),1)))) / (IF(IF(TEXT(CLDValue__c)=&apos;&apos;,0,1) + IF(TEXT(CEOValue__c)=&apos;&apos;,0,1) + IF(TEXT(COOValue__c)=&apos;&apos;,0,1) + IF(TEXT(CONValue__c)=&apos;&apos;,0,1) + IF(TEXT(EDUValue__c)=&apos;&apos;,0,1) + IF(TEXT(ITSValue__c)=&apos;&apos;,0,1) + IF(TEXT(MKTValue__c)=&apos;&apos;,0,1) + IF(TEXT(SLSValue__c)=&apos;&apos;,0,1) + IF(TEXT(SUPValue__c)=&apos;&apos;,0,1) + IF(TEXT(SVCValue__c)=&apos;&apos;,0,1) + IF(TEXT(TECValue__c)=&apos;&apos;,0,1)=0,1,(IF(TEXT(CLDValue__c)=&apos;&apos;,0,1) + IF(TEXT(CEOValue__c)=&apos;&apos;,0,1) + IF(TEXT(COOValue__c)=&apos;&apos;,0,1) + IF(TEXT(CONValue__c)=&apos;&apos;,0,1) + IF(TEXT(EDUValue__c)=&apos;&apos;,0,1) + IF(TEXT(ITSValue__c)=&apos;&apos;,0,1) + IF(TEXT(MKTValue__c)=&apos;&apos;,0,1) +  IF(TEXT(SLSValue__c)=&apos;&apos;,0,1) + IF(TEXT(SUPValue__c)=&apos;&apos;,0,1) + IF(TEXT(SVCValue__c)=&apos;&apos;,0,1) + IF(TEXT(TECValue__c)=&apos;&apos;,0,1))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Average of all submitted ratings of representative department&apos;s point of view on timeframe of delivery</inlineHelpText>
+        <label>Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CEOComments__c</fullName>
+        <description>Comments about tne Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CEO Comments About the Feature</inlineHelpText>
+        <label>CEO Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CEOTempo__c</fullName>
+        <description>CEO Tempo</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>CEO Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CEOValue__c</fullName>
+        <description>Value Rating for CEO</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>CEO Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CEO_Value_Tempo__c</fullName>
+        <description>Concat of Value Tempo for CEO</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(CEOValue__c)) &amp;&amp; ISBlank(TEXT(CEOTempo__c)),&apos;&apos;,TEXT(CEOValue__c) + &apos; / &apos; + TEXT(CEOTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>CEO Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CLDComments__c</fullName>
+        <description>CLD Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CLD Comments About the Feature</inlineHelpText>
+        <label>CLD Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CLDTempo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>CLD Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CLDValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>CLD Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CLD_Value_Tempo__c</fullName>
+        <description>Concat of Tempo and Value</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(CLDValue__c)) &amp;&amp; ISBlank(TEXT(CLDTempo__c)),&apos;&apos;,TEXT( CLDValue__c  )+ &apos;/&apos; + TEXT(CLDTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>CLD Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CONComments__c</fullName>
+        <description>CON Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CON Comments About the Feature</inlineHelpText>
+        <label>CON Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CONTempo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>CON Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CONValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>CON Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CON_Value_Tempo__c</fullName>
+        <description>Concat of Value and Tempo for SVC</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(CONValue__c)) &amp;&amp; ISBlank(TEXT(CONTempo__c)),&apos;&apos;,TEXT(CONValue__c) + &apos; / &apos; + TEXT(CONTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>CON Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>COOComments__c</fullName>
+        <description>COO Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>COO Comments About the Feature</inlineHelpText>
+        <label>COO Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>COOTempo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>COO Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>COOValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>COO Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>COO_Value_Tempo__c</fullName>
+        <description>Concat of Value and Tempo</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(COOValue__c)) &amp;&amp; ISBlank(TEXT(COOTempo__c)),&apos;&apos;,TEXT(COOValue__c) + &apos; / &apos; + TEXT(COOTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>COO Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Confidence__c</fullName>
+        <description>Picklist on TEC probability of delivering</description>
+        <externalId>false</externalId>
+        <inlineHelpText>TEC Confidence level of delivering Feature by release date</inlineHelpText>
+        <label>Confidence</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commit (100%)</fullName>
+                    <default>false</default>
+                    <label>Commit (100%)</label>
+                </value>
+                <value>
+                    <fullName>Plan (90%)</fullName>
+                    <default>false</default>
+                    <label>Plan (90%)</label>
+                </value>
+                <value>
+                    <fullName>Upside (75%)</fullName>
+                    <default>false</default>
+                    <label>Upside (75%)</label>
+                </value>
+                <value>
+                    <fullName>Stretch (50%)</fullName>
+                    <default>false</default>
+                    <label>Stretch (50%)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Days__c</fullName>
+        <description>Current estimated engineering days needed to deliver feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Current Engineering Days Estimate</inlineHelpText>
+        <label>Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EDUComments__c</fullName>
+        <description>EDU Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>EDU Comments About the Feature</inlineHelpText>
+        <label>EDU Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EDUTempo__c</fullName>
+        <description>Tempo for the EDU Department</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>EDU Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EDUValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>EDU Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EDU_Value_Tempo__c</fullName>
+        <description>Concat of Value and Tempo for EDU</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(EDUValue__c)) &amp;&amp; ISBlank(TEXT(EDUTempo__c)),&apos;&apos;,TEXT(EDUValue__c) + &apos; / &apos; + TEXT(EDUTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>EDU Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feature_Full_Name_f__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;+Id, Full_Name__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Feature Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feature_ID_and_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Feature_Id__c + &quot; - &quot; +  Full_Name__c</formula>
+        <label>Feature ID and Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feature_Id__c</fullName>
+        <description>Rally Feature Id</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For additional and updated data, enable the Feature TEC Hypercard</inlineHelpText>
+        <label>Feature Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feature_Rejected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>boolean to be used in generation of rally comments to display an additional header</description>
+        <externalId>false</externalId>
+        <label>Feature Rejected</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Full Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ITSComments__c</fullName>
+        <description>ITS Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ITS Comments About the Feature</inlineHelpText>
+        <label>ITS Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ITSTempo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>ITS Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ITSValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>ITS Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ITS_Value_Tempo__c</fullName>
+        <description>Concat of Value and Tempo for ITS</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(ITSValue__c)) &amp;&amp; ISBlank(TEXT(ITSTempo__c)),&apos;&apos;,TEXT(ITSValue__c) + &apos; / &apos; + TEXT(ITSTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>ITS Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InvestmentCategory__c</fullName>
+        <externalId>false</externalId>
+        <label>Investment Category</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsResubmission__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>signifies resubmission. used in rating component</description>
+        <externalId>false</externalId>
+        <label>Is Resubmission</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Team__c</fullName>
+        <description>TEC Team in charge of the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Primary TEC team delivering feature work</inlineHelpText>
+        <label>Team</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MKTComments__c</fullName>
+        <description>MKT Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>MKT Comments About the Feature</inlineHelpText>
+        <label>MKT Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MKTTempo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>MKT Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MKTValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>MKT Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MKT_Value_Tempo__c</fullName>
+        <description>Concat of Value and Tempo for MKt</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(MKTValue__c)) &amp;&amp; ISBlank(TEXT(MKTTempo__c)),&apos;&apos;,TEXT(MKTValue__c) + &apos; / &apos; + TEXT(MKTTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>MKT Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Id__c</fullName>
+        <description>Rally Object Id used on the writeback to rally to update fields</description>
+        <externalId>false</externalId>
+        <label>Object Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Percentage_Done__c</fullName>
+        <description>Current User Story percentage completed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Percentage of work completed on the Feature</inlineHelpText>
+        <label>Done</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_Rejection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This is to prevent CXOs from rejecting the process.</description>
+        <externalId>false</externalId>
+        <label>Prevent Rejection</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Universal Code Look up</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Universal_Code__c</referenceTo>
+        <relationshipLabel>Features (UC Product)</relationshipLabel>
+        <relationshipName>UC_Product</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RallyOwnerName__c</fullName>
+        <description>back end field used to mention the rally owner on conversation post.</description>
+        <externalId>false</externalId>
+        <label>Rally Owner Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RallyOwnerUUID__c</fullName>
+        <description>UUID for mentions in discussion post</description>
+        <externalId>false</externalId>
+        <label>RallyOwnerUUID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rally_Initiative__c</fullName>
+        <description>Initiative from rally</description>
+        <externalId>false</externalId>
+        <label>Rally Initiative</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Release_Date__c</fullName>
+        <description>Date projected for release</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Estimated calendar date of release</inlineHelpText>
+        <label>Target Release Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Release__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Estimated TEC Release Cycle</inlineHelpText>
+        <label>Target Release</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Resubmission_Comments__c</fullName>
+        <description>comments from rally to list out what changed</description>
+        <externalId>false</externalId>
+        <label>Resubmission Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SLSComments__c</fullName>
+        <description>SLS Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SLS Comments About the Feature</inlineHelpText>
+        <label>SLS Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SLSTempo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>SLS Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SLSValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>SLS Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SLS_Value_Tempo__c</fullName>
+        <description>Concat of Value and Tempo for SLS</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(SLSValue__c)) &amp;&amp; ISBlank(TEXT(SLSTempo__c)),&apos;&apos;,TEXT(SLSValue__c) + &apos; / &apos; + TEXT(SLSTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>SLS Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SSEComments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>SSE Comments About the Feature</inlineHelpText>
+        <label>SSE Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SSETempo__c</fullName>
+        <externalId>false</externalId>
+        <label>SSETempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SSEValue__c</fullName>
+        <externalId>false</externalId>
+        <label>SSE Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SSE_Value_Tempo__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(SSEValue__c)) &amp;&amp; ISBlank(TEXT(SSETempo__c)),&apos;&apos;,TEXT(SSEValue__c) + &apos; / &apos; + TEXT(SSETempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>SSE Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SUPComments__c</fullName>
+        <description>SUP Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SUP Comments About the Feature</inlineHelpText>
+        <label>SUP Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SUPTempo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>SUP Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SUPValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>SUP Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SUP_Value_Tempo__c</fullName>
+        <description>Concat of Value and Tempo for SUP</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(SUPValue__c)) &amp;&amp; ISBlank(TEXT(SUPTempo__c)),&apos;&apos;,TEXT(SUPValue__c) + &apos; / &apos; + TEXT(SUPTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>SUP Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SVCComments__c</fullName>
+        <description>SVC Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SVC Comments About the Feature</inlineHelpText>
+        <label>OEM Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SVCTempo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>OEM Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVCValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>OEM Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SVC_Value_Tempo__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(SVCValue__c)) &amp;&amp; ISBlank(TEXT(SVCTempo__c)),&apos;&apos;,TEXT(SVCValue__c) + &apos; / &apos; + TEXT(SVCTempo__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>OEM Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_To_Rally__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>backend field used to send trigger http callback to sync with rally</description>
+        <externalId>false</externalId>
+        <label>Send To Rally</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <description>Rally State</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Descriptions of TEC States:
+Backlog - Still in planning; 
+Development - Actively implementing; 
+Ready for Validation - Initial development completed; 
+Validated - Feature meets all acceptance criteria</inlineHelpText>
+        <label>State</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Idea</fullName>
+                    <default>false</default>
+                    <label>Idea</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Product Backlog</fullName>
+                    <default>false</default>
+                    <label>Product Backlog</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Release Backlog</fullName>
+                    <default>false</default>
+                    <label>Release Backlog</label>
+                </value>
+                <value>
+                    <fullName>Ready for Validation</fullName>
+                    <default>false</default>
+                    <label>Ready for Validation</label>
+                </value>
+                <value>
+                    <fullName>Validated</fullName>
+                    <default>false</default>
+                    <label>Validated</label>
+                </value>
+                <value>
+                    <fullName>Validation Failed</fullName>
+                    <default>false</default>
+                    <label>Validation Failed</label>
+                </value>
+                <value>
+                    <fullName>Shipped</fullName>
+                    <default>false</default>
+                    <label>Shipped</label>
+                </value>
+                <value>
+                    <fullName>Quality Assurance</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Quality Assurance</label>
+                </value>
+                <value>
+                    <fullName>UX Analysis</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>UX Analysis</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <defaultValue>&quot;F01 - SUB&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>F1 - CTO</fullName>
+                    <default>false</default>
+                    <label>F1 - CTO</label>
+                </value>
+                <value>
+                    <fullName>F2 - CXO</fullName>
+                    <default>false</default>
+                    <label>F2 - CXO</label>
+                </value>
+                <value>
+                    <fullName>F3 - CEO</fullName>
+                    <default>false</default>
+                    <label>F3 - CEO</label>
+                </value>
+                <value>
+                    <fullName>F4 - APV</fullName>
+                    <default>false</default>
+                    <label>F4 - APV</label>
+                </value>
+                <value>
+                    <fullName>F0 - REJ</fullName>
+                    <default>false</default>
+                    <label>F0 - REJ</label>
+                </value>
+                <value>
+                    <fullName>F0 -  REJ</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>F0 -  REJ</label>
+                </value>
+                <value>
+                    <fullName>F01 - CTO</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>F01 - CTO</label>
+                </value>
+                <value>
+                    <fullName>F02 - CXO</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>F02 - CXO</label>
+                </value>
+                <value>
+                    <fullName>F03 - CEO</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>F03 - CEO</label>
+                </value>
+                <value>
+                    <fullName>F04 - APV</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>F04 - APV</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Summary__c</fullName>
+        <description>Short description of the feature. Sourced from Rally</description>
+        <externalId>false</externalId>
+        <label>Rally Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TECComments__c</fullName>
+        <description>TEC Comments About the Feature</description>
+        <externalId>false</externalId>
+        <inlineHelpText>TEC Comments About the Feature</inlineHelpText>
+        <label>TEC Comments</label>
+        <length>50000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TECTempo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on time frame of delivery</inlineHelpText>
+        <label>TEC Tempo</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Tempo</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TECValue__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Representative Department&apos;s point of view on impact of delivery</inlineHelpText>
+        <label>TEC Value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Feature_Value</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TEC_Value_Tempo__c</fullName>
+        <description>Concat of Value and Tempo for TEC</description>
+        <externalId>false</externalId>
+        <formula>If( ISBLANK(TEXT(TECValue__c)) &amp;&amp; ISBlank(TEXT(TECTempo__c)),&apos;&apos;,TEXT(TECValue__c) + &apos; / &apos; + TEXT(TECTempo__c))</formula>
+        <inlineHelpText>Value: Point of view on impact of delivery / Tempo: Point of view on timeframe of delivery</inlineHelpText>
+        <label>TEC Value/Tempo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UC_Capability__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>UC Look up</description>
+        <externalId>false</externalId>
+        <label>Capability</label>
+        <referenceTo>Universal_Code__c</referenceTo>
+        <relationshipLabel>Features</relationshipLabel>
+        <relationshipName>UC_Component</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Feature</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Feature_Id__c</columns>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Product__c</columns>
+        <columns>Rally_Initiative__c</columns>
+        <columns>Lead_Team__c</columns>
+        <columns>Days__c</columns>
+        <columns>Avg_Tempo__c</columns>
+        <columns>Avg_Value__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>F4 - APV,F0 -  REJ</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Feature Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Features</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Prevent_Approval_Process_Rejection</fullName>
+        <active>true</active>
+        <description>Prevent CXO Rejection during Feature Process</description>
+        <errorConditionFormula>Prevent_Rejection__c</errorConditionFormula>
+        <errorMessage>Feature Objects cannot have their Approvals Rejected. Please rate your Value and Tempo and approve the recordl</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_from_edits_when_stage_not_F1</fullName>
+        <active>true</active>
+        <description>Prevent from editing the record when stage is different than F1</description>
+        <errorConditionFormula>AND(
+OR(
+ISPICKVAL(Status__c,&apos;F2 - CXO&apos;),
+ISPICKVAL(Status__c,&apos;F3 - CEO&apos;),
+ISPICKVAL(Status__c,&apos;F4 - APV&apos;)),
+OR(
+ISCHANGED(OwnerId),
+ISCHANGED(Days__c),
+ISCHANGED(Confidence__c),
+ISCHANGED(Percentage_Done__c),
+ISCHANGED(Affected_Customers__c),
+ISCHANGED(InvestmentCategory__c),
+ISCHANGED(Product__c),
+ISCHANGED(UC_Capability__c),
+ISCHANGED(Lead_Team__c) ,
+ISCHANGED(State__c),
+ISCHANGED(Release__c),  
+ISCHANGED(Release_Date__c) 
+)
+)</errorConditionFormula>
+        <errorMessage>You can&apos;t edit the record if in F2, F3, or F4 status.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

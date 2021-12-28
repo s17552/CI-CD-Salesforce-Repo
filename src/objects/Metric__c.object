@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>COScoreId__c</fullName>
+        <externalId>false</externalId>
+        <label>CO Score Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CO_Feed__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>CO Feed</label>
+        <referenceTo>CO_Feed__c</referenceTo>
+        <relationshipLabel>Metrics</relationshipLabel>
+        <relationshipName>Metrics</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cheerful_Raw__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheerful Raw</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheerful__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+ AND (TEXT( Feedback_Type__c )=&apos;Direct Report&apos;,  (CO_Feed__r.Count_Of_Direct_Reports__c &lt; 3) ),
+ AND (TEXT( Feedback_Type__c )=&apos;Indirect Report&apos;,  (CO_Feed__r.Count_Of_Indirect_Reports__c &lt;3) ),
+ AND (TEXT( Feedback_Type__c )=&apos;Overall&apos;, (CO_Feed__r.Count_Of_All_Raters__c &lt; 3) ),
+ AND (TEXT( Feedback_Type__c )=&apos;All Collaborator&apos;,  (CO_Feed__r.Count_Of_All_Collaborators__c &lt; 3) )
+
+),
+0,
+Cheerful_Raw__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cheerful</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Employee_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ratee__r.FirstName &amp; &quot; &quot; &amp; Ratee__r.LastName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Employee Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engaged_Raw__c</fullName>
+        <externalId>false</externalId>
+        <label>Engaged Raw</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engaged__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+ AND (TEXT( Feedback_Type__c )=&apos;Direct Report&apos;,  (CO_Feed__r.Count_Of_Direct_Reports__c &lt; 3) ),
+ AND (TEXT( Feedback_Type__c )=&apos;Indirect Report&apos;,  (CO_Feed__r.Count_Of_Indirect_Reports__c &lt;3) ),
+ AND (TEXT( Feedback_Type__c )=&apos;Overall&apos;, (CO_Feed__r.Count_Of_All_Raters__c &lt; 3) ),
+ AND (TEXT( Feedback_Type__c )=&apos;All Collaborator&apos;,  (CO_Feed__r.Count_Of_All_Collaborators__c &lt; 3) )
+
+),
+0,
+Engaged_Raw__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Engaged</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feedback_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Feedback Type</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Collaborator</fullName>
+                    <default>false</default>
+                    <label>All Collaborator</label>
+                </value>
+                <value>
+                    <fullName>Collaborator</fullName>
+                    <default>false</default>
+                    <label>Collaborator</label>
+                </value>
+                <value>
+                    <fullName>Direct Report</fullName>
+                    <default>false</default>
+                    <label>Direct Report</label>
+                </value>
+                <value>
+                    <fullName>Indirect Report</fullName>
+                    <default>false</default>
+                    <label>Indirect Report</label>
+                </value>
+                <value>
+                    <fullName>Functional Manager</fullName>
+                    <default>false</default>
+                    <label>Functional Manager</label>
+                </value>
+                <value>
+                    <fullName>Matrix Manager</fullName>
+                    <default>false</default>
+                    <label>Matrix Manager</label>
+                </value>
+                <value>
+                    <fullName>Overall</fullName>
+                    <default>false</default>
+                    <label>Overall</label>
+                </value>
+                <value>
+                    <fullName>Other Collaborator</fullName>
+                    <default>false</default>
+                    <label>Other Collaborator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Precise_Agile_Transparent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+ AND (TEXT( Feedback_Type__c )=&apos;Direct Report&apos;,  (CO_Feed__r.Count_Of_Direct_Reports__c &lt; 3) ),
+ AND (TEXT( Feedback_Type__c )=&apos;Indirect Report&apos;,  (CO_Feed__r.Count_Of_Indirect_Reports__c &lt;3) ),
+ AND (TEXT( Feedback_Type__c )=&apos;Overall&apos;, (CO_Feed__r.Count_Of_All_Raters__c &lt; 3) ),
+ AND (TEXT( Feedback_Type__c )=&apos;All Collaborator&apos;,  (CO_Feed__r.Count_Of_All_Collaborators__c &lt; 3) )
+
+),
+0,
+Precise_Raw__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Precise, Agile &amp; Transparent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Precise_Raw__c</fullName>
+        <externalId>false</externalId>
+        <label>Precise Raw</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quarter__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(CO_Feed__r.Quarter__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quarter</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ratee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ratee</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Metrics</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Raters__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Feedback_Type__c, &quot;All Collaborator&quot;),CO_Feed__r.No_Of_All_Collaborators__c, 
+IF(ISPICKVAL(Feedback_Type__c, &quot;Collaborator&quot;), CO_Feed__r.No_Of_Collaborators__c , 
+IF(ISPICKVAL(Feedback_Type__c, &quot;Direct Report&quot;), CO_Feed__r.No_Of_Direct_Reports__c , 
+IF(ISPICKVAL(Feedback_Type__c, &quot;Indirect Report&quot;),CO_Feed__r.No_Of_Indirect_Reports__c, 
+IF(ISPICKVAL(Feedback_Type__c, &quot;Functional Manager&quot;),CO_Feed__r.No_Of_Functional_Manager__c, 
+IF(ISPICKVAL(Feedback_Type__c, &quot;Matrix Manager&quot;),CO_Feed__r.No_Of_Matrix_Manager__c, 
+IF(ISPICKVAL(Feedback_Type__c, &quot;Other Collaborator&quot;),CO_Feed__r.No_Of_Other_Collaborators__c, 
+IF(ISPICKVAL(Feedback_Type__c, &quot;Overall&quot;),(CO_Feed__r.No_Of_All_Collaborators__c + CO_Feed__r.No_Of_Direct_Reports__c + CO_Feed__r.No_Of_Indirect_Reports__c + CO_Feed__r.No_Of_Functional_Manager__c + CO_Feed__r.No_Of_Matrix_Manager__c), 
+0 
+))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Count of users who provided rating</inlineHelpText>
+        <label># Raters</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Raters__c</fullName>
+        <description>Count of total raters</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Feedback_Type__c, &quot;All Collaborator&quot;),CO_Feed__r.Count_Of_All_Collaborators__c,
+IF(ISPICKVAL(Feedback_Type__c, &quot;Collaborator&quot;), CO_Feed__r.Count_Of_Direct_Collaborators__c ,
+IF(ISPICKVAL(Feedback_Type__c, &quot;Other Collaborator&quot;), CO_Feed__r.Count_Of_Indirect_Collaborators__c ,
+IF(ISPICKVAL(Feedback_Type__c, &quot;Direct Report&quot;), CO_Feed__r.Count_Of_Direct_Reports__c ,
+IF(ISPICKVAL(Feedback_Type__c, &quot;Indirect Report&quot;),CO_Feed__r.Count_Of_Indirect_Reports__c,
+IF(ISPICKVAL(Feedback_Type__c, &quot;Functional Manager&quot;),CO_Feed__r.Count_of_Functional_Manager__c,
+IF(ISPICKVAL(Feedback_Type__c, &quot;Matrix Manager&quot;),CO_Feed__r.Count_Of_Matrix_Manager__c,
+IF(ISPICKVAL(Feedback_Type__c, &quot;Overall&quot;),CO_Feed__r.Count_Of_All_Raters_F__c,
+0
+))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label># Total Raters</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Metric</label>
+    <nameField>
+        <label>Metric Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Metrics</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

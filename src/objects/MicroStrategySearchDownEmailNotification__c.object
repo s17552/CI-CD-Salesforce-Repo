@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This is to restrict the number of email sent on search down to the search maintenance team to one.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Email_Alert_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Email Alert Sent</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>MicroStrategySearchDownEmailNotification</label>
+    <visibility>Public</visibility>
+</CustomObject>

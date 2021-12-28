@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Configurable calculations for offering object based on record type and license type.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActiveCalculation__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Active Calculation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DestinationField__c</fullName>
+        <description>Destination field for the calculation</description>
+        <externalId>false</externalId>
+        <label>DestinationField</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Formula__c</fullName>
+        <description>Formula for calculating and populating the destination field.
+Use field API names in the formulas</description>
+        <externalId>false</externalId>
+        <label>Formula</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LicenseType__c</fullName>
+        <description>Offering license type</description>
+        <externalId>false</externalId>
+        <label>License Type</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RecordTypeDevName__c</fullName>
+        <description>Record Type developer Name</description>
+        <externalId>false</externalId>
+        <label>Record Type Dev Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Offering Object Calculations</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>ActiveCalculation__c</columns>
+        <columns>DestinationField__c</columns>
+        <columns>Formula__c</columns>
+        <columns>LicenseType__c</columns>
+        <columns>RecordTypeDevName__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <visibility>Protected</visibility>
+</CustomObject>

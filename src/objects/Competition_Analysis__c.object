@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Buyer_Persona__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Which buyer persona was the most influential?</inlineHelpText>
+        <label>Buyer Persona</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>User Buyers</fullName>
+                    <default>false</default>
+                    <label>User Buyers</label>
+                </value>
+                <value>
+                    <fullName>Coach</fullName>
+                    <default>false</default>
+                    <label>Coach</label>
+                </value>
+                <value>
+                    <fullName>Technical Buyers</fullName>
+                    <default>false</default>
+                    <label>Technical Buyers</label>
+                </value>
+                <value>
+                    <fullName>Financial Buyers</fullName>
+                    <default>false</default>
+                    <label>Financial Buyers</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cost_Overview__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How did cost have an impact in the opportunity? How was cost discussed? In relation to the competitors how did we fare?</inlineHelpText>
+        <label>Cost Overview</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Current_BI_Incumbent__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Who is the current BI Incumbent?</inlineHelpText>
+        <label>Current BI Incumbent</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Birst</fullName>
+                    <default>false</default>
+                    <label>Birst</label>
+                </value>
+                <value>
+                    <fullName>BOARD International S.A.</fullName>
+                    <default>false</default>
+                    <label>BOARD International S.A.</label>
+                </value>
+                <value>
+                    <fullName>Domo</fullName>
+                    <default>false</default>
+                    <label>Domo</label>
+                </value>
+                <value>
+                    <fullName>Information Builders</fullName>
+                    <default>false</default>
+                    <label>Information Builders</label>
+                </value>
+                <value>
+                    <fullName>Logi Analytics</fullName>
+                    <default>false</default>
+                    <label>Logi Analytics</label>
+                </value>
+                <value>
+                    <fullName>Looker</fullName>
+                    <default>false</default>
+                    <label>Looker</label>
+                </value>
+                <value>
+                    <fullName>Microsoft Power BI</fullName>
+                    <default>false</default>
+                    <label>Microsoft Power BI</label>
+                </value>
+                <value>
+                    <fullName>MicroStrategy</fullName>
+                    <default>false</default>
+                    <label>MicroStrategy</label>
+                </value>
+                <value>
+                    <fullName>Pentaho</fullName>
+                    <default>false</default>
+                    <label>Pentaho</label>
+                </value>
+                <value>
+                    <fullName>Pyramid Analytics</fullName>
+                    <default>false</default>
+                    <label>Pyramid Analytics</label>
+                </value>
+                <value>
+                    <fullName>Qlik Sense</fullName>
+                    <default>false</default>
+                    <label>Qlik Sense</label>
+                </value>
+                <value>
+                    <fullName>Qlikview</fullName>
+                    <default>false</default>
+                    <label>Qlikview</label>
+                </value>
+                <value>
+                    <fullName>Salesforce Wave</fullName>
+                    <default>false</default>
+                    <label>Salesforce Wave</label>
+                </value>
+                <value>
+                    <fullName>Tableau</fullName>
+                    <default>false</default>
+                    <label>Tableau</label>
+                </value>
+                <value>
+                    <fullName>TIBCO Spotfire</fullName>
+                    <default>false</default>
+                    <label>TIBCO Spotfire</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>(800.000): Tableau</fullName>
+                    <default>false</default>
+                    <label>(800.000): Tableau</label>
+                </value>
+                <value>
+                    <fullName>(801.000): IBM</fullName>
+                    <default>false</default>
+                    <label>(801.000): IBM</label>
+                </value>
+                <value>
+                    <fullName>(802.000): SAP</fullName>
+                    <default>false</default>
+                    <label>(802.000): SAP</label>
+                </value>
+                <value>
+                    <fullName>(803.000): Qlik</fullName>
+                    <default>false</default>
+                    <label>(803.000): Qlik</label>
+                </value>
+                <value>
+                    <fullName>(804.000): Microsoft</fullName>
+                    <default>false</default>
+                    <label>(804.000): Microsoft</label>
+                </value>
+                <value>
+                    <fullName>(808.000): Salesforce</fullName>
+                    <default>false</default>
+                    <label>(808.000): Salesforce</label>
+                </value>
+                <value>
+                    <fullName>(810.000): Birst</fullName>
+                    <default>false</default>
+                    <label>(810.000): Birst</label>
+                </value>
+                <value>
+                    <fullName>(812.000): Board</fullName>
+                    <default>false</default>
+                    <label>(812.000): Board</label>
+                </value>
+                <value>
+                    <fullName>(817.000): Domo</fullName>
+                    <default>false</default>
+                    <label>(817.000): Domo</label>
+                </value>
+                <value>
+                    <fullName>(827.000): Information Builders</fullName>
+                    <default>false</default>
+                    <label>(827.000): Information Builders</label>
+                </value>
+                <value>
+                    <fullName>(832.000): Logi Analytics</fullName>
+                    <default>false</default>
+                    <label>(832.000): Logi Analytics</label>
+                </value>
+                <value>
+                    <fullName>(833.000): Looker</fullName>
+                    <default>false</default>
+                    <label>(833.000): Looker</label>
+                </value>
+                <value>
+                    <fullName>(837.000): Oracle</fullName>
+                    <default>false</default>
+                    <label>(837.000): Oracle</label>
+                </value>
+                <value>
+                    <fullName>(842.000): Pyramid Analytics</fullName>
+                    <default>false</default>
+                    <label>(842.000): Pyramid Analytics</label>
+                </value>
+                <value>
+                    <fullName>(844.000): SAS</fullName>
+                    <default>false</default>
+                    <label>(844.000): SAS</label>
+                </value>
+                <value>
+                    <fullName>(850.000): TIBCO</fullName>
+                    <default>false</default>
+                    <label>(850.000): TIBCO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_Contact_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Contact</label>
+        <length>140</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Final_Action__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Final Action</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Purchased Competitor</fullName>
+                    <default>false</default>
+                    <label>Purchased Competitor</label>
+                </value>
+                <value>
+                    <fullName>No Purchase</fullName>
+                    <default>false</default>
+                    <label>No Purchase</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Edit_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>Edit Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Functional_Solution__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What was the primary functional solution of the opportunity?</inlineHelpText>
+        <label>Functional Solution</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Facilities</fullName>
+                    <default>false</default>
+                    <label>Facilities</label>
+                </value>
+                <value>
+                    <fullName>HR</fullName>
+                    <default>false</default>
+                    <label>HR</label>
+                </value>
+                <value>
+                    <fullName>Customer Support</fullName>
+                    <default>false</default>
+                    <label>Customer Support</label>
+                </value>
+                <value>
+                    <fullName>Field Service</fullName>
+                    <default>false</default>
+                    <label>Field Service</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>(401.000): Sales</fullName>
+                    <default>false</default>
+                    <label>(401.000): Sales</label>
+                </value>
+                <value>
+                    <fullName>(402.000): Executive</fullName>
+                    <default>false</default>
+                    <label>(402.000): Executive</label>
+                </value>
+                <value>
+                    <fullName>(403.000): Marketing</fullName>
+                    <default>false</default>
+                    <label>(403.000): Marketing</label>
+                </value>
+                <value>
+                    <fullName>(404.000): Finance</fullName>
+                    <default>false</default>
+                    <label>(404.000): Finance</label>
+                </value>
+                <value>
+                    <fullName>(409.000): IT</fullName>
+                    <default>false</default>
+                    <label>(409.000): IT</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Identified_Budget__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was there an identified budget?</inlineHelpText>
+        <label>Identified Budget</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Incumbent_Tenure__c</fullName>
+        <externalId>false</externalId>
+        <label>Incumbent Tenure</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Current_BI_Incumbent__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0-11 Months</fullName>
+                    <default>false</default>
+                    <label>0-11 Months</label>
+                </value>
+                <value>
+                    <fullName>1 Year</fullName>
+                    <default>false</default>
+                    <label>1 Year</label>
+                </value>
+                <value>
+                    <fullName>2 Years</fullName>
+                    <default>false</default>
+                    <label>2 Years</label>
+                </value>
+                <value>
+                    <fullName>3 Years</fullName>
+                    <default>false</default>
+                    <label>3 Years</label>
+                </value>
+                <value>
+                    <fullName>4+ Years</fullName>
+                    <default>false</default>
+                    <label>4+ Years</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>0-11 Months</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>1 Year</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>2 Years</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>3 Years</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>4+ Years</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>Unknown</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Competition Analyses</relationshipLabel>
+        <relationshipName>Competition_Analyses</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Political_Landscape_Overview__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a description of the political landscape. How Did it effect the opportunity?</inlineHelpText>
+        <label>Political Landscape Overview</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Primary_BI_Competitor__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Who was the Primary BI Competitor?</inlineHelpText>
+        <label>Primary BI Competitor</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Birst</fullName>
+                    <default>false</default>
+                    <label>Birst</label>
+                </value>
+                <value>
+                    <fullName>BOARD International S.A.</fullName>
+                    <default>false</default>
+                    <label>BOARD International S.A.</label>
+                </value>
+                <value>
+                    <fullName>Domo</fullName>
+                    <default>false</default>
+                    <label>Domo</label>
+                </value>
+                <value>
+                    <fullName>IBM Cognos Analytics</fullName>
+                    <default>false</default>
+                    <label>IBM Cognos Analytics</label>
+                </value>
+                <value>
+                    <fullName>IBM Watson</fullName>
+                    <default>false</default>
+                    <label>IBM Watson</label>
+                </value>
+                <value>
+                    <fullName>Logi Analytics</fullName>
+                    <default>false</default>
+                    <label>Logi Analytics</label>
+                </value>
+                <value>
+                    <fullName>Looker</fullName>
+                    <default>false</default>
+                    <label>Looker</label>
+                </value>
+                <value>
+                    <fullName>Microsoft Power BI</fullName>
+                    <default>false</default>
+                    <label>Microsoft Power BI</label>
+                </value>
+                <value>
+                    <fullName>Oracle OBIEE</fullName>
+                    <default>false</default>
+                    <label>Oracle OBIEE</label>
+                </value>
+                <value>
+                    <fullName>Pentaho</fullName>
+                    <default>false</default>
+                    <label>Pentaho</label>
+                </value>
+                <value>
+                    <fullName>Pyramid Analytics</fullName>
+                    <default>false</default>
+                    <label>Pyramid Analytics</label>
+                </value>
+                <value>
+                    <fullName>Qlik Sense</fullName>
+                    <default>false</default>
+                    <label>Qlik Sense</label>
+                </value>
+                <value>
+                    <fullName>Qlikview</fullName>
+                    <default>false</default>
+                    <label>Qlikview</label>
+                </value>
+                <value>
+                    <fullName>SAP Business Objects</fullName>
+                    <default>false</default>
+                    <label>SAP Business Objects</label>
+                </value>
+                <value>
+                    <fullName>SAP Lumira</fullName>
+                    <default>false</default>
+                    <label>SAP Lumira</label>
+                </value>
+                <value>
+                    <fullName>SAS</fullName>
+                    <default>false</default>
+                    <label>SAS</label>
+                </value>
+                <value>
+                    <fullName>TIBCO Spotfire</fullName>
+                    <default>false</default>
+                    <label>TIBCO Spotfire</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>(800.000): Tableau</fullName>
+                    <default>false</default>
+                    <label>(800.000): Tableau</label>
+                </value>
+                <value>
+                    <fullName>(801.000): IBM</fullName>
+                    <default>false</default>
+                    <label>(801.000): IBM</label>
+                </value>
+                <value>
+                    <fullName>(802.000): SAP</fullName>
+                    <default>false</default>
+                    <label>(802.000): SAP</label>
+                </value>
+                <value>
+                    <fullName>(803.000): Qlik</fullName>
+                    <default>false</default>
+                    <label>(803.000): Qlik</label>
+                </value>
+                <value>
+                    <fullName>(804.000): Microsoft</fullName>
+                    <default>false</default>
+                    <label>(804.000): Microsoft</label>
+                </value>
+                <value>
+                    <fullName>(808.000): Salesforce</fullName>
+                    <default>false</default>
+                    <label>(808.000): Salesforce</label>
+                </value>
+                <value>
+                    <fullName>(810.000): Birst</fullName>
+                    <default>false</default>
+                    <label>(810.000): Birst</label>
+                </value>
+                <value>
+                    <fullName>(812.000): Board</fullName>
+                    <default>false</default>
+                    <label>(812.000): Board</label>
+                </value>
+                <value>
+                    <fullName>(817.000): Domo</fullName>
+                    <default>false</default>
+                    <label>(817.000): Domo</label>
+                </value>
+                <value>
+                    <fullName>(827.000): Information Builders</fullName>
+                    <default>false</default>
+                    <label>(827.000): Information Builders</label>
+                </value>
+                <value>
+                    <fullName>(832.000): Logi Analytics</fullName>
+                    <default>false</default>
+                    <label>(832.000): Logi Analytics</label>
+                </value>
+                <value>
+                    <fullName>(833.000): Looker</fullName>
+                    <default>false</default>
+                    <label>(833.000): Looker</label>
+                </value>
+                <value>
+                    <fullName>(837.000): Oracle</fullName>
+                    <default>false</default>
+                    <label>(837.000): Oracle</label>
+                </value>
+                <value>
+                    <fullName>(842.000): Pyramid Analytics</fullName>
+                    <default>false</default>
+                    <label>(842.000): Pyramid Analytics</label>
+                </value>
+                <value>
+                    <fullName>(844.000): SAS</fullName>
+                    <default>false</default>
+                    <label>(844.000): SAS</label>
+                </value>
+                <value>
+                    <fullName>(850.00): TIBCO</fullName>
+                    <default>false</default>
+                    <label>(850.00): TIBCO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary_End_User__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Who is the customer&apos;s primary end user of this opportunity (ex. financial analysts, Store Managers, Executives, read only users)?</inlineHelpText>
+        <label>Primary End User</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Loss_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Loss Reason</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Financial</fullName>
+                    <default>false</default>
+                    <label>Financial</label>
+                </value>
+                <value>
+                    <fullName>Technological</fullName>
+                    <default>false</default>
+                    <label>Technological</label>
+                </value>
+                <value>
+                    <fullName>Political</fullName>
+                    <default>false</default>
+                    <label>Political</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary_Win_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Win Reason</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Financial</fullName>
+                    <default>false</default>
+                    <label>Financial</label>
+                </value>
+                <value>
+                    <fullName>Technological</fullName>
+                    <default>false</default>
+                    <label>Technological</label>
+                </value>
+                <value>
+                    <fullName>Political</fullName>
+                    <default>false</default>
+                    <label>Political</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Revenue_Effect_Overview__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>In depth please describe how MicroStrategy was positioned to increase the customer’s revenue in this opportunity.</inlineHelpText>
+        <label>Revenue Effect Overview</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_Level_with_Incumbent__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What was their satisfaction level with the Incumbent? How long have they been using their service?</inlineHelpText>
+        <label>Satisfaction Level with Incumbent</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Current_BI_Incumbent__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Very Satisfied</fullName>
+                    <default>false</default>
+                    <label>Very Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Content</fullName>
+                    <default>false</default>
+                    <label>Content</label>
+                </value>
+                <value>
+                    <fullName>Not Satisfied</fullName>
+                    <default>false</default>
+                    <label>Not Satisfied</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>Very Satisfied</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>Content</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>Not Satisfied</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other</controllingFieldValue>
+                <controllingFieldValue>Pentaho</controllingFieldValue>
+                <controllingFieldValue>Pyramid Analytics</controllingFieldValue>
+                <controllingFieldValue>Qlik Sense</controllingFieldValue>
+                <controllingFieldValue>Qlikview</controllingFieldValue>
+                <controllingFieldValue>Salesforce Wave</controllingFieldValue>
+                <controllingFieldValue>Birst</controllingFieldValue>
+                <controllingFieldValue>BOARD International S.A.</controllingFieldValue>
+                <controllingFieldValue>Domo</controllingFieldValue>
+                <controllingFieldValue>Information Builders</controllingFieldValue>
+                <controllingFieldValue>Logi Analytics</controllingFieldValue>
+                <controllingFieldValue>Looker</controllingFieldValue>
+                <controllingFieldValue>Microsoft Power BI</controllingFieldValue>
+                <controllingFieldValue>Tableau</controllingFieldValue>
+                <controllingFieldValue>MicroStrategy</controllingFieldValue>
+                <controllingFieldValue>TIBCO Spotfire</controllingFieldValue>
+                <valueName>Unknown</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tech_Eval_Performed__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Evaluation Performed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Technical_Overview__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How did technology have an impact in the opportunity? Provide a description of the technical needs of the customer/opportunity and the discussions regarding technology that were had.</inlineHelpText>
+        <label>MSTR Technical Overview</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Technical_Presentations__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Presentation</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Demo</fullName>
+                    <default>false</default>
+                    <label>Demo</label>
+                </value>
+                <value>
+                    <fullName>POC</fullName>
+                    <default>false</default>
+                    <label>POC</label>
+                </value>
+                <value>
+                    <fullName>Demo &amp; POC</fullName>
+                    <default>false</default>
+                    <label>Demo &amp; POC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Technical_Solution__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What was the primary technical solution of the opportunity?</inlineHelpText>
+        <label>Technical Solution</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Data Discovery</fullName>
+                    <default>false</default>
+                    <label>Data Discovery</label>
+                </value>
+                <value>
+                    <fullName>Embedded Analytics</fullName>
+                    <default>false</default>
+                    <label>Embedded Analytics</label>
+                </value>
+                <value>
+                    <fullName>B2B/B2C Mobile Apps</fullName>
+                    <default>false</default>
+                    <label>B2B/B2C Mobile Apps</label>
+                </value>
+                <value>
+                    <fullName>Employee Access</fullName>
+                    <default>false</default>
+                    <label>Employee Access</label>
+                </value>
+                <value>
+                    <fullName>Multi-Channel Customer Experience</fullName>
+                    <default>false</default>
+                    <label>Multi-Channel Customer Experience</label>
+                </value>
+                <value>
+                    <fullName>MicroStrategy Cloud</fullName>
+                    <default>false</default>
+                    <label>MicroStrategy Cloud</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>(450.000): Enterprise Analytics</fullName>
+                    <default>false</default>
+                    <label>(450.000): Enterprise Analytics</label>
+                </value>
+                <value>
+                    <fullName>(451.000): Big Data</fullName>
+                    <default>false</default>
+                    <label>(451.000): Big Data</label>
+                </value>
+                <value>
+                    <fullName>(454.000): Mobile Analytics</fullName>
+                    <default>false</default>
+                    <label>(454.000): Mobile Analytics</label>
+                </value>
+                <value>
+                    <fullName>(455.000): Mobile Productivity</fullName>
+                    <default>false</default>
+                    <label>(455.000): Mobile Productivity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Cost_of_Ownership__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was Total Cost of Ownership a significant factor in the customer&apos;s final decision?</inlineHelpText>
+        <label>TCO Impact</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>View__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp; Id, &quot;View&quot;, &quot;_Parent&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>View</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Winner_Actions__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What did the winner do to outperform the competition in the presentation, POC, or Demonstration of the product?</inlineHelpText>
+        <label>Presentation Overview/Winner Actions</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>Competition Analysis</label>
+    <nameField>
+        <label>Competition Analysis Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Competition Analyses</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
