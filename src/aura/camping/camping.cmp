@@ -3,6 +3,8 @@
  -->
 
 <aura:component description="camping">
+<!--test-->
     <c:campingHeader/>
+
     <c:campingList/>
 </aura:component>
