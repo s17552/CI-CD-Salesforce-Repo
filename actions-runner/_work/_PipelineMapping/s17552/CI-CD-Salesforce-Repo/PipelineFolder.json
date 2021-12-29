@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "s17552/CI-CD-Salesforce-Repo",
+  "pipelineDirectory": "CI-CD-Salesforce-Repo",
+  "workspaceDirectory": "CI-CD-Salesforce-Repo/CI-CD-Salesforce-Repo",
+  "repositories": {
+    "s17552/CI-CD-Salesforce-Repo": {
+      "repositoryPath": "CI-CD-Salesforce-Repo/CI-CD-Salesforce-Repo",
+      "lastRunOn": "12/29/2021 18:13:03 +01:00"
+    }
+  },
+  "lastRunOn": "12/29/2021 19:00:04 +01:00"
+}
