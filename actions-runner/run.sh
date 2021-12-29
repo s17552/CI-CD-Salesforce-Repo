@@ -1,5 +1,36 @@
 #!/bin/bash
 
+npm --version
+node --version
+
+#sudo rm -rf /usr/local/sfdx
+#sudo rm -rf /usr/local/lib/sfdx
+#sudo rm -rf /usr/local/bin/sfdx
+#sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
+#sudo rm -rf ~/Library/Caches/sfdx
+#sudo rm -rf /usr/local/sf
+#sudo rm -rf /usr/local/bin/sf
+#sudo npm cache clean -f
+#sudo npm install -g n --save
+#sudo n 16.13.1
+#echo "Node Version"
+#node --version
+
+#sfdx update
+#sfdx --version
+
+#sfdx plugins:uninstall sfdx-git-delta
+
+npm install sfdx-cli --global --save
+echo "sfdx Version"
+sfdx --version
+
+echo "Installing delta"
+sudo sfdx plugins:install sfdx-git-delta@latest -g --save
+echo "Installed delta"
+
+sfdx sgd:source:delta --help
+
 # Validate not sudo
 user_id=`id -u`
 if [ $user_id -eq 0 -a -z "$RUNNER_ALLOW_RUNASROOT" ]; then
