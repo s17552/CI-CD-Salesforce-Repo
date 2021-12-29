@@ -1,40 +1,46 @@
 #!/bin/bash
 
-npm --version
-node --version
+if [ true ]; then
+    echo "Installing Everything"
+    npm --version
+    node --version
 
-#sudo rm -rf /usr/local/sfdx
-#sudo rm -rf /usr/local/lib/sfdx
-#sudo rm -rf /usr/local/bin/sfdx
-#sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
-#sudo rm -rf ~/Library/Caches/sfdx
-#sudo rm -rf /usr/local/sf
-#sudo rm -rf /usr/local/bin/sf
-#sudo npm cache clean -f
-#sudo npm install -g n --save
-#sudo n 16.13.1
-#echo "Node Version"
-#node --version
-
-#sfdx update
-#sfdx --version
-
-#sfdx plugins:uninstall sfdx-git-delta
+    #CLEANUP
+    #sudo rm -rf /usr/local/sfdx
+    #sudo rm -rf /usr/local/lib/sfdx
+    #sudo rm -rf /usr/local/bin/sfdx
+    #sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
+    #sudo rm -rf ~/Library/Caches/sfdx
+    #sudo rm -rf /usr/local/sf
+    #sudo rm -rf /usr/local/bin/sf
 
 
+    echo "Node Version"
+    node --version
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install wget
+#    sudo npm cache clean -f
+#    sudo npm install -g n --save
+#    sudo n 16.13.1
 
+    echo "installing sfdx"
+    sudo npm install sfdx-cli --global --save
+    sfdx --version
 
+    #sfdx update
+    #sfdx --version
 
-npm install sfdx-cli --global --save
-echo "sfdx Version"
-sfdx --version
+    #sfdx plugins:uninstall sfdx-git-delta
 
-echo "Installing delta"
-sudo sfdx plugins:install sfdx-git-delta@latest -g --save
-echo "Installed delta"
+    echo "installing brew"
+    sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+    echo "installing wget"
+    sudo brew install wget
+
+    echo "Installing delta"
+    sudo sfdx plugins:install sfdx-git-delta@latest -g --save
+    echo "Installed delta"
+fi
 
 sfdx sgd:source:delta --help
 
