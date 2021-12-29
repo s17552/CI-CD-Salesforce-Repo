@@ -20,10 +20,20 @@ jobs:
           sfdx-auth-url: 'force://PlatformCLI::5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMPNvzMFvDOHp_9BQKj8onBn8QD_946Sj34s0OSO@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
       - name: 'Prepare Deployment Package'
         run: |
+          sudo rm -rf /usr/local/sfdx
+          sudo rm -rf /usr/local/lib/sfdx
+          sudo rm -rf /usr/local/bin/sfdx
+          sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
+          sudo rm -rf ~/Library/Caches/sfdx
+          sudo rm -rf /usr/local/sf
+          sudo rm -rf /usr/local/bin/sf
           sudo npm cache clean -f
           sudo npm install -g n
           sudo n 16.13.1
           
+          node --version
+          
+          npm install sfdx-cli --global
           sfdx --version
           sfdx update
           sfdx --version
