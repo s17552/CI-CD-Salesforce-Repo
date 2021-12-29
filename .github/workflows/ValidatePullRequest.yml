@@ -42,7 +42,7 @@ jobs:
           sudo n 16.13.1
           
           echo "installing sfdx"
-          sudo npm install sfdx-cli --global
+          sudo npm install sfdx-cli --global -force
           sfdx --version
           
           echo "installing brew"
