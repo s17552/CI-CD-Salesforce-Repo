@@ -46,7 +46,7 @@ jobs:
           git fetch --all
           git checkout -b pr
           git --no-pager diff --name-status pr origin/staging
-          sfdx sgd:source:delta --to pr --from origin/staging --repo . --output .
+          sfdx delta --to pr --from origin/staging --repo . --output .
           cat package/package.xml
 
       - name: 'Convert Metadata'
