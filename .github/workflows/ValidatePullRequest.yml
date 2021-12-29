@@ -28,7 +28,7 @@ jobs:
           sfdx update
           sfdx --version
           
-          sfdx plugins:uninstall sfdx-git-delta
+          #sfdx plugins:uninstall sfdx-git-delta
           sudo npm install sfdx-cli --global
           #printf y | sudo sfdx plugins:install sfdx-git-delta
 
