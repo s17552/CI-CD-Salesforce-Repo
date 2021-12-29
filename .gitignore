@@ -9,8 +9,8 @@ package-lock.json
 .sfdx/
 .localdevserver/
 deploy-options.json
-actions-runner/_diag
-actions-runner/_work
+actions-runner/_diag/
+actions-runner/_work/
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json

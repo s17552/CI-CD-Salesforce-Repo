@@ -2,43 +2,43 @@
 
 if [ true ]; then
     echo "Installing Everything"
+    echo "npm Version"
     npm --version
-    node --version
-
-    #CLEANUP
-    #sudo rm -rf /usr/local/sfdx
-    #sudo rm -rf /usr/local/lib/sfdx
-    #sudo rm -rf /usr/local/bin/sfdx
-    #sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
-    #sudo rm -rf ~/Library/Caches/sfdx
-    #sudo rm -rf /usr/local/sf
-    #sudo rm -rf /usr/local/bin/sf
-
-
     echo "Node Version"
     node --version
+
+#    CLEANUP
+
+#    sudo rm -rf /usr/local/sfdx
+#    sudo rm -rf /usr/local/lib/sfdx
+#    sudo rm -rf /usr/local/bin/sfdx
+#    sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
+#    sudo rm -rf ~/Library/Caches/sfdx
+#    sudo rm -rf /usr/local/sf
+#    sudo rm -rf /usr/local/bin/sf
 
 #    sudo npm cache clean -f
 #    sudo npm install -g n --save
 #    sudo n 16.13.1
 
     echo "installing sfdx"
-    sudo npm install sfdx-cli --global --save
-    sfdx --version
+#    sudo npm install sfdx-cli --global
+#    sfdx --version
 
     #sfdx update
     #sfdx --version
 
-    #sfdx plugins:uninstall sfdx-git-delta
 
     echo "installing brew"
-    sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#    sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
     echo "installing wget"
-    sudo brew install wget
+#    sudo brew install wget
 
     echo "Installing delta"
-    sudo sfdx plugins:install sfdx-git-delta@latest -g --save
+    #UNINSTALL
+    #sfdx plugins:uninstall sfdx-git-delta
+#    sudo sfdx plugins:install sfdx-git-delta
     echo "Installed delta"
 fi
 
