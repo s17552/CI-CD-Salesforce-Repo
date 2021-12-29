@@ -20,6 +20,7 @@ jobs:
           sfdx-auth-url: 'force://PlatformCLI::5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMPNvzMFvDOHp_9BQKj8onBn8QD_946Sj34s0OSO@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
       - name: 'Install Required Plugins'
         run: |
+          npm install -g npm@latest
           #sudo npm install sfdx-git-delta@latest -g
           printf y | sudo sfdx plugins:install sfdx-git-delta
 
