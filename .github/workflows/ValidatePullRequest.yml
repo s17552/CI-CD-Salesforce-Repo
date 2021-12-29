@@ -46,7 +46,12 @@ jobs:
           sfdx --version
           
           echo "installing brew"
-          sudo ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+          
+          url_sh = 'https://raw.githubusercontent.com/Homebrew/install/master/install.sh'
+          node.default['homebrew']['installer']['url'] = url_sh
+          include_recipe 'homebrew'
+
+#          sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
           
           echo "installing wget"
           sudo brew install wget
