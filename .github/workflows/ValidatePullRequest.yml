@@ -27,9 +27,10 @@ jobs:
           sfdx --version
           sfdx update
           sfdx --version
+          
+          sfdx plugins:uninstall sfdx-git-delta
           sudo npm install sfdx-cli --global
           #printf y | sudo sfdx plugins:install sfdx-git-delta
-          sfdx plugins:uninstall sfdx-git-delta
 
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
           git fetch --all
