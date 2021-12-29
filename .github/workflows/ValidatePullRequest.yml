@@ -27,8 +27,8 @@ jobs:
           sfdx --version
           sfdx update
           sfdx --version
-          
-          printf y | sudo sfdx plugins:install sfdx-git-delta
+          npm install sfdx-cli --global
+          #printf y | sudo sfdx plugins:install sfdx-git-delta
           
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
           git fetch --all
