@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 21,
+  "agentName": "WARM17935-A",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/HY3iV4nQvtWAAr69olLW8jF7KxrEvNduo4qFApwmzUIPqiYBCc",
+  "gitHubUrl": "https://github.com/s17552/CI-CD-Salesforce-Repo",
+  "workFolder": "_work"
+}
