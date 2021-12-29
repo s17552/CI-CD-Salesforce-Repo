@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Validate PR
+
+on:
+  pull_request:
+    branches: [ staging ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: sfdx-actions/setup-sfdx@v1
+        with:
+          #sfdx-auth-url: 'force://5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMNPvYWM5Yjba_0MCnunPkyuIwBMN01QT_eT50BW@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
+          sfdx-auth-url: 'force://3MVG96_7YM2sI9wTu41QWA_.oE4qEXLDogwf6vb7eLdIYTJyVRqRbZLv8ohePFpkijBCRiuEvfg==:B14346BA427E9BA0A2C248EA56F32A82299750E31FC2CB3C735C374C9B6EB279:5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMPm3PnIw5nYXZVGXu57WFW8YNNA.3cBb0_L3gvm@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
+      - name: 'Install App And Create Delta'
+        run: |
+          sudo nmp install sfdx-git-delta@latest -g
+          git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+          git fetch --all
+          git checkout-b pr
+          git --no-pager diff --name-status pr origin/staging
+          sfdx sgd:source:delta --to pr --from origin/staging --repo . --output .
+          cat package/package.xml
+
+      - name: 'Convert Metadata'
+        run: sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
+      - name: 'Run Test on Metadata'
+        run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
