@@ -24,6 +24,10 @@ jobs:
           sudo npm install -g n
           sudo n 16.13.1
           
+          sfdx --version
+          sfdx update
+          sfdx --version
+          
           printf y | sudo sfdx plugins:install sfdx-git-delta
           
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
