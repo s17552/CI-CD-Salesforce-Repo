@@ -21,6 +21,13 @@ node --version
 
 #sfdx plugins:uninstall sfdx-git-delta
 
+
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install wget
+
+
+
 npm install sfdx-cli --global --save
 echo "sfdx Version"
 sfdx --version
