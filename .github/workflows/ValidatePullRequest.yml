@@ -21,15 +21,18 @@ jobs:
           sfdx-auth-url: 'force://PlatformCLI::5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMPNvzMFvDOHp_9BQKj8onBn8QD_946Sj34s0OSO@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
       - name: 'Prepare Deployment Package'
         run: |
+          echo "Setting up git env"
+          git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+          git fetch --all
+          git checkout -b pr
+          git --no-pager diff --name-status pr origin/staging
           
-          echo "Installing Everything"
-          echo "npm Version"
+          echo "NPM Version"
           npm --version
           echo "Node Version"
           node --version
           
           #CLEANUP
-          
           sudo rm -rf /usr/local/sfdx
           sudo rm -rf /usr/local/lib/sfdx
           sudo rm -rf /usr/local/bin/sfdx
@@ -38,43 +41,39 @@ jobs:
           sudo rm -rf /usr/local/sf
           sudo rm -rf /usr/local/bin/sf
           
-          echo "installing npm"
+          echo "Installing npm"
           sudo npm cache clean -f
           sudo npm install -g n --save
           sudo n 16.13.1
           
-          #echo "sfdx update"
+          #echo "Sfdx update"
           #sfdx update
 
-          #echo "sfdx version"
+          #echo "Sfdx version"
           #sfdx --version
 
-          echo "installing sfdx"
+          echo "Installing sfdx"
           sudo npm install sfdx-cli --global
           sfdx --version
           
-          echo "installing brew"
+          echo "Installing brew"
           #url_sh = 'https://raw.githubusercontent.com/Homebrew/install/master/install.sh'
           #node.default['homebrew']['installer']['url'] = url_sh
           #include_recipe 'homebrew'
 
           #sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
           
-          echo "installing wget"
+          echo "Installing wget"
           #sudo brew install wget
           
           echo "Installing delta"
           #UNINSTALL
           #sfdx plugins:uninstall sfdx-git-delta
           printf "y" | sudo sfdx plugins:install sfdx-git-delta
-          
           echo "Installed delta"  
           
+          sfdx sgd:source:delta
           
-          git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
-          git fetch --all
-          git checkout -b pr
-          git --no-pager diff --name-status pr origin/staging
           sfdx sgd:source:delta --to pr --from origin/staging --repo . --output . 
           cat package/package.xml
 
