@@ -63,7 +63,7 @@ jobs:
           echo "Installing delta"
           #UNINSTALL
           #sfdx plugins:uninstall sfdx-git-delta
-          sudo sfdx plugins:install sfdx-git-delta
+          y | sudo sfdx plugins:install sfdx-git-delta
           echo "Installed delta"  
           
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
