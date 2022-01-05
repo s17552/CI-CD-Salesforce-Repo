@@ -28,7 +28,7 @@ jobs:
           echo "Node Version"
           node --version
           
-          #    CLEANUP
+          #CLEANUP
           
           #    sudo rm -rf /usr/local/sfdx
           #    sudo rm -rf /usr/local/lib/sfdx
