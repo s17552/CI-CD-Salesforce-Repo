@@ -46,10 +46,9 @@ jobs:
           echo "sfdx version"
           sfdx --version
 
-#          echo "installing sfdx"
-#          sudo npm install sfdx-cli --global
-#          sfdx --version
-          
+          #echo "installing sfdx"
+          #sudo npm install sfdx-cli --global
+          #sfdx --version
           
           echo "installing brew"
           url_sh = 'https://raw.githubusercontent.com/Homebrew/install/master/install.sh'
