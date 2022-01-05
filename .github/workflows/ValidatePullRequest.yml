@@ -30,28 +30,28 @@ jobs:
           
           #CLEANUP
           
-          #    sudo rm -rf /usr/local/sfdx
-          #    sudo rm -rf /usr/local/lib/sfdx
-          #    sudo rm -rf /usr/local/bin/sfdx
-          #    sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
-          #    sudo rm -rf ~/Library/Caches/sfdx
-          #    sudo rm -rf /usr/local/sf
-          #    sudo rm -rf /usr/local/bin/sf
+          sudo rm -rf /usr/local/sfdx
+          sudo rm -rf /usr/local/lib/sfdx
+          sudo rm -rf /usr/local/bin/sfdx
+          sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
+          sudo rm -rf ~/Library/Caches/sfdx
+          sudo rm -rf /usr/local/sf
+          sudo rm -rf /usr/local/bin/sf
           
           echo "installing npm"
           sudo npm cache clean -f
           sudo npm install -g n --save
           sudo n 16.13.1
           
-          echo "sfdx update"
-          sfdx update
+          #echo "sfdx update"
+          #sfdx update
 
-          echo "sfdx version"
-          sfdx --version
-
-          #echo "installing sfdx"
-          #sudo npm install sfdx-cli --global
+          #echo "sfdx version"
           #sfdx --version
+
+          echo "installing sfdx"
+          sudo npm install sfdx-cli --global
+          sfdx --version
           
           echo "installing brew"
           #url_sh = 'https://raw.githubusercontent.com/Homebrew/install/master/install.sh'
