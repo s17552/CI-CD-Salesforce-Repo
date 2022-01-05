@@ -43,6 +43,9 @@ jobs:
           sudo npm install -g n --save
           sudo n 16.13.1
           
+          echo "sfdx update"
+          sfdx update
+
           echo "sfdx version"
           sfdx --version
 
