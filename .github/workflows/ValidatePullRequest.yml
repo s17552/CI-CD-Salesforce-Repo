@@ -46,6 +46,7 @@ jobs:
           sudo npm install sfdx-cli --global -force
           sfdx --version
           
+          
           echo "installing brew"
           url_sh = 'https://raw.githubusercontent.com/Homebrew/install/master/install.sh'
           node.default['homebrew']['installer']['url'] = url_sh
