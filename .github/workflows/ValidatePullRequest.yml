@@ -38,12 +38,16 @@ jobs:
           #    sudo rm -rf /usr/local/sf
           #    sudo rm -rf /usr/local/bin/sf
           
+          echo "installing npm"
           sudo npm cache clean -f
           sudo npm install -g n --save
           sudo n 16.13.1
           
+          echo "sfdx version"
+          sfdx --version
+
           echo "installing sfdx"
-          sudo npm install sfdx-cli --global -force
+          sudo npm install sfdx-cli --global
           sfdx --version
           
           
