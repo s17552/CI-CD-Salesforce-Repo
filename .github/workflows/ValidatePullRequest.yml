@@ -64,7 +64,10 @@ jobs:
           #UNINSTALL
           #sfdx plugins:uninstall sfdx-git-delta
           y | sudo sfdx plugins:install sfdx-git-delta
+          
+          wait 10
           echo "Installed delta"  
+          
           
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
           git fetch --all
