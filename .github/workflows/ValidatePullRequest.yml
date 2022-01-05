@@ -68,7 +68,6 @@ jobs:
           #sfdx plugins:uninstall sfdx-git-delta
           printf "y" | sudo sfdx plugins:install sfdx-git-delta
           
-          wait 10
           echo "Installed delta"  
           
           
