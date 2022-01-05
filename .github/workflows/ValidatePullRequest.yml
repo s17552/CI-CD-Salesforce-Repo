@@ -11,7 +11,8 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - uses: sfdx-actions/setup-sfdx@v1
@@ -20,6 +21,51 @@ jobs:
           sfdx-auth-url: 'force://PlatformCLI::5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMPNvzMFvDOHp_9BQKj8onBn8QD_946Sj34s0OSO@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
       - name: 'Prepare Deployment Package'
         run: |
+          
+          echo "Installing Everything"
+          echo "npm Version"
+          npm --version
+          echo "Node Version"
+          node --version
+          
+          #    CLEANUP
+          
+          #    sudo rm -rf /usr/local/sfdx
+          #    sudo rm -rf /usr/local/lib/sfdx
+          #    sudo rm -rf /usr/local/bin/sfdx
+          #    sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
+          #    sudo rm -rf ~/Library/Caches/sfdx
+          #    sudo rm -rf /usr/local/sf
+          #    sudo rm -rf /usr/local/bin/sf
+          
+          echo "installing npm"
+          sudo npm cache clean -f
+          sudo npm install -g n --save
+          sudo n 16.13.1
+          
+          echo "sfdx version"
+          sfdx --version
+
+          #echo "installing sfdx"
+          #sudo npm install sfdx-cli --global
+          #sfdx --version
+          
+          echo "installing brew"
+          #url_sh = 'https://raw.githubusercontent.com/Homebrew/install/master/install.sh'
+          #node.default['homebrew']['installer']['url'] = url_sh
+          #include_recipe 'homebrew'
+
+          #sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+          
+          echo "installing wget"
+          #sudo brew install wget
+          
+          echo "Installing delta"
+          #UNINSTALL
+          #sfdx plugins:uninstall sfdx-git-delta
+          sudo sfdx plugins:install sfdx-git-delta
+          echo "Installed delta"  
+          
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
           git fetch --all
           git checkout -b pr
