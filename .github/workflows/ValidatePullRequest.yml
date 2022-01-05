@@ -63,7 +63,7 @@ jobs:
           echo "Installing delta"
           #UNINSTALL
           #sfdx plugins:uninstall sfdx-git-delta
-          y | sudo sfdx plugins:install sfdx-git-delta
+          printf "y" | sudo sfdx plugins:install sfdx-git-delta
           
           wait 10
           echo "Installed delta"  
