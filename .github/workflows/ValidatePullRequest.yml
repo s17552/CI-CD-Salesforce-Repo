@@ -72,6 +72,8 @@ jobs:
           printf "y" | sudo sfdx plugins:install sfdx-git-delta
           echo "Installed delta"  
           
+          which sfdx
+          
           sfdx sgd:source:delta
           
           sfdx sgd:source:delta --to pr --from origin/staging --repo . --output . 
