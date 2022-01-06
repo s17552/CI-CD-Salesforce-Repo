@@ -20,15 +20,15 @@ jobs:
           sfdx-auth-url: ${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}
       - name: 'Install Required Updates'
         run: |
-          echo "NPM Version"
+          echo "npm version"
           npm --version
-          echo "Node Version"
+          echo "node version"
           node --version
           
-          echo "Sfdx update"
+          echo "sfdx update"
           sfdx update
 
-          echo "Sfdx version"
+          echo "sfdx version"
           sfdx --version
 
           #echo "Installing sfdx"
@@ -38,8 +38,8 @@ jobs:
           #Uninstall SFDX
           #sfdx plugins:uninstall sfdx-git-delta
           
+          echo "Installing delta"  
           echo y | sfdx plugins:install sfdx-git-delta
-          echo "Installed delta"  
 
       - name: 'Setting up git env'
         run: |
