@@ -82,8 +82,15 @@ jobs:
           cat package/package.xml
 
       - name: 'Convert Metadata'
-        run: sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
+        run: |
+          sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
       - name: 'Run Test on Metadata'
         #run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
         #NoTestRun, RunLocalTests, RunAllTestsInOrg
-        run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+        run: |
+          cd ./convert
+          ls -all
+          cat package.xml
+          cd ..
+          #sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+          sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun -w30
