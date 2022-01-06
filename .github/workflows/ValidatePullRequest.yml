@@ -19,13 +19,15 @@ jobs:
         with:
           #sfdx-auth-url: 'force://5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMNPvYWM5Yjba_0MCnunPkyuIwBMN01QT_eT50BW@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
           sfdx-auth-url: 'force://PlatformCLI::5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMPNvzMFvDOHp_9BQKj8onBn8QD_946Sj34s0OSO@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
-      - name: 'Prepare Deployment Package'
+      - name: 'Setting up git env'
         run: |
-          echo "Setting up git env"
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
           git fetch --all
           git checkout -b pr
           git --no-pager diff --name-status pr origin/staging
+
+      - name: 'Install Required Updates'
+        run: |
           
           echo "NPM Version"
           npm --version
@@ -33,28 +35,28 @@ jobs:
           node --version
           
           #CLEANUP
-          sudo rm -rf /usr/local/sfdx
-          sudo rm -rf /usr/local/lib/sfdx
-          sudo rm -rf /usr/local/bin/sfdx
-          sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
-          sudo rm -rf ~/Library/Caches/sfdx
-          sudo rm -rf /usr/local/sf
-          sudo rm -rf /usr/local/bin/sf
+          #sudo rm -rf /usr/local/sfdx
+          #sudo rm -rf /usr/local/lib/sfdx
+          #sudo rm -rf /usr/local/bin/sfdx
+          #sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
+          #sudo rm -rf ~/Library/Caches/sfdx
+          #sudo rm -rf /usr/local/sf
+          #sudo rm -rf /usr/local/bin/sf
           
           echo "Installing npm"
           sudo npm cache clean -f
           sudo npm install -g n --save
           sudo n 16.13.1
           
-          #echo "Sfdx update"
-          #sfdx update
+          echo "Sfdx update"
+          sfdx update
 
-          #echo "Sfdx version"
-          #sfdx --version
-
-          echo "Installing sfdx"
-          sudo npm install sfdx-cli --global
+          echo "Sfdx version"
           sfdx --version
+
+          #echo "Installing sfdx"
+          #sudo npm install sfdx-cli --global
+          #sfdx --version
           
           echo "Installing brew"
           #url_sh = 'https://raw.githubusercontent.com/Homebrew/install/master/install.sh'
@@ -68,7 +70,7 @@ jobs:
           
           echo "Installing delta"
           
-          #UNINSTALL
+          #Uninstall SFDX
           #sfdx plugins:uninstall sfdx-git-delta
           
           echo y | sfdx plugins:install sfdx-git-delta
@@ -77,10 +79,12 @@ jobs:
           which sfdx
           
           #sfdx sgd:source:delta
-          
-          sfdx sgd:source:delta --to pr --from origin/staging --repo . --output . 
-          cat package/package.xml
 
+      - name: 'Generate Deployment Packages'
+        run: |
+          sfdx sgd:source:delta --to pr --from origin/staging --repo . --output . 
+          echo "package/package.xml"
+          cat package/package.xml
       - name: 'Convert Metadata'
         run: |
           sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
@@ -90,7 +94,7 @@ jobs:
         run: |
           cd ./convert
           ls -all
+          echo "Convert Package JSON for Deployment"
           cat package.xml
           cd ..
-          #sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
-          sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun -w30
+          sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
