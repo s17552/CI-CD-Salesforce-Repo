@@ -18,13 +18,6 @@ jobs:
       - uses: sfdx-actions/setup-sfdx@v1
         with:
           sfdx-auth-url: ${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}
-      - name: 'Setting up git env'
-        run: |
-          git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
-          git fetch --all
-          git checkout -b pr
-          git --no-pager diff --name-status pr origin/staging
-
       - name: 'Install Required Updates'
         run: |
           echo "NPM Version"
@@ -47,11 +40,13 @@ jobs:
           
           echo y | sfdx plugins:install sfdx-git-delta
           echo "Installed delta"  
-          
-          which sfdx
-          
-          #sfdx sgd:source:delta
 
+      - name: 'Setting up git env'
+        run: |
+          git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+          git fetch --all
+          git checkout -b pr
+          git --no-pager diff --name-status pr origin/staging
       - name: 'Generate Deployment Packages'
         run: |
           sfdx sgd:source:delta --to pr --from origin/staging --repo . --output . 
