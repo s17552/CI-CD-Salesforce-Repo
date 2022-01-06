@@ -2,7 +2,15 @@
 # If you are not using git, you can delete this file. For more information see: https://git-scm.com/docs/gitignore
 # For useful gitignore templates see: https://github.com/github/gitignore
 authFile.json
-package-lock.json
+.idea/
+.idea/*
+
+
+#sfdx delta plugin directories
+package/
+destructiveChanges/
+
+.husky/
 
 # Salesforce cache
 .sf/
@@ -40,6 +48,38 @@ $RECYCLE.BIN/
 .env
 
 # Added by Illuminated Cloud
-/IlluminatedCloud/
-/out/
+IlluminatedCloud/
+out/
 target/
+
+
+.idea
+IlluminatedCloud
+
+### macOS template
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
