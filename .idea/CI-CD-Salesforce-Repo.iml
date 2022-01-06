@@ -24,9 +24,13 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/.husky" />
+      <excludeFolder url="file://$MODULE_DIR$/.sfdx" />
+      <excludeFolder url="file://$MODULE_DIR$/destructiveChanges" />
+      <excludeFolder url="file://$MODULE_DIR$/IlluminatedCloud" />
+      <excludeFolder url="file://$MODULE_DIR$/package" />
     </content>
     <orderEntry type="jdk" jdkName="IlluminatedCloud (CI-CD-Salesforce-Repo/DevPlayground)" jdkType="IlluminatedCloud" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="actions-runner" />
   </component>
 </module>

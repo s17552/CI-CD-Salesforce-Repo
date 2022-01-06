@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CI-CD-Salesforce-Repo.iml" filepath="$PROJECT_DIR$/.idea/CI-CD-Salesforce-Repo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../actions-runner/.idea/actions-runner.iml" filepath="$PROJECT_DIR$/../actions-runner/.idea/actions-runner.iml" />
     </modules>
   </component>
 </project>
