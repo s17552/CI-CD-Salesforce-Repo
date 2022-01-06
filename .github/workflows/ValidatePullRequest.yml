@@ -88,5 +88,7 @@ jobs:
         #run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
         #NoTestRun, RunLocalTests, RunAllTestsInOrg
         run: |
+          cd ./convert
           ls -all
+          cd ..
           sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
