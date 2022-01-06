@@ -97,4 +97,5 @@ jobs:
           echo "Convert Package JSON for Deployment"
           cat package.xml
           cd ..
-          sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+          #sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+          sfdx force:source:deploy -p "./convert" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
