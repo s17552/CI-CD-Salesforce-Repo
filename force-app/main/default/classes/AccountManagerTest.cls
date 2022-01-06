@@ -7,7 +7,7 @@ private class AccountManagerTest {
     @IsTest
     static void test(){
 
-        Account a = new Account(Name = 'Test');
+        Account a = new Account(Name = 'Test',Phone = '+489888888');
         insert a;
         insert new Contact(LastName = 'TEST1', AccountId = a.Id);
         insert new Contact(LastName = 'TEST2', AccountId = a.Id);

@@ -19,63 +19,85 @@ jobs:
         with:
           #sfdx-auth-url: 'force://5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMNPvYWM5Yjba_0MCnunPkyuIwBMN01QT_eT50BW@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
           sfdx-auth-url: 'force://PlatformCLI::5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMPNvzMFvDOHp_9BQKj8onBn8QD_946Sj34s0OSO@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
-      - name: 'Prepare Deployment Package'
+      - name: 'Setting up git env'
+        run: |
+          git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+          git fetch --all
+          git checkout -b pr
+          git --no-pager diff --name-status pr origin/staging
+
+      - name: 'Install Required Updates'
         run: |
           
-          echo "Installing Everything"
-          echo "npm Version"
+          echo "NPM Version"
           npm --version
           echo "Node Version"
           node --version
           
-          #    CLEANUP
+          #CLEANUP
+          #sudo rm -rf /usr/local/sfdx
+          #sudo rm -rf /usr/local/lib/sfdx
+          #sudo rm -rf /usr/local/bin/sfdx
+          #sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
+          #sudo rm -rf ~/Library/Caches/sfdx
+          #sudo rm -rf /usr/local/sf
+          #sudo rm -rf /usr/local/bin/sf
           
-          #    sudo rm -rf /usr/local/sfdx
-          #    sudo rm -rf /usr/local/lib/sfdx
-          #    sudo rm -rf /usr/local/bin/sfdx
-          #    sudo rm -rf ~/.local/share/sfdx ~/.config/sfdx ~/.cache/sfdx
-          #    sudo rm -rf ~/Library/Caches/sfdx
-          #    sudo rm -rf /usr/local/sf
-          #    sudo rm -rf /usr/local/bin/sf
-          
-          echo "installing npm"
+          echo "Installing npm"
           sudo npm cache clean -f
           sudo npm install -g n --save
           sudo n 16.13.1
           
-          echo "sfdx version"
+          echo "Sfdx update"
+          sfdx update
+
+          echo "Sfdx version"
           sfdx --version
 
-          #echo "installing sfdx"
+          #echo "Installing sfdx"
           #sudo npm install sfdx-cli --global
           #sfdx --version
           
-          echo "installing brew"
+          echo "Installing brew"
           #url_sh = 'https://raw.githubusercontent.com/Homebrew/install/master/install.sh'
           #node.default['homebrew']['installer']['url'] = url_sh
           #include_recipe 'homebrew'
 
           #sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
           
-          echo "installing wget"
+          echo "Installing wget"
           #sudo brew install wget
           
           echo "Installing delta"
-          #UNINSTALL
+          
+          #Uninstall SFDX
           #sfdx plugins:uninstall sfdx-git-delta
-          sudo sfdx plugins:install sfdx-git-delta
+          
+          echo y | sfdx plugins:install sfdx-git-delta
           echo "Installed delta"  
           
-          git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
-          git fetch --all
-          git checkout -b pr
-          git --no-pager diff --name-status pr origin/staging
-          sfdx sgd:source:delta --to pr --from origin/staging --repo . --output . 
-          cat package/package.xml
+          which sfdx
+          
+          #sfdx sgd:source:delta
 
+      - name: 'Generate Deployment Packages'
+        run: |
+          sfdx sgd:source:delta --to pr --from origin/staging --repo . --output . 
+          echo "package/package.xml"
+          cat package/package.xml
       - name: 'Convert Metadata'
-        run: sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
+        run: |
+          sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
       - name: 'Run Test on Metadata'
         #run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
         #NoTestRun, RunLocalTests, RunAllTestsInOrg
-        run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+        run: |
+          cd ./convert
+          #ls -all
+          echo "Convert Package JSON for Deployment"
+          cat package.xml
+          cd ..
+          #sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+          #https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
+          #-c for checkonly
+          sfdx force:source:deploy -c -p "./convert" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
