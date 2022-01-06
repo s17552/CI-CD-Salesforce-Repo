@@ -7,10 +7,6 @@ package-lock.json
 # Salesforce cache
 .sf/
 .sfdx/
-.localdevserver/
-deploy-options.json
-actions-runner/_diag/
-actions-runner/_work/
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
