@@ -92,4 +92,5 @@ jobs:
           ls -all
           cat package.xml
           cd ..
-          sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+          #sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+          sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun -w30
