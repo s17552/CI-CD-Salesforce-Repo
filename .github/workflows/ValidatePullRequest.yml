@@ -93,9 +93,11 @@ jobs:
         #NoTestRun, RunLocalTests, RunAllTestsInOrg
         run: |
           cd ./convert
-          ls -all
+          #ls -all
           echo "Convert Package JSON for Deployment"
           cat package.xml
           cd ..
           #sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
-          sfdx force:source:deploy -p "./convert" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
+          #https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
+          #-c for checkonly
+          sfdx force:source:deploy -c -p "./convert" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
