@@ -17,8 +17,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: sfdx-actions/setup-sfdx@v1
         with:
-          #sfdx-auth-url: 'force://5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMNPvYWM5Yjba_0MCnunPkyuIwBMN01QT_eT50BW@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
-          sfdx-auth-url: 'force://PlatformCLI::5Aep861F1.ndOFuBX2SsXAMVut_px87diQZF7oNPGYJqQJwyMPNvzMFvDOHp_9BQKj8onBn8QD_946Sj34s0OSO@yaroslav-chuiev-test-dev-ed.my.salesforce.com'
+          sfdx-auth-url: ${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}
       - name: 'Setting up git env'
         run: |
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
