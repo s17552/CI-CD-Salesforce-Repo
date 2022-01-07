@@ -39,7 +39,7 @@ public class BotTest {
     }
 
     static testMethod void testFindAccount() {
-		Account a = new Account(Name='TestAccount');
+		Account a = new Account(Name='TestAccount', Phone = '+4899999999');
 		insert a;
         BotHandler handler = new HandlerFindAccount();
         BotResponse response = handler.handle('', new String[]{'Test'}, null, null, null);
