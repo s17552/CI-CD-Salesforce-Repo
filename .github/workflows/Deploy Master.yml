@@ -44,21 +44,21 @@ jobs:
             echo "Validation"
           fi
 
-          endpointAuth = ""
+          endpoint = ""
           if [ "${{ github.event.inputs.target-env }}" == "Production" ]; then
 
             echo "Production"
-            endpointAuth = "${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}"
+            endpoint = "${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}"
           
           elif [ "${{ github.event.inputs.target-env }}" == "Sandbox" ]; then
   
             echo "Sandbox"
-            endpointAuth = "${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}"
+            endpoint = "${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}"
           else
             echo "No Endpoint found"
           fi
-          echo $endpointAuth
-          echo "ENDPOINT_ENV_AUTH=$endpointAuth" >> $GITHUB_ENV
+          echo $endpoint
+          echo "ENDPOINT_ENV_AUTH=$endpoint" >> $GITHUB_ENV
 
       - name: Test
         run: echo $ENDPOINT_ENV_AUTH
