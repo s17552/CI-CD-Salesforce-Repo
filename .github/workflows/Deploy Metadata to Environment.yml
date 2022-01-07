@@ -72,12 +72,12 @@ jobs:
           echo "sfdx version"
           sfdx --version
 
-#          echo "Installing sfdx"
-#          sudo npm install sfdx-cli --global
-#          sfdx --version
+          #echo "Installing sfdx"
+          #sudo npm install sfdx-cli --global
+          #sfdx --version
           
-#          Uninstall SFDX
-#          sfdx plugins:uninstall sfdx-git-delta
+          #Uninstall SFDX
+          #sfdx plugins:uninstall sfdx-git-delta
           
           echo "Installing delta"  
           echo y | sfdx plugins:install sfdx-git-delta
@@ -88,34 +88,23 @@ jobs:
           git fetch --all
           git checkout -b deployment_branch
 
-#          git --no-pager diff --name-status origin/master
-
-#      - name: Generate Deployment Packages
-#        run: |
-#          sfdx sgd:source:delta --from origin/master --repo . --output .
-#          echo "package/package.xml"
-#          cat package/package.xml
-
-#      - name: Convert Metadata
-#        run: |
-#          sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
+          #git --no-pager diff --name-status origin/master
 
       - name: Run Test on Metadata
-#        run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
-#           NoTestRun, RunLocalTests, RunAllTestsInOrg
         run: |
-#         sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
-#         https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
+          #https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
 
           if [ "${{ github.event.inputs.job-type }}" == "Deployment" ]; then
           
             echo "Job Type - Deployment"
           
           else
+          
             echo "Job Type - Validation"
-#         -c for checkonly
+            #-c for checkonly
           
           fi
+          #NoTestRun, RunLocalTests, RunAllTestsInOrg
 
-#          sfdx force:source:deploy -c -p "./force-app/main/default" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
+          #sfdx force:source:deploy -c -p "./force-app/main/default" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
           sfdx force:source:deploy -c -p force-app/main/default -l NoTestRun -w 60 --verbose --loglevel info
