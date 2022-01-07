@@ -16,7 +16,7 @@ on:
         required: true
       target-env:
         type: choice
-        description: Target Enviroment
+        description: Target Environment
         options:
           - Production
           - Sandbox
@@ -40,16 +40,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set env
+      - name: Setup Connection To Environment
         run: |
           if [ "${{ github.event.inputs.target-env }}" == "Production" ]; then
           
-            echo "Enviroment - Production"
+            echo "Environment - Production"
             echo "ENDPOINT_ENV_AUTH="${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}"" >> $GITHUB_ENV
           
           elif [ "${{ github.event.inputs.target-env }}" == "Sandbox" ]; then
           
-            echo "Enviroment - Sandbox"
+            echo "Environment - Sandbox"
             echo "ENDPOINT_ENV_AUTH="${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}"" >> $GITHUB_ENV
           else
             echo "No Endpoint found"
@@ -58,7 +58,6 @@ jobs:
       - uses: sfdx-actions/setup-sfdx@v1
         with:
           sfdx-auth-url: ${{ env.ENDPOINT_ENV_AUTH }}
-
 
       - name: Install Required Updates
         run: |
@@ -73,12 +72,12 @@ jobs:
           echo "sfdx version"
           sfdx --version
 
-          #echo "Installing sfdx"
-          #sudo npm install sfdx-cli --global
-          #sfdx --version
+#          echo "Installing sfdx"
+#          sudo npm install sfdx-cli --global
+#          sfdx --version
           
-          #Uninstall SFDX
-          #sfdx plugins:uninstall sfdx-git-delta
+#          Uninstall SFDX
+#          sfdx plugins:uninstall sfdx-git-delta
           
           echo "Installing delta"  
           echo y | sfdx plugins:install sfdx-git-delta
@@ -89,34 +88,34 @@ jobs:
           git fetch --all
           git checkout -b deployment_branch
 
-      #          git --no-pager diff --name-status origin/master
+#          git --no-pager diff --name-status origin/master
 
 #      - name: Generate Deployment Packages
 #        run: |
 #          sfdx sgd:source:delta --from origin/master --repo . --output .
 #          echo "package/package.xml"
 #          cat package/package.xml
+
 #      - name: Convert Metadata
 #        run: |
 #          sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
-      - name: Run Test on Metadata
-        #run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
-        #NoTestRun, RunLocalTests, RunAllTestsInOrg
-        run: |
 
-          #sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
-          #https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
-          
- 
+      - name: Run Test on Metadata
+#        run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
+#           NoTestRun, RunLocalTests, RunAllTestsInOrg
+        run: |
+#         sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+#         https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
+
           if [ "${{ github.event.inputs.job-type }}" == "Deployment" ]; then
           
             echo "Job Type - Deployment"
           
           else
             echo "Job Type - Validation"
-            #-c for checkonly
+#         -c for checkonly
           
           fi
 
-          #sfdx force:source:deploy -c -p "./force-app/main/default" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
-          sfdx force:source:deploy -c -p force-app/main/default -l NoTestRun -w 60 --verbose --loglevel info 
+#          sfdx force:source:deploy -c -p "./force-app/main/default" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
+          sfdx force:source:deploy -c -p force-app/main/default -l NoTestRun -w 60 --verbose --loglevel info
