@@ -27,7 +27,7 @@ on:
         options:
           - All Tests
           - No Tests
-          - Spicified tests
+          - Spicified Tests
         required: true
       tests-to-run:
         description: List of Test Classes to Run
@@ -57,48 +57,6 @@ jobs:
           else
             echo "No Endpoint found"
           fi
-          
-          
-          
-          
-          declare -a params
-
-          params=(-p force-app/main/default)
-
-          if [ "${{ github.event.inputs.job-type }}" == "Deployment" ]; then
-            echo "Job Type - Deployment"
-          else
-            echo "Job Type - Validation"
-            params=(-c ${params[@]})
-          fi
-          
-          #NoTestRun, RunLocalTests, RunAllTestsInOrg
-
-          if [ "${{ github.event.inputs.test-level }}" == "All Tests" ]; then
-            echo "Test Level - All Tests"
-            params=(${params[@]} -l RunAllTestsInOrg)
-
-          elif [ "${{ github.event.inputs.test-level }}" == "No Tests" ]; then
-          
-            echo "Test Level - No Tests"
-            params=(${params[@]} -l NoTestRun)
-
-          elif [ "${{ github.event.inputs.test-level }}" == "Spicified tests" ]; then
-            echo "Test Level - Spicified tests"
-            #-l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest
-            params=(${params[@]} -l RunSpecifiedTests -r ${{ github.event.inputs.tests-to-run }})
-          
-          else
-            echo "No Endpoint found"
-          fi
-          
-          #w 60 - wait 60 minutes till the end of deployment
-          #--verbose - Emit additional command output to stdout.
-          
-          params=(${params[@]} -w 60 --verbose --loglevel info)
-          
-          echo $params
-          echo "${params[@]}"
 
       - uses: sfdx-actions/setup-sfdx@v1
         with:
@@ -161,7 +119,7 @@ jobs:
             echo "Test Level - No Tests"
             params=(${params[@]} -l NoTestRun)
 
-          elif [ "${{ github.event.inputs.test-level }}" == "Spicified tests" ]; then
+          elif [ "${{ github.event.inputs.test-level }}" == "Spicified Tests" ]; then
             echo "Test Level - Spicified tests"
             #-l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest
             params=(${params[@]} -l RunSpecifiedTests -r ${{ github.event.inputs.tests-to-run }})
