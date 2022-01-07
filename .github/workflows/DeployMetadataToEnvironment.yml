@@ -90,7 +90,11 @@ jobs:
           git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
           git fetch --all
           git checkout -b deployment_branch
-
+          cp -r ./force-app/main/default ./deploymentPackage
+          cp -v ./manifest/package.xml ./deploymentPackage
+          cd deploymentPackage
+          ls -all
+          cd ..
           #git --no-pager diff --name-status origin/master
 
       - name: Run Test on Metadata
@@ -98,8 +102,7 @@ jobs:
           #https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
 
           declare -a params
-
-          params=(-p force-app/main/default)
+          params=(-p deploymentPackage)
 
           if [ "${{ github.event.inputs.job-type }}" == "Deployment" ]; then
             echo "Job Type - Deployment"
