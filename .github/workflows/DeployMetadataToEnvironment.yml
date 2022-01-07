@@ -18,8 +18,8 @@ on:
         type: choice
         description: Target Environment
         options:
-          - Production
           - Sandbox
+          - Production
         required: true
       test-level:
         type: choice
