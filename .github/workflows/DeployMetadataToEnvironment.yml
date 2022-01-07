@@ -69,19 +69,19 @@ jobs:
             echo "Job Type - Deployment"
           else
             echo "Job Type - Validation"
-            params+=(-c "$params")
+            params=(-c "$params")
           fi
           
           #NoTestRun, RunLocalTests, RunAllTestsInOrg
 
           if [ "${{ github.event.inputs.test-level }}" == "All Tests" ]; then
             echo "Test Level - All Tests"
-            params+=("$params" -l RunAllTestsInOrg)
+            params=("$params" -l RunAllTestsInOrg)
 
           elif [ "${{ github.event.inputs.test-level }}" == "No Tests" ]; then
           
             echo "Test Level - No Tests"
-            params+=("$params" -l NoTestRun)
+            params=("$params" -l NoTestRun)
 
           elif [ "${{ github.event.inputs.test-level }}" == "Spicified tests" ]; then
             echo "Test Level - Spicified tests"
@@ -95,7 +95,7 @@ jobs:
           #w 60 - wait 60 minutes till the end of deployment
           #--verbose - Emit additional command output to stdout.
           
-          params+=("$params" -w 60 --verbose --loglevel info)
+          params=("$params" -w 60 --verbose --loglevel info)
           
           echo $params
           echo "${params[@]}"
@@ -147,19 +147,19 @@ jobs:
             echo "Job Type - Deployment"
           else
             echo "Job Type - Validation"
-            params+=(-c "$params")
+            params=(-c "$params")
           fi
           
           #NoTestRun, RunLocalTests, RunAllTestsInOrg
 
           if [ "${{ github.event.inputs.test-level }}" == "All Tests" ]; then
             echo "Test Level - All Tests"
-            params+=("$params" -l RunAllTestsInOrg)
+            params=("$params" -l RunAllTestsInOrg)
 
           elif [ "${{ github.event.inputs.test-level }}" == "No Tests" ]; then
           
             echo "Test Level - No Tests"
-            params+=("$params" -l NoTestRun)
+            params=("$params" -l NoTestRun)
 
           elif [ "${{ github.event.inputs.test-level }}" == "Spicified tests" ]; then
             echo "Test Level - Spicified tests"
@@ -173,7 +173,7 @@ jobs:
           #w 60 - wait 60 minutes till the end of deployment
           #--verbose - Emit additional command output to stdout.
           
-          params+=("$params" -w 60 --verbose --loglevel info)
+          params=("$params" -w 60 --verbose --loglevel info)
           
           echo $params
           echo "${params[@]}"
