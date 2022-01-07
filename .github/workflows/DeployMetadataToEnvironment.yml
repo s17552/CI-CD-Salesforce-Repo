@@ -11,8 +11,8 @@ on:
         type: choice
         description: Type of Action
         options:
-          - Deployment
           - Validation
+          - Deployment
         required: true
       target-env:
         type: choice
@@ -31,7 +31,7 @@ on:
         required: true
       tests-to-run:
         description: 'List of Test Classes to Run'
-        required: true
+        required: false
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -98,7 +98,7 @@ jobs:
           #https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
 
 
-          params=(-p force-app/main/default)
+          params="-p force-app/main/default"
 
           if [ "${{ github.event.inputs.job-type }}" == "Deployment" ]; then
             echo "Job Type - Deployment"
@@ -134,6 +134,4 @@ jobs:
           
           echo $params
 
-          #sfdx force:source:deploy -c -p "./force-app/main/default" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
-          #sfdx force:source:deploy -w 60 
           sfdx force:source:deploy "${params[@]}"
