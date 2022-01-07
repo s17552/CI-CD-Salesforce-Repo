@@ -83,11 +83,13 @@ jobs:
           echo "Installing delta"  
           echo y | sfdx plugins:install sfdx-git-delta
 
-#      - name: Setting up git env
-#        run: |
-#          git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-#          git fetch --all
-#          git --no-pager diff --name-status origin/master
+      - name: Setting up git env
+        run: |
+          git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+          git fetch --all
+          git checkout -b deployment_branch
+
+      #          git --no-pager diff --name-status origin/master
 
 #      - name: Generate Deployment Packages
 #        run: |
@@ -117,4 +119,4 @@ jobs:
           fi
 
           #sfdx force:source:deploy -c -p "./force-app/main/default" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
-          sfdx force:source:deploy -c -p force-app/main/default -l NoTestRun -w 60 --verbose --loglevel info --manifest manifest/package.xml 
+          sfdx force:source:deploy -c -p force-app/main/default -l NoTestRun -w 60 --verbose --loglevel info 
