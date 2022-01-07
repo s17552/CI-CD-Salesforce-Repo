@@ -43,8 +43,7 @@ jobs:
           else
             echo "Validation"
           fi
-          
-          endpointAuth = ""
+
           if [ "${{ github.event.inputs.target-env }}" == "Production" ]; then
 
             echo "Production"
