@@ -14,17 +14,12 @@ on:
           - Deployment
           - Validation
         required: true
-
       target-env:
         type: choice
         description: Select Target
         options:
           - Production
           - Sandbox
-        required: true
-
-      source-branch:
-        description: Branch to copy metadata
         required: true
 
 
@@ -36,17 +31,48 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Set env
+        run: |
+          
+          echo "${{ github.event.inputs.job-type }} "
+          echo "${{ github.event.inputs.target-env }} "
+          
+          if [ "${{ github.event.inputs.job-type }}" == "Deployment" ]; then
+            echo 'Deployment'
+          elif [ "${{ github.event.inputs.job-type }}" == "Validation" ]; then
+            echo 'Validation'
+          else
+          fi
+          
+          endpointAuth = ''
+          if [ "${{ github.event.inputs.target-env }}" == "Production" ]; then
+
+            echo 'Production'
+            endpointAuth = ${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}
+          
+          elif [ "${{ github.event.inputs.target-env }}" == "Sandbox" ]; then
+  
+            echo 'Sandbox'
+            endpointAuth = ${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}
+
+          else
+          fi
+          echo $endpointAuth
+          echo "ENDPOINT_ENV_AUTH=$endpointAuth" >> $GITHUB_ENV
+          
+          
+          echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
+
+      - name: Test
+        run: echo $ENDPOINT_ENV_AUTH
+
       - uses: sfdx-actions/setup-sfdx@v1
         with:
-          sfdx-auth-url: ${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}
+          sfdx-auth-url: ${{ env.ENDPOINT_ENV_AUTH }}
 
-      - name: "Send greeting"
-        run: |
-          echo "${{ github.event.inputs.job-type }} 
-          echo "${{ github.event.inputs.target-env }} 
-          echo "${{ github.event.inputs.source-branch }} 
 
-      - name: 'Install Required Updates'
+      - name: Install Required Updates
         run: |
           echo "npm version"
           npm --version
@@ -69,9 +95,38 @@ jobs:
           echo "Installing delta"  
           echo y | sfdx plugins:install sfdx-git-delta
 
-      - name: 'Setting up git env'
+      - name: Setting up git env
         run: |
           git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
           git fetch --all
-          git checkout -b deploymentBranch
-          git --no-pager diff --name-status pr origin/staging
+          git --no-pager diff --name-status origin/master
+
+      - name: Generate Deployment Packages
+        run: |
+          sfdx sgd:source:delta --from origin/master --repo . --output . 
+          echo "package/package.xml"
+          cat package/package.xml
+      - name: Convert Metadata
+        run: |
+          sfdx force:source:convert --manifest=package/package.xml --outputdir=convert
+      - name: Run Test on Metadata
+        #run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunLocalTests --checkonly -w30
+        #NoTestRun, RunLocalTests, RunAllTestsInOrg
+        run: |
+          cd ./convert
+          #ls -all
+          echo "Convert Package JSON for Deployment"
+          cat package.xml
+          cd ..
+          #sfdx force:mdapi:deploy --deploydir=convert --testlevel=NoTestRun --checkonly -w30
+          #https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
+          #-c for checkonly
+          
+          
+          echo "${{ github.event.inputs.job-type }} "
+          echo "${{ github.event.inputs.target-env }} "
+          
+          if
+          
+          
+          sfdx force:source:deploy -c -p "./convert" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
