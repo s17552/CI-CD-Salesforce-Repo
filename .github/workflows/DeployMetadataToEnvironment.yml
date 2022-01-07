@@ -30,7 +30,7 @@ on:
           - Spicified tests
         required: true
       tests-to-run:
-        description: 'List of Test Classes to Run'
+        description: List of Test Classes to Run
         required: false
 
 
@@ -85,7 +85,7 @@ jobs:
           echo "Installing delta"  
           echo y | sfdx plugins:install sfdx-git-delta
 
-      - name: Setting up git env
+      - name: Fetching origin..
         run: |
           git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
           git fetch --all
@@ -130,7 +130,7 @@ jobs:
           #w 60 - wait 60 minutes till the end of deployment
           #--verbose - Emit additional command output to stdout.
           
-          params="$params -w60 --verbose --loglevel info"
+          params="$params -w 60 --verbose --loglevel info"
           
           echo $params
 
