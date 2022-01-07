@@ -137,31 +137,32 @@ jobs:
         run: |
           #https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
 
+          declare -a params
 
-          params="-p force-app/main/default"
+          params=(-p force-app/main/default)
 
           if [ "${{ github.event.inputs.job-type }}" == "Deployment" ]; then
             echo "Job Type - Deployment"
           else
             echo "Job Type - Validation"
-            params="-c $params"
+            params+=(-c "$params")
           fi
           
           #NoTestRun, RunLocalTests, RunAllTestsInOrg
 
           if [ "${{ github.event.inputs.test-level }}" == "All Tests" ]; then
             echo "Test Level - All Tests"
-            params="$params -l RunAllTestsInOrg"
+            params+=("$params" -l RunAllTestsInOrg)
 
           elif [ "${{ github.event.inputs.test-level }}" == "No Tests" ]; then
           
             echo "Test Level - No Tests"
-            params="$params -l NoTestRun"
+            params+=("$params" -l NoTestRun)
 
           elif [ "${{ github.event.inputs.test-level }}" == "Spicified tests" ]; then
             echo "Test Level - Spicified tests"
             #-l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest
-            params="$params -l RunSpecifiedTests -r ${{ github.event.inputs.tests-to-run }}"
+            params=("$params" -l RunSpecifiedTests -r ${{ github.event.inputs.tests-to-run }})
             
           else
             echo "No Endpoint found"
@@ -170,8 +171,11 @@ jobs:
           #w 60 - wait 60 minutes till the end of deployment
           #--verbose - Emit additional command output to stdout.
           
-          params="$params -w 60 --verbose --loglevel info"
+          params+=("$params" -w 60 --verbose --loglevel info)
           
           echo $params
+          echo "${params[@]}"
 
           sfdx force:source:deploy "${params[@]}"
+          #sfdx force:source:deploy -c -p "./force-app/main/default" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
+          #sfdx force:source:deploy -c -p force-app/main/default -l NoTestRun -w 60 --verbose --loglevel info
