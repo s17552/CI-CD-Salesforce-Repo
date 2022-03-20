@@ -17,7 +17,7 @@ global class LeadProcessor implements Database.Batchable<SObject> {
 
 
     global void finish (Database.BatchableContext param1) {
-        EmailManager.sendMail('yaroslav.chuiev@pwc.com', 'Recs', 'Rec changed: ' + recChanged);
+//        EmailManager.sendMail('yaroslav.chuiev@pwc.com', 'Recs', 'Rec changed: ' + recChanged);
     }
 
     global Database.QueryLocator start (Database.BatchableContext param1) {

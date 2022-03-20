@@ -1,0 +1,144 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy Metadata to Environment
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      job-type:
+        type: choice
+        description: Type of Action
+        options:
+          - Validation
+          - Deployment
+        required: true
+      target-env:
+        type: choice
+        description: Target Environment
+        options:
+          - Sandbox
+          - Production
+        required: true
+      test-level:
+        type: choice
+        description: Test Level
+        options:
+          - All Tests
+          - No Tests
+          - Spicified Tests
+        required: true
+      tests-to-run:
+        description: List of Test Classes to Run
+        required: false
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Connection To Environment
+        run: |
+          if [ "${{ github.event.inputs.target-env }}" == "Production" ]; then
+          
+            echo "Environment - Production"
+            echo "ENDPOINT_ENV_AUTH="${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}"" >> $GITHUB_ENV
+          
+          elif [ "${{ github.event.inputs.target-env }}" == "Sandbox" ]; then
+          
+            echo "Environment - Sandbox"
+            echo "ENDPOINT_ENV_AUTH="${{ secrets.SFDX_DEV_PLAYGROUND_AUTH }}"" >> $GITHUB_ENV
+          else
+            echo "No Endpoint found"
+          fi
+
+      - uses: sfdx-actions/setup-sfdx@v1
+        with:
+          sfdx-auth-url: ${{ env.ENDPOINT_ENV_AUTH }}
+
+      - name: Install Required Updates
+        run: |
+          echo "npm version"
+          npm --version
+          echo "node version"
+          node --version
+          
+          echo "sfdx update"
+          sfdx update
+
+          echo "sfdx version"
+          sfdx --version
+
+          #echo "Installing sfdx"
+          #sudo npm install sfdx-cli --global
+          #sfdx --version
+          
+          #Uninstall SFDX
+          #sfdx plugins:uninstall sfdx-git-delta
+          
+          echo "Installing delta"  
+          echo y | sfdx plugins:install sfdx-git-delta
+
+      - name: Fetching origin..
+        run: |
+          git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+          git fetch --all
+          git checkout -b deployment_branch
+          cp -r ./force-app/main/default ./deploymentPackage
+          cp -v ./manifest/package.xml ./deploymentPackage
+          cd deploymentPackage
+          ls -all
+          cd ..
+          #git --no-pager diff --name-status origin/master
+
+      - name: Run Test on Metadata
+        run: |
+          #https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_force_source_deploy
+
+          declare -a params
+          params=(-p deploymentPackage)
+
+          if [ "${{ github.event.inputs.job-type }}" == "Deployment" ]; then
+            echo "Job Type - Deployment"
+          else
+            echo "Job Type - Validation"
+            params=(-c ${params[@]})
+          fi
+          
+          #NoTestRun, RunLocalTests, RunAllTestsInOrg
+
+          if [ "${{ github.event.inputs.test-level }}" == "All Tests" ]; then
+            echo "Test Level - All Tests"
+            params=(${params[@]} -l RunAllTestsInOrg)
+
+          elif [ "${{ github.event.inputs.test-level }}" == "No Tests" ]; then
+          
+            echo "Test Level - No Tests"
+            params=(${params[@]} -l NoTestRun)
+
+          elif [ "${{ github.event.inputs.test-level }}" == "Spicified Tests" ]; then
+            echo "Test Level - Spicified tests"
+            #-l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest
+            params=(${params[@]} -l RunSpecifiedTests -r ${{ github.event.inputs.tests-to-run }})
+            
+          else
+            echo "No Endpoint found"
+          fi
+          
+          #w 60 - wait 60 minutes till the end of deployment
+          #--verbose - Emit additional command output to stdout.
+          
+          params=(${params[@]} -w 60 --verbose --loglevel info)
+          
+          echo $params
+          echo "${params[@]}"
+
+          sfdx force:source:deploy "${params[@]}"
+          #sfdx force:source:deploy -c -p "./force-app/main/default" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
+          #sfdx force:source:deploy -c -p force-app/main/default -l NoTestRun -w 60 --verbose --loglevel info

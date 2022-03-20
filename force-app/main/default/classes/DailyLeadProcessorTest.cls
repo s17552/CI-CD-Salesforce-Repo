@@ -4,7 +4,7 @@
 
 @IsTest
 public class DailyLeadProcessorTest {
-    public static String CRON_EXP = '0 0 0 15 3 ? 2022';
+    public static String CRON_EXP = '0 0 23 * * ?';
     @TestSetup
     public static void setup () {
         List<Lead> forInsert = new List<Lead>();
