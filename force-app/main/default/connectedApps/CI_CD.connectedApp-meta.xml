@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>yaroslav.chuiev@gmail.com</contactEmail>
+    <contactPhone>+48889825495</contactPhone>
+    <label>CI CD</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/</callbackUrl>
+        <consumerKey>3MVG96_7YM2sI9wTu41QWA_.oE4qEXLDogwf6vb7eLdIYTJyVRqRbZLv8ohePFpkijBCRiuEvfg==</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

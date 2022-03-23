@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    "@lwc/eslint-plugin-lwc",
+    "@salesforce/eslint-plugin-aura"
+  ],
+  "extends": [
+    "@salesforce/eslint-config-lwc/recommended"//,
+//    "@salesforce/eslint-plugin-aura/recommended",
+//    "@salesforce/eslint-plugin-aura/locker"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "parserOpts": {
+        "plugins": [
+          "classProperties",
+          [
+            "decorators",
+            {
+              "decoratorsBeforeExport": false
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,7 +1,4 @@
 <aura:component implements="flexipage:availableForAllPageTypes" controller="BotController" >
-
-    <h1></h1>
-    <h1></h1>
     <h1></h1>
     <aura:attribute name="question" type="String" default=""/>
     <aura:attribute name="messages" type="Object[]"/>

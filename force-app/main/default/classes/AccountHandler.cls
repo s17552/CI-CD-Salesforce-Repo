@@ -4,7 +4,7 @@
 
 public with sharing class AccountHandler {
     public static Account insertNewAccount (String accountName) {
-        System.debug('YC Debug--' +'1');
+
         try {
             Account acc = new Account(Name = accountName);
             insert acc;

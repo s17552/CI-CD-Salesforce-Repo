@@ -36,6 +36,6 @@ global class UpdateContactAddresses implements
         FROM AsyncApexJob
         WHERE Id = :bc.getJobId()];
         // call some utility to send email
-//        EmailManager.sendMail('yaroslav.chuiev@pwc.com',''+job, ''+recordsProcessed);
+        EmailManager.sendMail('yaroslav.chuiev@pwc.com',''+job, ''+recordsProcessed);
     }
 }

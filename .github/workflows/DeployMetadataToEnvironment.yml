@@ -95,7 +95,7 @@ jobs:
           cd deploymentPackage
           ls -all
           cd ..
-          #git --no-pager diff --name-status origin/master
+          git --no-pager diff --name-status origin/master
 
       - name: Run Test on Metadata
         run: |
@@ -140,5 +140,3 @@ jobs:
           echo "${params[@]}"
 
           sfdx force:source:deploy "${params[@]}"
-          #sfdx force:source:deploy -c -p "./force-app/main/default" -l RunSpecifiedTests -r AccountManagerTest,AwesomeCalculatorTest -w 33 --verbose --loglevel fatal
-          #sfdx force:source:deploy -c -p force-app/main/default -l NoTestRun -w 60 --verbose --loglevel info
