@@ -95,7 +95,7 @@ jobs:
           cd deploymentPackage
           ls -all
           cd ..
-          git --no-pager diff --name-status origin/master
+          #git --no-pager diff --name-status origin/master
 
       - name: Run Test on Metadata
         run: |
